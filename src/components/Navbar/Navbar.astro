@@ -1,0 +1,66 @@
+---
+import "@fontsource/quattrocento-sans";
+import "@fontsource/montserrat";
+
+//https://github.com/cyishere/zhouzhou-rocks/blob/ed4747fe24719f0a0f09806a2f7082b0d6c9acfe/src/components/Navbar.astro
+const pathname = new URL(Astro.request.url).pathname;
+const isNavHighlight = (path: string, prefix: string): boolean => {
+  const homePage = path === prefix || null;
+  return homePage ?? path.slice(1).startsWith(prefix);
+};
+---
+
+<div class="flex flex-row w-full my-6 justify-center">
+  <div class="flex flex-col w-fit text-center">
+    <div class="my-4">
+      <a class="text-4xl font-black" style={{ fontFamily: "montserrat" }} href="/">
+        Mounds View XC / T&F
+      </a>
+    </div>
+    <div class="flex flex-row w-fit justify-center">
+      <nav class="flex flex-row justify-between">
+        <a
+          href="/"
+          class={`mx-6 text-gray-400 hover:text-black ${
+            isNavHighlight(pathname, "/") ? "text-gray-900" : ""
+          }`}
+        >
+          HOME
+        </a>
+        <a
+          href="/schedule"
+          class={`mx-6 text-gray-400 hover:text-black ${
+            isNavHighlight(pathname, "/schedule") ? "text-gray-900" : ""
+          }`}
+        >
+          SCHEDULE
+        </a>
+        <a
+          href="/results"
+          class={`mx-6 text-gray-400 hover:text-black ${
+            isNavHighlight(pathname, "/results") ? "text-gray-900" : ""
+          }`}
+        >
+          RESULTS</a
+        >
+        <a
+          href="/coaches"
+          class={`mx-6 text-gray-400 hover:text-black ${
+            isNavHighlight(pathname, "/coaches") ? "text-gray-900" : ""
+          }`}
+        >
+          COACHES</a
+        >
+        <a
+          href="/captains"
+          class={`mx-6 text-gray-400 hover:text-black ${
+            isNavHighlight(pathname, "/captains") ? "text-gray-900" : ""
+          }`}
+        >
+          CAPTAINS</a
+        >
+        <span class="mx-6 text-gray-400 hover:text-black">MEDIA</span>
+      </nav>
+    </div>
+  </div>
+</div>
