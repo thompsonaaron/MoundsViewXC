@@ -4,7 +4,7 @@ export const hoverColor = "hover:text-green-500";
 
 export const Results2012 = () => (
   <Accordion title="2012">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/1eH1t5lN1pd-CAG73Vc88-sBfIIQ-j4My/view?usp=share_link"
@@ -74,7 +74,7 @@ export const Results2012 = () => (
 
 export const Results2013 = () => (
   <Accordion title="2013">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/1eH1t5lN1pd-CAG73Vc88-sBfIIQ-j4My/view?usp=share_link"
@@ -144,7 +144,7 @@ export const Results2013 = () => (
 
 export const Results2014 = () => (
   <Accordion title="2014">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/19U4zX44JaeVItqk86QNHMCjM4K-LRM2L/view?usp=share_link"
@@ -232,7 +232,7 @@ export const Results2014 = () => (
 
 export const Results2015 = () => (
   <Accordion title="2015">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/18TRZZIQ2lXoSPY233EvkBZQ9thTjc1Of/view?usp=share_link"
@@ -331,7 +331,7 @@ export const Results2015 = () => (
 
 export const Results2016 = () => (
   <Accordion title="2016">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/1S5VjlEGtS9-C3jQ5UQpB1U1FO61ovYKB/view?usp=share_link"
@@ -438,7 +438,7 @@ export const Results2016 = () => (
 
 export const Results2017 = () => (
   <Accordion title="2017">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/1lBW3jjwwPaaVVXiBy_tllTHifs9DDmfr/view?usp=share_link"
@@ -527,7 +527,7 @@ export const Results2017 = () => (
 
 export const Results2018 = () => (
   <Accordion title="2018">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/1qrdCqyXxNyt4_fuzUBJOSjLpwVXbjxX8/view?usp=share_link"
@@ -642,7 +642,7 @@ export const Results2018 = () => (
 
 export const Results2019 = () => (
   <Accordion title="2019">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/1lfD9poJg4LSUG0XPAYmwbPku8xFCw8RS/view?usp=share_link"
@@ -766,7 +766,7 @@ export const Results2019 = () => (
 
 export const Results2020 = () => (
   <Accordion title="2020">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/1O_BcW0TaaQSJo9EVsvTH0wvn5GtntmB8/view?usp=share_link"
@@ -845,7 +845,7 @@ export const Results2020 = () => (
 
 export const Results2021 = () => (
   <Accordion title="2021">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/1Kap3enTbg4gDQ7noy3Z29MQhb74aF0Iu/view?usp=share_link"
@@ -978,7 +978,7 @@ export const Results2021 = () => (
 
 export const Results2022 = () => (
   <Accordion title="2022">
-    <ol>
+    <ol class="mx-2">
       <li>
         <a
           href="https://drive.google.com/file/d/1NiN3YGOCBizyNeL0o65VtlEPlztRMngf/view?usp=share_link"

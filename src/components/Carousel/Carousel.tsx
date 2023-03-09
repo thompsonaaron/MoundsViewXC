@@ -1,16 +1,16 @@
 import Alexandria from "../../assets/img-4530_orig.jpg";
-// import SectionsTeam from "/moundsviewxc/assets/img-3485_orig.jpg";
-// import State2018 from "/moundsviewxc/assets/img-3753_orig.jpg";
-// import Rosemount2015 from "/moundsviewxc/assets/img-2015-rosemount-start.jpg";
-// import SEC2015 from "/moundsviewxc/assets/img-2015-cc-conference-walking.jpg";
+import SectionsTeam from "../../assets/img-3485_orig.jpg";
+import State2018 from "../../assets/img-3753_orig.jpg";
+import Rosemount2015 from "../../assets/img-2015-rosemount-start.jpg";
+import SEC2015 from "../../assets/img-2015-cc-conference-walking.jpg";
 // import AlexandriaFinish from "/img-4415_orig.jpg";
-// import Hugs from "/moundsviewxc/assets/img-7128_orig.jpg";
+import Hugs from "../../assets/img-7128_orig.jpg";
 
 import { useEffect, useState } from "preact/hooks";
 import clsx from "clsx";
 
-// const imageList = [SEC2015, Rosemount2015, Hugs, State2018, Alexandria, SectionsTeam];
-const imageList = [Alexandria];
+const imageList = [SEC2015, Rosemount2015, Hugs, State2018, Alexandria, SectionsTeam];
+// const imageList = [Alexandria];
 
 const Carousel = () => {
   const [imageNum, setImageNum] = useState(0);
@@ -35,7 +35,7 @@ const Carousel = () => {
         setImageNum((currNum) => {
           return currNum === imageSrcs.length - 1 ? 0 : currNum + 1;
         }),
-      3000
+      10000
     );
     return () => clearInterval(interval);
   }, []);
