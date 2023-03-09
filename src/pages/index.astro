@@ -1,12 +1,11 @@
 ---
-import Counter from "../components/Counter/Counter";
 import Navbar from "../components/Navbar/Navbar.astro";
 // import { signal } from "@preact/signals";
 import "../styles/tailwind.css";
 import Grant from "../assets/homepage-image-cropped(2).jpg";
 import "@fontsource/quattrocento-sans";
-import Flicking, { MoveEvent, WillChangeEvent } from "@egjs/preact-flicking";
 import Carousel from "../components/Carousel/Carousel";
+import Taskbar from "../components/Taskbar/Taskbar";
 // Full Astro Component Syntax: // https://docs.astro.build/core-concepts/astro-components/
 
 // const count = signal(0);
@@ -29,16 +28,14 @@ import Carousel from "../components/Carousel/Carousel";
       } */
     </style>
   </head>
-  <body class="flex justify-center w-fit">
+  <body class="flex justify-center w-screen">
     <main class="flex flex-col justify-center grow-1">
       <Navbar />
-      <img src={Grant} alt="homepage-background" width="vw" height="200px" />
-      <!-- <Counter count={count} client:visible><h1>Hello, Preact 1!</h1></Counter>
-        <Counter count={count} client:visible><h1>Hello, Preact 2!</h1></Counter> -->
-      <div id="background" class="flex-col bg-neutral-700 text-slate-50 pb-16">
+      <img src={Grant} alt="homepage-background" />
+      <div id="background" class="flex-col bg-neutral-700 text-slate-50 pb-16 min-h-screen">
         <div class="flex justify-center my-8">
           <div
-            class="flex flex-col lg:w-1/2 text-center text-xl items-center"
+            class="flex flex-col w-10/12 lg:w-1/2 text-center text-lg md:text-xl items-center"
             style={{ fontFamily: "Quattrocento Sans" }}
           >
             <p class="flex">Nike Cross Nationals (NXN): 2019 (19th), 2018 (17th)</p><br />
@@ -56,8 +53,11 @@ import Carousel from "../components/Carousel/Carousel";
             <p class="flex flex-row">MSHSL Champions: 1999, 2000, 2001, 2006, 2007</p>
           </div>
         </div>
+        <div class="flex flex-col justify-center m-4 transition ease-in-out">
+          <Carousel client:load />
+        </div>
       </div>
-      <div class="flex justify-center"><Carousel /></div>
+      <Taskbar client:load />
     </main>
   </body>
 </html>
