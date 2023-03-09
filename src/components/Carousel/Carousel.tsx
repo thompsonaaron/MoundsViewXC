@@ -18,7 +18,7 @@ const Carousel = () => {
   const imageSrcs = imageList.map((img, index) => (
     <img
       src={img}
-      alt="some text"
+      alt="team photo"
       style={{ maxWidth: "80%" }}
       class={clsx("transition-opacity duration-1000 ease-in-out mb-8 max-h-fit", {
         "opacity-100": index === imageNum,

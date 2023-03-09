@@ -7,5 +7,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [preact(), tailwind()],
   site: "https://thompsonaaron.github.io",
-  base: "/moundsviewxc",
+  base: "/MoundsViewXC",
 });
