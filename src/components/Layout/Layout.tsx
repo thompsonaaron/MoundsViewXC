@@ -1,5 +1,5 @@
 import Navbar from "../Navbar/Navbar.astro";
-import Grant from "../assets/homepage-image-cropped(2).jpg";
+import Grant from "../../assets/homepage-image-cropped(2).jpg";
 
 const Layout = (children) => {
   <body class="flex justify-center w-fit">
