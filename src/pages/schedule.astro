@@ -10,7 +10,9 @@ import Grant from "../assets/homepage-image-cropped(2).jpg";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="./src/assets/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/favicon.svg" sizes="any" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <style>
       html,
       body {
@@ -23,7 +25,7 @@ import Grant from "../assets/homepage-image-cropped(2).jpg";
     <main class="flex flex-col justify-center grow-1">
       <Navbar />
       <img src={Grant} alt="homepage-background" />
-      <div id="background" class="flex-col bg-neutral-700 text-slate-50 pb-16 min-h-screen">
+      <div id="background" class="flex-col bg-neutral-700 text-slate-50 pb-8">
         <div class="flex justify-center my-8">
           <div class="flex flex-col w-full md:w-5/12">
             <iframe

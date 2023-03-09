@@ -3,7 +3,19 @@ import Navbar from "../components/Navbar/Navbar.astro";
 import Taskbar from "../components/Taskbar/Taskbar";
 import "../styles/tailwind.css";
 import Grant from "../assets/homepage-image-cropped(2).jpg";
-import { Results2012, Results2013, Results2014 } from "../constants/Results";
+import {
+  Results2012,
+  Results2013,
+  Results2014,
+  Results2015,
+  Results2016,
+  Results2017,
+  Results2018,
+  Results2019,
+  Results2020,
+  Results2021,
+  Results2022,
+} from "../constants/XCResults";
 ---
 
 <html lang="en">
@@ -11,7 +23,9 @@ import { Results2012, Results2013, Results2014 } from "../constants/Results";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="./src/assets/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/favicon.svg" sizes="any" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <style>
       html,
       body {
@@ -27,15 +41,15 @@ import { Results2012, Results2013, Results2014 } from "../constants/Results";
     <main class="flex flex-col justify-center grow-1">
       <Navbar />
       <img src={Grant} alt="homepage-background" />
-      <div id="background" class="flex-col bg-neutral-700 text-slate-50 pb-16 min-h-screen">
-        <div class="flex flex-col md:flex-row justify-center my-8 mx-4 gap-4">
+      <div id="background" class="flex-col bg-neutral-700 text-slate-50 pb-8 min-h-screen">
+        <div class="flex flex-col md:flex-row justify-center my-8 mx-4 gap-6">
           <div class="flex flex-col w-full md:w-3/12">
             <h1 class="text-xl flex flex-row items-center">
               <span class="mr-4">Cross Country</span>
               <a
                 href="https://drive.google.com/drive/folders/1sM5QbGR2_dGPKLRKMctSDTCX0wxNYq4K?usp=share_link"
                 target="_blank"
-                title="link to all cross country results"
+                title="see archive"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="15">
                   <path
@@ -46,10 +60,17 @@ import { Results2012, Results2013, Results2014 } from "../constants/Results";
               </a>
             </h1>
             <div class="mx-8 my-4">
-              <!-- 2014 has dummy links -->
-              <Results2014 client:visible />
-              <Results2013 client:visible />
-              <Results2012 client:visible />
+              <Results2022 client:load />
+              <Results2021 client:load />
+              <Results2020 client:load />
+              <Results2019 client:load />
+              <Results2018 client:load />
+              <Results2017 client:load />
+              <Results2016 client:load />
+              <Results2015 client:load />
+              <Results2014 client:load />
+              <Results2013 client:load />
+              <Results2012 client:load />
             </div>
           </div>
           <div class="flex flex-col w-full md:w-3/12">
@@ -58,7 +79,7 @@ import { Results2012, Results2013, Results2014 } from "../constants/Results";
               <a
                 href="https://drive.google.com/drive/folders/11_lKm7daAKJTsSTkx-OUH0gcduMRBX9A?usp=share_link"
                 target="_blank"
-                title="link to all track results"
+                title="see archive"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="15">
                   <path

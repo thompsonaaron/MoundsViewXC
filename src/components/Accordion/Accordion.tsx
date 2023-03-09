@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { useState } from "preact/hooks";
 
 interface AccordionProps {
@@ -11,13 +12,17 @@ const Accordion = ({ title, children }: AccordionProps) => {
   return (
     <div>
       <div
-        class="flex flex-row justify-between cursor-pointer"
+        class="flex flex-row justify-between items-center cursor-pointer"
         onClick={() => setIsOpen((prevState) => !prevState)}
       >
         <div class="text-md md:text-xl">{title}</div>
         <div class="text-xl">{isOpen ? "-" : "+"}</div>
       </div>
-      {isOpen && <div class="pl-4 flex text-sm md:text-lg">{children}</div>}
+      {isOpen && (
+        <div class={"transition ease-in-out delay-150 pl-4 mb-1 flex text-sm md:text-lg"}>
+          {children}
+        </div>
+      )}
     </div>
   );
 };

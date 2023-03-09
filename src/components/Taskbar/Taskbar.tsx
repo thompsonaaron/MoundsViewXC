@@ -12,11 +12,11 @@ const Taskbar = () => {
       <div
         id="full width container"
         onClick={clickHandler}
-        class="flex fixed bottom-0 right-0 left-0 w-screen bg-slate-50 justify-end pb-2"
+        class="flex md:hidden fixed bottom-0 right-0 left-0 w-screen bg-slate-50 justify-end p-1"
       >
         <div
           id="toggle-component"
-          class="flex flex-col h-16 md:hidden w-14 mr-2 sticky object-bottom justify-center"
+          class="flex flex-col h-12 md:hidden w-12 mr-2 sticky object-bottom justify-center"
         >
           <div class="flex h-1 w-full my-1 bg-green-700">&nbsp;</div>
           <div class="flex h-1 bg-black w-full my-1 bg-green-700">&nbsp;</div>
@@ -24,7 +24,7 @@ const Taskbar = () => {
         </div>
       </div>
       {showNav && (
-        <div class="flex flex-col fixed bottom-0 mb-16 transition-all h-fit w-full bg-white border-t-4 border-green-700">
+        <div class="flex flex-col fixed bottom-0 mb-14 transition-all h-fit w-full bg-white border-t-4 border-green-700">
           <a href="/" class="m-6 text-gray-400 hover:text-black">
             HOME
           </a>
@@ -37,9 +37,9 @@ const Taskbar = () => {
           <a href="/coaches" class="m-6 text-gray-400 hover:text-black">
             COACHES
           </a>
-          <a href="/captains" class="m-6 text-gray-400 hover:text-black">
+          {/* <a href="/captains" class="m-6 text-gray-400 hover:text-black">
             CAPTAINS
-          </a>
+          </a> */}
           <a href="/media" class="m-6 text-gray-400 hover:text-black">
             MEDIA
           </a>
