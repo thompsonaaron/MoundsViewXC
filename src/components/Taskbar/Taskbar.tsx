@@ -17,15 +17,15 @@ const Taskbar = () => {
       >
         <div
           id="toggle-component"
-          class="flex flex-col h-8 md:hidden w-8 sticky object-bottom justify-center items-center py-0.5"
+          class="flex flex-col h-12 md:hidden w-12 sticky object-bottom justify-center items-center py-0.5"
         >
-          <div class="flex h-0.5 w-full my-0.5 bg-white">&nbsp;</div>
-          <div class="flex h-0.5 w-full my-0.5 bg-white">&nbsp;</div>
-          <div class="flex h-0.5 w-full my-0.5 bg-white">&nbsp;</div>
+          <div class="flex h-1 w-full my-1 bg-white">&nbsp;</div>
+          <div class="flex h-1 w-full my-1 bg-white">&nbsp;</div>
+          <div class="flex h-1 w-full my-1 bg-white">&nbsp;</div>
         </div>
       </div>
       {showNav && (
-        <div class="flex flex-col fixed bottom-0 mb-14 transition-all h-fit w-full bg-white shadow shadow-slate-400">
+        <div class="flex flex-col fixed bottom-0 mb-12 transition-all h-fit w-full bg-white shadow shadow-slate-400">
           <a href="/MoundsViewXC/" class="m-4 text-gray-400 hover:text-black">
             HOME
           </a>
