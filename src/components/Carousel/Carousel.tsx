@@ -3,13 +3,21 @@ import SectionsTeam from "../../assets/img-3485_orig.jpg";
 import State2018 from "../../assets/img-3753_orig.jpg";
 import Rosemount2015 from "../../assets/img-2015-rosemount-start.jpg";
 import SEC2015 from "../../assets/img-2015-cc-conference-walking.jpg";
-// import AlexandriaFinish from "/img-4415_orig.jpg";
+import AlexandriaFinish from "../../assets/img-4415_orig.jpg";
 import Hugs from "../../assets/img-7128_orig.jpg";
 
 import { useEffect, useState } from "preact/hooks";
 import clsx from "clsx";
 
-const imageList = [SEC2015, Rosemount2015, Hugs, State2018, Alexandria, SectionsTeam];
+const imageList = [
+  AlexandriaFinish,
+  SEC2015,
+  Rosemount2015,
+  Hugs,
+  State2018,
+  Alexandria,
+  SectionsTeam,
+];
 // const imageList = [Alexandria];
 
 const Carousel = () => {
@@ -23,7 +31,7 @@ const Carousel = () => {
       class={clsx("transition-opacity duration-1000 ease-in-out mb-8 max-h-fit", {
         "opacity-100": index === imageNum,
         "opacity-0": index !== imageNum,
-        collapse: index !== imageNum,
+        invisible: index !== imageNum,
         visible: index === imageNum,
       })}
     />
@@ -47,7 +55,7 @@ const Carousel = () => {
       </div>
       {imageSrcs.map((img) => (
         <div
-          style={{ position: "absolute", top: "0", left: "0", right: "0", bottom: "0" }}
+          style={{ position: "absolute", top: "0", left: "0", right: "0" }}
           class="flex justify-center w-full"
         >
           {img}

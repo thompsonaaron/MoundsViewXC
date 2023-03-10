@@ -2,16 +2,16 @@ import { useState } from "preact/hooks";
 
 interface AccordionProps {
   title: string;
-  children: any;
+  links: { text: string; href: string }[];
 }
 
-const Accordion = ({ title, children }: AccordionProps) => {
+const Accordion = ({ title, links }: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
       <div
-        class="flex flex-row justify-between items-center cursor-pointer"
+        class="flex flex-row justify-between items-center cursor-pointer active:text-green-500"
         onClick={() => setIsOpen((prevState) => !prevState)}
       >
         <div class="text-md md:text-xl">{title}</div>
@@ -19,7 +19,15 @@ const Accordion = ({ title, children }: AccordionProps) => {
       </div>
       {isOpen && (
         <div class={"transition ease-in-out delay-150 pl-4 mb-1 flex text-sm md:text-lg"}>
-          {children}
+          <ul class="mx-2">
+            {links.map((link) => (
+              <li class="my-1">
+                <a href={link.href} target="_blank" class="hover:text-green-500">
+                  {link.text}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </div>

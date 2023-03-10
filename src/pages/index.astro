@@ -7,6 +7,9 @@ import "@fontsource/quattrocento-sans";
 import Carousel from "../components/Carousel/Carousel";
 import Taskbar from "../components/Taskbar/Taskbar";
 import Logo from "../assets/favicon.svg";
+import NewLogo from "../assets/MV logo (square, no yellow).svg";
+import LogoThree from "../assets/MV logo (square, yellow and black swapped).svg";
+
 // import { Image } from "@astrojs/image/components";
 // Full Astro Component Syntax: // https://docs.astro.build/core-concepts/astro-components/
 
@@ -61,8 +64,10 @@ import Logo from "../assets/favicon.svg";
       <div class="flex static bottom-0 right-0 left-0 w-screen bg-neutral-700 justify-center p-1">
         <img
           src={Logo}
+          height="100"
+          width="100"
           alt="MV Logo"
-          class="hidden md:flex mb-8 max-h-20 self-center justify-self-center"
+          class="hidden md:flex mb-8 max-h-24 self-center justify-self-center"
         />
       </div>
 

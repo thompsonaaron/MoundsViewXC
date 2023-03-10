@@ -12,15 +12,16 @@ const Taskbar = () => {
       <div
         id="full width container"
         onClick={clickHandler}
-        class="flex md:hidden fixed bottom-0 right-0 left-0 w-screen bg-neutral-700 justify-center p-1 shadow shadow-slate-400"
+        style={{ bottom: "-5" }}
+        class="flex md:hidden fixed bottom-0 right-0 left-0 w-screen bg-neutral-700 justify-center shadow shadow-slate-400"
       >
         <div
           id="toggle-component"
-          class="flex flex-col h-12 md:hidden w-12 sticky object-bottom justify-center items-center"
+          class="flex flex-col h-8 md:hidden w-8 sticky object-bottom justify-center items-center py-0.5"
         >
-          <div class="flex h-1 w-full my-1 bg-white">&nbsp;</div>
-          <div class="flex h-1 w-full my-1 bg-white">&nbsp;</div>
-          <div class="flex h-1 w-full my-1 bg-white">&nbsp;</div>
+          <div class="flex h-0.5 w-full my-0.5 bg-white">&nbsp;</div>
+          <div class="flex h-0.5 w-full my-0.5 bg-white">&nbsp;</div>
+          <div class="flex h-0.5 w-full my-0.5 bg-white">&nbsp;</div>
         </div>
       </div>
       {showNav && (

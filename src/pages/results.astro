@@ -16,6 +16,17 @@ import {
   Results2021,
   Results2022,
 } from "../constants/XCResults";
+
+import {
+  TFResults2014,
+  TFResults2015,
+  TFResults2016,
+  TFResults2017,
+  TFResults2018,
+  TFResults2019,
+  TFResults2021,
+  TFResults2022,
+} from "../constants/TFResults";
 ---
 
 <html lang="en">
@@ -33,7 +44,7 @@ import {
         margin: 0;
       }
       a:hover {
-        color: green;
+        color: #006633;
       }
     </style>
   </head>
@@ -60,17 +71,17 @@ import {
               </a>
             </h1>
             <div class="mx-8 my-4">
-              <Results2022 client:load />
-              <Results2021 client:load />
-              <Results2020 client:load />
-              <Results2019 client:load />
-              <Results2018 client:load />
-              <Results2017 client:load />
-              <Results2016 client:load />
-              <Results2015 client:load />
-              <Results2014 client:load />
-              <Results2013 client:load />
-              <Results2012 client:load />
+              <Results2022 client:idle />
+              <Results2021 client:idle />
+              <Results2020 client:idle />
+              <Results2019 client:idle />
+              <Results2018 client:idle />
+              <Results2017 client:idle />
+              <Results2016 client:idle />
+              <Results2015 client:idle />
+              <Results2014 client:idle />
+              <Results2013 client:idle />
+              <Results2012 client:idle />
             </div>
           </div>
           <div class="flex flex-col w-full md:w-4/12">
@@ -89,11 +100,20 @@ import {
                 </svg>
               </a>
             </h1>
-            <div class="mx-8 my-4"><Results2012 client:idle /></div>
+            <div class="mx-8 my-4">
+              <TFResults2022 client:visible />
+              <TFResults2021 client:visible />
+              <TFResults2019 client:visible />
+              <TFResults2018 client:visible />
+              <TFResults2017 client:visible />
+              <TFResults2016 client:visible />
+              <TFResults2015 client:visible />
+              <TFResults2014 client:visible />
+            </div>
           </div>
         </div>
       </div>
-      <Taskbar client:load />
+      <Taskbar client:idle />
     </main>
   </body>
 </html>
