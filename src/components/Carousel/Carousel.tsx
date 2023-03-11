@@ -44,7 +44,7 @@ const Carousel = () => {
 				setImageNum((currNum) => {
 					return currNum === imageSrcs.length - 1 ? 0 : currNum + 1;
 				}),
-			3000
+			8000
 		);
 		return () => clearInterval(interval);
 	}, []);
