@@ -5,8 +5,8 @@ const MediaDropdown = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<div class={"flex flex-col"}>
-			<div class="flex relative cursor-pointer m-0 p-0 items-center text-gray-400 hover:text-black active:text-black">
+		<div class={"flex flex-col my-4 md:my-0"}>
+			<div class="flex relative cursor-pointer m-0 p-0 items-center text-gray-500 hover:text-black active:text-black">
 				<span
 					class="mx-4 md:mx-6 z-50"
 					onClick={() => setIsOpen((prevValue) => !prevValue)}>
@@ -16,7 +16,7 @@ const MediaDropdown = () => {
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
 						class={clsx(
-							"transition-all duration-100 ease-in-out self-right inline-block h-4 mx-1 fill-red-200 hover:fill-red-700",
+							"transition-all duration-100 ease-in-out self-right inline-block my-auto h-4 mx-1",
 							{
 								"-rotate-90 md:rotate-180": isOpen,
 								"rotate-0": !isOpen,
@@ -38,7 +38,7 @@ const MediaDropdown = () => {
 			<div class="relative text-left left-2">
 				<ul
 					class={clsx(
-						"absolute m-0 bg-white w-full px-4 py-2 -top-24 md:-top-8 left-12 md:right-0 flex flex-col transition-all duration-1000 ease-in-out",
+						"absolute m-0 bg-white w-full px-4 py-2 -top-20 md:-top-8 left-12 md:left-0 flex flex-col transition-all duration-1000 ease-in-out",
 						{
 							"static flex z-100bg-none opacity-100 z-50": isOpen,
 							"translate-x-12 md:translate-y-10 md:translate-x-0": isOpen,
@@ -46,21 +46,21 @@ const MediaDropdown = () => {
 								!isOpen,
 						}
 					)}>
-					<li class="pl-1 text-gray-400 hover:text-black">
+					<li class="pl-1 text-gray-500 hover:text-black">
 						<a
 							href="http://moundsviewboyscrosscountry.shutterfly.com/"
 							target="_blank">
 							XC Photos
 						</a>
 					</li>
-					<li class="pl-1 text-gray-400 hover:text-black">
+					<li class="pl-1 text-gray-500 hover:text-black">
 						<a
 							href="https://moundsviewboystrack2017.shutterfly.com/#"
 							target="_blank">
 							TF Photos
 						</a>
 					</li>
-					<li class="pl-1 text-gray-400 hover:text-black">
+					<li class="pl-1 text-gray-500 hover:text-black">
 						<a
 							href="https://www.youtube.com/channel/UCg_Z3H_nyqWZvTqml7jGIwQ?view_as=subscriber"
 							target="_blank">
