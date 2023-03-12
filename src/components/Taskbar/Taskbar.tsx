@@ -24,32 +24,32 @@ const Taskbar = () => {
 				</div>
 			</div>
 			{showNav && (
-				<div class="flex flex-col fixed bottom-0 mb-12 transition-all h-fit w-full bg-white shadow shadow-slate-400">
-					<a href="/MoundsViewXC/" class="m-4 text-gray-400 hover:text-black">
+				<div class="flex flex-col fixed bottom-0 mb-12 py-4 transition-all h-fit w-full bg-white shadow shadow-slate-400">
+					<a href="/MoundsViewXC/" class="m-4 text-gray-500 hover:text-black">
 						HOME
 					</a>
 					<a
 						href="/MoundsViewXC/schedule"
-						class="m-4 text-gray-400 hover:text-black">
+						class="m-4 text-gray-500 hover:text-black">
 						SCHEDULE
 					</a>
 					<a
 						href="/MoundsViewXC/results"
-						class="m-4 text-gray-400 hover:text-black">
+						class="m-4 text-gray-500 hover:text-black">
 						RESULTS
 					</a>
 					<a
 						href="/MoundsViewXC/coaches"
-						class="m-4 text-gray-400 hover:text-black">
+						class="m-4 text-gray-500 hover:text-black">
 						COACHES
 					</a>
-					{/* <a href="/captains" class="m-6 text-gray-400 hover:text-black">
+					{/* <a href="/captains" class="m-6 text-gray-500 hover:text-black">
             CAPTAINS
           </a> */}
-					{/* <a href="/MoundsViewXC/media" class="m-4 text-gray-400 hover:text-black">
+					{/* <a href="/MoundsViewXC/media" class="m-4 text-gray-500 hover:text-black">
             MEDIA
           </a> */}
-						<MediaDropdown />
+					<MediaDropdown />
 				</div>
 			)}
 		</>
