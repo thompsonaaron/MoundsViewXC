@@ -1,134 +1,136 @@
 ---
-import Grant from "../assets/banner.jpg";
-import Navbar from "../components/Navbar/Navbar.astro";
-import Taskbar from "../components/Taskbar/Taskbar";
+import Grant from '../assets/banner.jpg'
+import Navbar from '../components/Navbar/Navbar.astro'
+import Taskbar from '../components/Taskbar/Taskbar'
 import {
-	Results2012,
-	Results2013,
-	Results2014,
-	Results2015,
-	Results2016,
-	Results2017,
-	Results2018,
-	Results2019,
-	Results2020,
-	Results2021,
-	Results2022,
-} from "../constants/XCResults";
+    Results2012,
+    Results2013,
+    Results2014,
+    Results2015,
+    Results2016,
+    Results2017,
+    Results2018,
+    Results2019,
+    Results2020,
+    Results2021,
+    Results2022,
+} from '../constants/XCResults'
 
 import {
-	TFResults2014,
-	TFResults2015,
-	TFResults2016,
-	TFResults2017,
-	TFResults2018,
-	TFResults2019,
-	TFResults2021,
-	TFResults2022,
-} from "../constants/TFResults";
+    TFResults2014,
+    TFResults2015,
+    TFResults2016,
+    TFResults2017,
+    TFResults2018,
+    TFResults2019,
+    TFResults2021,
+    TFResults2022,
+} from '../constants/TFResults'
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" href="/MoundsViewXC/favicon.ico" sizes="any" />
-		<link
-			rel="icon"
-			type="image/svg+xml"
-			href="/MoundsViewXC/favicon.svg"
-			sizes="any"
-		/>
-		<link rel="apple-touch-icon" href="/MoundsViewXC/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: Montserrat;
-				margin: 0;
-			}
-			a:hover {
-				color: #006633;
-			}
-		</style>
-	</head>
-	<body class="flex justify-center w-screen">
-		<main class="flex flex-col justify-center grow-1">
-			<Navbar />
-			<img src={Grant} alt="homepage-background" />
-			<div
-				id="background"
-				class="flex-col bg-neutral-700 text-slate-50 pb-8 min-h-screen"
-			>
-				<div class="flex flex-col md:flex-row justify-center my-8 mx-4 gap-6">
-					<div class="flex flex-col w-full md:w-6/12 lg:w-4/12">
-						<h1 class="text-xl flex flex-row items-center">
-							<span class="mr-4">Cross Country</span>
-							<a
-								href="https://drive.google.com/drive/folders/1sM5QbGR2_dGPKLRKMctSDTCX0wxNYq4K?usp=share_link"
-								target="_blank"
-								title="see archive"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 512 512"
-									height="15"
-								>
-									<path
-										class="fill-white"
-										d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-									></path>
-								</svg>
-							</a>
-						</h1>
-						<div class="mx-8 my-4">
-							<Results2022 client:idle />
-							<Results2021 client:idle />
-							<Results2020 client:idle />
-							<Results2019 client:idle />
-							<Results2018 client:idle />
-							<Results2017 client:idle />
-							<Results2016 client:idle />
-							<Results2015 client:idle />
-							<Results2014 client:idle />
-							<Results2013 client:idle />
-							<Results2012 client:idle />
-						</div>
-					</div>
-					<div class="flex flex-col w-full md:w-6/12 lg:w-4/12">
-						<h1 class="text-xl flex flex-row items-center">
-							<span class="mr-4">Track</span>
-							<a
-								href="https://drive.google.com/drive/folders/11_lKm7daAKJTsSTkx-OUH0gcduMRBX9A?usp=share_link"
-								target="_blank"
-								title="see archive"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 512 512"
-									height="15"
-								>
-									<path
-										class="fill-white"
-										d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-									></path>
-								</svg>
-							</a>
-						</h1>
-						<div class="mx-8 my-4">
-							<TFResults2022 client:visible />
-							<TFResults2021 client:visible />
-							<TFResults2019 client:visible />
-							<TFResults2018 client:visible />
-							<TFResults2017 client:visible />
-							<TFResults2016 client:visible />
-							<TFResults2015 client:visible />
-							<TFResults2014 client:visible />
-						</div>
-					</div>
-				</div>
-			</div>
-			<Taskbar client:idle />
-		</main>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="icon" href="/MoundsViewXC/favicon.ico" sizes="any" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="/MoundsViewXC/favicon.svg"
+            sizes="any"
+        />
+        <link rel="apple-touch-icon" href="/MoundsViewXC/favicon.svg" />
+        <style>
+            html,
+            body {
+                font-family: Montserrat;
+                margin: 0;
+            }
+            a:hover {
+                color: #006633;
+            }
+        </style>
+    </head>
+    <body class="flex justify-center w-screen">
+        <main class="flex flex-col justify-center grow-1">
+            <Navbar />
+            <img src={Grant} alt="homepage-background" />
+            <div
+                id="background"
+                class="flex-col bg-neutral-700 text-slate-50 pb-8 min-h-screen"
+            >
+                <div
+                    class="flex flex-col md:flex-row justify-center my-8 mx-4 gap-6"
+                >
+                    <div class="flex flex-col w-full md:w-6/12 lg:w-4/12">
+                        <h1 class="text-xl flex flex-row items-center">
+                            <span class="mr-4">Cross Country</span>
+                            <a
+                                href="https://drive.google.com/drive/folders/1sM5QbGR2_dGPKLRKMctSDTCX0wxNYq4K?usp=share_link"
+                                target="_blank"
+                                title="see archive"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                    height="15"
+                                >
+                                    <path
+                                        class="fill-white"
+                                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </h1>
+                        <div class="mx-8 my-4">
+                            <Results2022 client:idle />
+                            <Results2021 client:idle />
+                            <Results2020 client:idle />
+                            <Results2019 client:idle />
+                            <Results2018 client:idle />
+                            <Results2017 client:idle />
+                            <Results2016 client:idle />
+                            <Results2015 client:idle />
+                            <Results2014 client:idle />
+                            <Results2013 client:idle />
+                            <Results2012 client:idle />
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full md:w-6/12 lg:w-4/12">
+                        <h1 class="text-xl flex flex-row items-center">
+                            <span class="mr-4">Track</span>
+                            <a
+                                href="https://drive.google.com/drive/folders/11_lKm7daAKJTsSTkx-OUH0gcduMRBX9A?usp=share_link"
+                                target="_blank"
+                                title="see archive"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                    height="15"
+                                >
+                                    <path
+                                        class="fill-white"
+                                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </h1>
+                        <div class="mx-8 my-4">
+                            <TFResults2022 client:visible />
+                            <TFResults2021 client:visible />
+                            <TFResults2019 client:visible />
+                            <TFResults2018 client:visible />
+                            <TFResults2017 client:visible />
+                            <TFResults2016 client:visible />
+                            <TFResults2015 client:visible />
+                            <TFResults2014 client:visible />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Taskbar client:idle />
+        </main>
+    </body>
 </html>
