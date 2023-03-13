@@ -1,69 +1,109 @@
 ---
-import Navbar from "../components/Navbar/Navbar.astro";
 import "@fontsource/quattrocento-sans";
 import Grant from "../assets/banner.jpg";
 import Logo from "../assets/favicon.svg";
 import Carousel from "../components/Carousel/Carousel";
+import Navbar from "../components/Navbar/Navbar.astro";
 import Taskbar from "../components/Taskbar/Taskbar";
 import "../styles/tailwind.css";
 ---
 
 <html lang="en" class="flex">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" href="/MoundsViewXC/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/svg+xml" href="/MoundsViewXC/favicon.svg" sizes="any" />
-    <link rel="apple-touch-icon" href="/MoundsViewXC/favicon.svg" />
-    <style>
-      html,
-      body {
-        font-family: Montserrat;
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body class="flex justify-center w-screen bg-neutral-700">
-    <main class="flex flex-col justify-center grow-1">
-      <Navbar />
-      <img src={Grant} alt="homepage-background" />
-      <div id="background" class="flex-col text-slate-50 pb-8">
-        <div class="flex justify-center my-8">
-          <div
-            class="flex flex-col w-10/12 lg:w-1/2 text-center text-lg md:text-xl items-center"
-            style={{ fontFamily: "Quattrocento Sans" }}
-          >
-            <p class="flex">Nike Cross Nationals (NXN): 2019 (19th), 2018 (17th)</p><br />
-            <p class="flex">
-              Nike Cross Heartland Regional: 2022 (12th), 2021 (10th), 2019 (1st), 2018 (1st)
-            </p><br />
-            <p class="flex">
-              MSHSL XC: 2022 (5th), 2021 (3rd), 2019 (1st) 2018 (2nd), 2017 (5th), 2016 (4th), 2015
-              (9th), 2013 (6th), 2012 (15th), 2011 (14th), 2007 (14th), 2006 (7th), 2004 (9th), 2002
-              (10th), 2001 (15th), 2000 (6th), 1999 (2nd)
-            </p><br />
-            <p class="flex flex-row">
-              True Team State Champions: 1998, 1999, 2000, 2001, 2002, 2003, 2006, 2007
-            </p>
-            <p class="flex flex-row">MSHSL Champions: 1999, 2000, 2001, 2006, 2007</p>
-          </div>
-        </div>
-        <div class="flex flex-col justify-center content-center m-4 transition ease-in-out">
-          <Carousel client:load />
-        </div>
-      </div>
-      <div class="flex static bottom-0 right-0 left-0 w-screen justify-center p-1">
-        <img
-          src={Logo}
-          height="100"
-          width="100"
-          alt="MV Logo"
-          class="hidden md:flex mb-8 max-h-24 self-center justify-self-center"
-        />
-      </div>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" href="/MoundsViewXC/favicon.ico" sizes="any" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/MoundsViewXC/favicon.svg"
+			sizes="any"
+		/>
+		<link rel="apple-touch-icon" href="/MoundsViewXC/favicon.svg" />
+		<style>
+			html,
+			body {
+				font-family: Montserrat;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body class="flex justify-center w-screen bg-neutral-700">
+		<main class="flex flex-col justify-center grow-1">
+			<Navbar />
+			<img src={Grant} alt="homepage-background" />
+			<div id="background" class="flex-col text-slate-50 pb-8">
+				<section class="flex justify-center my-8">
+					<div
+						class="flex flex-col md:w-10/12 lg:w-6/12 border-2 border-white rounded px-4 py-2"
+					>
+						<h1 class="text-xl self-center">Updates</h1>
+						<div class="grid grid-cols-4 gap-4 auto-cols-auto">
+							<div class="col-span-1">Saturday March 12, 2023</div>
+							<div class="col-span-3">
+								Practice this week will be at Bethel Indoor Track / Bethel SRC
+								from 11:30 - 1:30pm</div
+							>
+							<div>Monday, March 13, 2023</div>
+							<div class="col-span-3"
+								>Remember to register for boys track and field. Register <a
+									href="https://lobby.wordwareinc.com/">here</a
+								></div
+							>
+						</div>
+						<!-- <div class="self-center"
+							><time>Saturday March 12, 2023</time>: Practice this week will be
+							at Bethel Indoor Track / Bethel SRC from 11:30 - 1:30pm</div
+						> -->
+					</div>
+				</section>
+				<div class="flex justify-center my-8">
+					<div
+						class="flex flex-col w-10/12 lg:w-1/2 text-center text-lg md:text-xl items-center"
+						style={{ fontFamily: "Quattrocento Sans" }}
+					>
+						<p class="flex"
+							>Nike Cross Nationals (NXN): 2019 (19th), 2018 (17th)</p
+						><br />
+						<p class="flex">
+							Nike Cross Heartland Regional: 2022 (12th), 2021 (10th), 2019
+							(1st), 2018 (1st)
+						</p><br />
+						<p class="flex">
+							MSHSL XC: 2022 (5th), 2021 (3rd), 2019 (1st) 2018 (2nd), 2017
+							(5th), 2016 (4th), 2015 (9th), 2013 (6th), 2012 (15th), 2011
+							(14th), 2007 (14th), 2006 (7th), 2004 (9th), 2002 (10th), 2001
+							(15th), 2000 (6th), 1999 (2nd)
+						</p><br />
+						<p class="flex flex-row">
+							True Team State Champions: 1998, 1999, 2000, 2001, 2002, 2003,
+							2006, 2007
+						</p>
+						<p class="flex flex-row"
+							>MSHSL Champions: 1999, 2000, 2001, 2006, 2007</p
+						>
+					</div>
+				</div>
+				<div
+					class="flex flex-col justify-center content-center m-4 transition ease-in-out"
+				>
+					<Carousel client:load />
+				</div>
+			</div>
+			<div
+				class="flex static bottom-0 right-0 left-0 w-screen justify-center p-1"
+			>
+				<img
+					src={Logo}
+					height="100"
+					width="100"
+					alt="MV Logo"
+					class="hidden md:flex mb-8 max-h-24 self-center justify-self-center"
+				/>
+			</div>
 
-      <Taskbar client:load />
-    </main>
-  </body>
+			<Taskbar client:load />
+		</main>
+	</body>
 </html>

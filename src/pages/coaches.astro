@@ -1,0 +1,101 @@
+---
+import "@fontsource/quattrocento-sans";
+import Grant from "../assets/banner.jpg";
+import Logo from "../assets/favicon.svg";
+import Navbar from "../components/Navbar/Navbar.astro";
+import Taskbar from "../components/Taskbar/Taskbar";
+import "../styles/tailwind.css";
+
+import coachFleming from "../assets/coach-fleming.jpeg";
+import coachWentworth from "../assets/coach-wentworth.jpg";
+---
+
+<html lang="en" class="flex">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" href="/MoundsViewXC/favicon.ico" sizes="any" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/MoundsViewXC/favicon.svg"
+			sizes="any"
+		/>
+		<link rel="apple-touch-icon" href="/MoundsViewXC/favicon.svg" />
+		<style>
+			html,
+			body {
+				font-family: Montserrat;
+				margin: 0;
+			}
+
+			p {
+				overflow-wrap: break-word;
+				font-size: 0.75rem;
+			}
+		</style>
+	</head>
+	<body class="flex justify-center w-screen bg-neutral-700">
+		<main class="flex flex-col justify-center">
+			<Navbar />
+			<img src={Grant} alt="homepage-background" />
+			<div
+				id="background"
+				class="flex-col text-slate-50 pb-8 w-11/12 lg:w-6/12 self-center"
+			>
+				<div class="grid grid-cols-2 gap-4 auto-cols-auto my-8">
+					<div class="col-span-1"
+						><img
+							src={coachFleming}
+							alt="coach fleming"
+							object-fit="contain"
+							class="max-h-56"
+						/></div
+					>
+					<div class="col-span-1"
+						><p>Head Track and Cross Country Coach</p><p
+							>ross.fleming@moundsviewschools.org</p
+						></div
+					>
+					<div class="col-span-1">
+						<img
+							src={coachWentworth}
+							alt="coach wentworth"
+							object-fit="contain"
+							class="max-h-56"
+						/></div
+					>
+					<div class="col-span-1"
+						><p>Assistant Cross Country and Track Coach</p></div
+					>
+					<div class="col-span-1">
+						<img
+							src={coachWentworth}
+							alt="coach wentworth"
+							object-fit="contain"
+							class="max-h-56"
+						/></div
+					>
+					<div class="col-span-1"
+						><p>Tom Davis</p><p>Throws</p><p>tom.davis@moundsviewschools.org</p
+						></div
+					>
+				</div>
+			</div>
+			<div
+				class="flex static bottom-0 right-0 left-0 w-screen justify-center p-1"
+			>
+				<img
+					src={Logo}
+					height="100"
+					width="100"
+					alt="MV Logo"
+					class="hidden md:flex mb-8 max-h-24 self-center justify-self-center"
+				/>
+			</div>
+
+			<Taskbar client:load />
+		</main>
+	</body>
+</html>
