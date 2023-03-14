@@ -1,13 +1,17 @@
 ---
 import '@fontsource/quattrocento-sans'
 import Grant from '../assets/banner.jpg'
-import Logo from '../assets/favicon.svg'
 import Navbar from '../components/Navbar/Navbar.astro'
 import Taskbar from '../components/Taskbar/Taskbar'
 import '../styles/tailwind.css'
 
+import aaronThompson from '../assets/aaron-thompson.jpg'
+import billPratt from '../assets/bill pratt.jpg'
 import coachFleming from '../assets/coach-fleming.jpeg'
 import coachWentworth from '../assets/coach-wentworth.jpg'
+import mikeGoldman from '../assets/mike-goldman.jpeg'
+import scottKopp from '../assets/scott-kopp.jpeg'
+import tomDavis from '../assets/tom-davis.jpeg'
 ---
 
 <html lang="en" class="flex">
@@ -42,49 +46,106 @@ import coachWentworth from '../assets/coach-wentworth.jpg'
             <img src={Grant} alt="homepage-background" />
             <div
                 id="background"
-                class="flex-col text-slate-50 pb-8 w-11/12 lg:w-6/12 self-center"
+                class="flex-col text-slate-50 pb-8 w-11/12 lg:w-7/12 self-center"
             >
-                <div class="grid grid-cols-2 gap-4 auto-cols-auto my-8">
+                <div
+                    class="grid grid-cols-2 gap-6 md:gap-y-6 md:gap-x-16 auto-cols-auto my-8"
+                >
                     <div class="col-span-1">
                         <img
                             src={coachFleming}
                             alt="coach fleming"
                             object-fit="contain"
-                            class="max-h-56"
+                            class="max-h-56 ml-auto"
                         />
                     </div>
                     <div class="col-span-1">
-                        <p>Head Track and Cross Country Coach</p><p>
-                            ross.fleming@moundsviewschools.org
+                        <p class="md:text-base">
+                            Head Track and Cross Country Coach
+                        </p><p>ross.fleming@moundsviewschools.org</p>
+                    </div>
+                    <div class="col-span-1">
+                        <img
+                            src={coachWentworth}
+                            alt="coach wentworth"
+                            object-fit="contain"
+                            class="max-h-56 ml-auto"
+                        />
+                    </div>
+                    <div class="col-span-1">
+                        <p class="md:text-base">
+                            Assistant cross country and JV distance track coach
                         </p>
                     </div>
                     <div class="col-span-1">
                         <img
-                            src={coachWentworth}
-                            alt="coach wentworth"
+                            src={tomDavis}
+                            alt="coach davis"
                             object-fit="contain"
-                            class="max-h-56"
+                            class="max-h-56 ml-auto"
                         />
                     </div>
                     <div class="col-span-1">
-                        <p>Assistant Cross Country and Track Coach</p>
-                    </div>
-                    <div class="col-span-1">
-                        <img
-                            src={coachWentworth}
-                            alt="coach wentworth"
-                            object-fit="contain"
-                            class="max-h-56"
-                        />
-                    </div>
-                    <div class="col-span-1">
-                        <p>Tom Davis</p><p>Throws</p><p>
+                        <p class="md:text-base">Tom Davis</p><p>Throws</p><p>
                             tom.davis@moundsviewschools.org
                         </p>
                     </div>
+                    <div class="col-span-1">
+                        <img
+                            src={billPratt}
+                            alt="bill pratt"
+                            object-fit="contain"
+                            class="max-h-56 ml-auto"
+                        />
+                    </div>
+                    <div class="col-span-1">
+                        <p class="md:text-base">Bill Pratt</p>
+                        <p>Mid-Distance</p><p>wilfredapratt@gmail.com</p>
+                    </div>
+                    <div class="col-span-1">
+                        <img
+                            src={scottKopp}
+                            alt="scott kopp"
+                            object-fit="contain"
+                            class="max-h-56 ml-auto"
+                        />
+                    </div>
+                    <div class="col-span-1">
+                        <p class="md:text-base">Scott Kopp</p>
+                        <p>Jumps</p>
+                        <p>skopp713@gmail.com</p>
+                    </div>
+                    <div class="col-span-1">
+                        <img
+                            src={mikeGoldman}
+                            alt="mikeGoldman"
+                            object-fit="contain"
+                            class="max-h-56 ml-auto"
+                        />
+                    </div>
+                    <div class="col-span-1">
+                        <p class="md:text-base">Mike Goldman</p>
+                        <p>Long sprints and hurdles</p>
+                        <p>miko1@visi.com</p>
+                    </div>
+                    <div class="col-span-1">
+                        <img
+                            src={aaronThompson}
+                            alt="aaronThompson"
+                            object-fit="contain"
+                            class="max-h-56 ml-auto"
+                        />
+                    </div>
+                    <div class="col-span-1">
+                        <p class="md:text-base">Aaron Thompson</p>
+                        <p>
+                            Assistant cross country and JV distance track coach
+                        </p>
+                        <p>moundsviewxc@gmail.com</p>
+                    </div>
                 </div>
             </div>
-            <div
+            <!-- <div
                 class="flex static bottom-0 right-0 left-0 w-screen justify-center p-1"
             >
                 <img
@@ -94,7 +155,7 @@ import coachWentworth from '../assets/coach-wentworth.jpg'
                     alt="MV Logo"
                     class="hidden md:flex mb-8 max-h-24 self-center justify-self-center"
                 />
-            </div>
+            </div> -->
 
             <Taskbar client:load />
         </main>
