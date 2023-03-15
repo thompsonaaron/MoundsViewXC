@@ -25,6 +25,7 @@ import {
     TFResults2019,
     TFResults2021,
     TFResults2022,
+    TFResults2023,
 } from '../constants/TFResults'
 ---
 
@@ -37,14 +38,9 @@ import {
             name="description"
             content="Mounds View High School, Cross Country, Track and Field, Results from 2012 to present"
         />
-        <link rel="icon" href="/MoundsViewXC/favicon.ico" sizes="any" />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/MoundsViewXC/favicon.svg"
-            sizes="any"
-        />
-        <link rel="apple-touch-icon" href="/MoundsViewXC/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <style>
             html,
             body {
@@ -123,6 +119,7 @@ import {
                             </a>
                         </h1>
                         <div class="mx-8 my-4">
+                            <TFResults2023 client:visible />
                             <TFResults2022 client:visible />
                             <TFResults2021 client:visible />
                             <TFResults2019 client:visible />

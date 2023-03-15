@@ -10,6 +10,7 @@ import billPratt from '../assets/bill-pratt.webp'
 import coachFleming from '../assets/coach-fleming.webp'
 import coachWentworth from '../assets/coach-wentworth.webp'
 import mikeGoldman from '../assets/mike-goldman.webp'
+import peteErickson from '../assets/pete-erickson-cropped.jpg'
 import scottKopp from '../assets/scott-kopp.webp'
 import tomDavis from '../assets/tom-davis.webp'
 ---
@@ -23,14 +24,9 @@ import tomDavis from '../assets/tom-davis.webp'
             name="description"
             content="Mounds View High School, Cross Country, Track and Field, Coaches for track and cross country, distance, sprints, hurdles, jumps; Coach Fleming"
         />
-        <link rel="icon" href="/MoundsViewXC/favicon.ico" sizes="any" />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/MoundsViewXC/favicon.svg"
-            sizes="any"
-        />
-        <link rel="apple-touch-icon" href="/MoundsViewXC/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <style>
             html,
             body {
@@ -40,7 +36,10 @@ import tomDavis from '../assets/tom-davis.webp'
 
             p {
                 overflow-wrap: break-word;
-                font-size: 0.75rem;
+            }
+
+            a {
+                color: rgb(34 197 94);
             }
         </style>
         <title>Mounds View XC</title>
@@ -55,6 +54,7 @@ import tomDavis from '../assets/tom-davis.webp'
             >
                 <div
                     class="grid grid-cols-2 gap-6 md:gap-y-6 md:gap-x-16 auto-cols-auto my-8"
+                    style={{ gridTemplateRows: 'repeat(8, minmax(0, 1fr))' }}
                 >
                     <div class="col-span-1">
                         <img
@@ -66,22 +66,32 @@ import tomDavis from '../assets/tom-davis.webp'
                         />
                     </div>
                     <div class="col-span-1">
-                        <p class="md:text-base">
+                        <p class="text-base md:text-xl">Ross Fleming</p>
+                        <p class="text-xs md:text-base">
                             Head Track and Cross Country Coach
-                        </p><p>ross.fleming@moundsviewschools.org</p>
+                        </p>
+                        <p class="text-xs md:text-base">
+                            <a href="mailto:ross.fleming@moundsviewschools.org"
+                                >ross.fleming@moundsviewschools.org</a
+                            >
+                        </p>
                     </div>
                     <div class="col-span-1">
                         <img
-                            src={coachWentworth}
-                            alt="coach wentworth"
+                            src={scottKopp}
+                            alt="scott kopp"
                             object-fit="contain"
-                            class="ml-auto"
+                            class="my-auto mx-auto"
                             height="100%"
                         />
                     </div>
                     <div class="col-span-1">
-                        <p class="md:text-base">
-                            Assistant cross country and JV distance track coach
+                        <p class="text-base md:text-xl">Scott Kopp</p>
+                        <p class="text-xs md:text-base">Jumps</p>
+                        <p class="text-xs md:text-base">
+                            <a href="mailto:skopp713@gmail.com"
+                                >skopp713@gmail.com</a
+                            >
                         </p>
                     </div>
                     <div class="col-span-1">
@@ -94,8 +104,14 @@ import tomDavis from '../assets/tom-davis.webp'
                         />
                     </div>
                     <div class="col-span-1">
-                        <p class="md:text-base">Tom Davis</p><p>Throws</p><p>
-                            tom.davis@moundsviewschools.org
+                        <p class="text-base md:text-xl">Tom Davis</p><p
+                            class="text-xs md:text-base"
+                        >
+                            Throws
+                        </p><p class="text-xs md:text-base">
+                            <a href="mailto:tom.davis@moundsviewschools.org"
+                                >tom.davis@moundsviewschools.org</a
+                            >
                         </p>
                     </div>
                     <div class="col-span-1">
@@ -108,23 +124,15 @@ import tomDavis from '../assets/tom-davis.webp'
                         />
                     </div>
                     <div class="col-span-1">
-                        <p class="md:text-base">Bill Pratt</p>
-                        <p>Mid-Distance</p><p>wilfredapratt@gmail.com</p>
+                        <p class="text-base md:text-xl">Bill Pratt</p>
+                        <p class="text-xs md:text-base">Mid-Distance</p>
+                        <p class="text-xs md:text-base">
+                            <a href="mailto:wilfredapratt@gmail.com"
+                                >wilfredapratt@gmail.com</a
+                            >
+                        </p>
                     </div>
-                    <div class="col-span-1">
-                        <img
-                            src={scottKopp}
-                            alt="scott kopp"
-                            object-fit="contain"
-                            class="ml-auto"
-                            height="100%"
-                        />
-                    </div>
-                    <div class="col-span-1">
-                        <p class="md:text-base">Scott Kopp</p>
-                        <p>Jumps</p>
-                        <p>skopp713@gmail.com</p>
-                    </div>
+
                     <div class="col-span-1">
                         <img
                             src={mikeGoldman}
@@ -135,9 +143,13 @@ import tomDavis from '../assets/tom-davis.webp'
                         />
                     </div>
                     <div class="col-span-1">
-                        <p class="md:text-base">Mike Goldman</p>
-                        <p>Long sprints and hurdles</p>
-                        <p>miko1@visi.com</p>
+                        <p class="text-base md:text-xl">Mike Goldman</p>
+                        <p class="text-xs md:text-base">
+                            Long sprints and hurdles
+                        </p>
+                        <p class="text-xs md:text-base">
+                            <a href="mailto:miko1@visi.com">miko1@visi.com</a>
+                        </p>
                     </div>
                     <div class="col-span-1">
                         <img
@@ -149,11 +161,53 @@ import tomDavis from '../assets/tom-davis.webp'
                         />
                     </div>
                     <div class="col-span-1">
-                        <p class="md:text-base">Aaron Thompson</p>
-                        <p>
+                        <p class="text-base md:text-xl">Aaron Thompson</p>
+                        <p class="text-xs md:text-base">
                             Assistant cross country and JV distance track coach
                         </p>
-                        <p>moundsviewxc@gmail.com</p>
+                        <p class="text-xs md:text-base">
+                            <a href="mailto:moundsviewxc@gmail.com"
+                                >moundsviewxc@gmail.com</a
+                            >
+                        </p>
+                    </div>
+                    <div class="col-span-1">
+                        <img
+                            src={peteErickson}
+                            alt="peteErickson"
+                            object-fit="contain"
+                            class="ml-auto"
+                            height="100%"
+                        />
+                    </div>
+                    <div class="col-span-1">
+                        <p class="text-base md:text-xl">Pete Erickson</p>
+                        <p class="text-xs md:text-base">Pole vault</p>
+                        <p class="text-xs md:text-base">
+                            <a href="mailto:eric2396@umn.edu"
+                                >eric2396@umn.edu</a
+                            >
+                        </p>
+                    </div>
+                    <div class="col-span-1">
+                        <img
+                            src={coachWentworth}
+                            alt="coach wentworth"
+                            object-fit="contain"
+                            class="ml-auto"
+                            height="100%"
+                        />
+                    </div>
+                    <div class="col-span-1">
+                        <p class="text-base md:text-xl">Tom Wentworth</p>
+                        <p class="text-xs md:text-base">
+                            Assistant cross country and JV distance track coach
+                        </p>
+                        <p class="text-xs md:text-base">
+                            <a href="mailto:moundsviewxc@gmail.com"
+                                >moundsviewxc@gmail.com</a
+                            >
+                        </p>
                     </div>
                 </div>
             </div>
