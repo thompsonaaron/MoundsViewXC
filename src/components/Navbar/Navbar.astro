@@ -1,63 +1,69 @@
 ---
-import "@fontsource/montserrat";
-import "@fontsource/quattrocento-sans";
-import MediaDropdown from "../Dropdown/Dropdown";
+import '@fontsource/montserrat'
+import '@fontsource/quattrocento-sans'
+import MediaDropdown from '../Dropdown/Dropdown'
 
 //https://github.com/cyishere/zhouzhou-rocks/blob/ed4747fe24719f0a0f09806a2f7082b0d6c9acfe/src/components/Navbar.astro
-const pathname = new URL(Astro.request.url).pathname;
+const pathname = new URL(Astro.request.url).pathname
 const isNavHighlight = (path: string, prefix: string): boolean => {
-  const homePage = path === prefix || null;
-  return homePage ?? path.slice(1).startsWith(prefix);
-};
+    const homePage = path === prefix || null
+    return homePage ?? path.slice(1).startsWith(prefix)
+}
 ---
 
 <div class="flex flex-row w-full py-2 lg:py-6 justify-center bg-white">
-  <div class="flex flex-col w-fit text-center">
-    <div class="my-2 lg:my-4">
-      <a
-        class="text-xl sm:text-2xl md:text-4xl font-black"
-        style={{ fontFamily: "montserrat" }}
-        href="/MoundsViewXC/"
-      >
-        Mounds View XC / T&F
-      </a>
+    <div class="flex flex-col w-fit text-center">
+        <div class="my-2 lg:my-4">
+            <a
+                class="text-xl sm:text-2xl md:text-4xl font-black"
+                style={{ fontFamily: 'montserrat' }}
+                href="/"
+            >
+                Mounds View XC / T&F
+            </a>
+        </div>
+        <div class="flex flex-row w-fit justify-center hidden md:flex">
+            <nav class="flex flex-row justify-between">
+                <a
+                    href="/"
+                    class={`mx-6 text-gray-500 hover:text-black ${
+                        isNavHighlight(pathname, '/') ? 'text-gray-900' : ''
+                    }`}
+                >
+                    HOME
+                </a>
+                <a
+                    href="/schedule"
+                    class={`mx-6 text-gray-500 hover:text-black ${
+                        isNavHighlight(pathname, '/schedule')
+                            ? 'text-gray-900'
+                            : ''
+                    }`}
+                >
+                    SCHEDULE
+                </a>
+                <a
+                    href="/results"
+                    class={`mx-6 text-gray-500 hover:text-black ${
+                        isNavHighlight(pathname, '/results')
+                            ? 'text-gray-900'
+                            : ''
+                    }`}
+                >
+                    RESULTS</a
+                >
+                <a
+                    href="/coaches"
+                    class={`mx-6 text-gray-500 hover:text-black ${
+                        isNavHighlight(pathname, '/coaches')
+                            ? 'text-gray-900'
+                            : ''
+                    }`}
+                >
+                    COACHES</a
+                >
+                <MediaDropdown client:load />
+            </nav>
+        </div>
     </div>
-    <div class="flex flex-row w-fit justify-center hidden md:flex">
-      <nav class="flex flex-row justify-between">
-        <a
-          href="/MoundsViewXC/"
-          class={`mx-6 text-gray-500 hover:text-black ${
-            isNavHighlight(pathname, "/") ? "text-gray-900" : ""
-          }`}
-        >
-          HOME
-        </a>
-        <a
-          href="/MoundsViewXC/schedule"
-          class={`mx-6 text-gray-500 hover:text-black ${
-            isNavHighlight(pathname, "/schedule") ? "text-gray-900" : ""
-          }`}
-        >
-          SCHEDULE
-        </a>
-        <a
-          href="/MoundsViewXC/results"
-          class={`mx-6 text-gray-500 hover:text-black ${
-            isNavHighlight(pathname, "/results") ? "text-gray-900" : ""
-          }`}
-        >
-          RESULTS</a
-        >
-        <a
-          href="/MoundsViewXC/coaches"
-          class={`mx-6 text-gray-500 hover:text-black ${
-            isNavHighlight(pathname, "/coaches") ? "text-gray-900" : ""
-          }`}
-        >
-          COACHES</a
-        >
-        <MediaDropdown client:load />
-      </nav>
-    </div>
-  </div>
 </div>

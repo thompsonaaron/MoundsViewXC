@@ -17,14 +17,9 @@ import '../styles/tailwind.css'
             name="description"
             content="Mounds View High School, Cross Country, Track and Field, HomePage"
         />
-        <link rel="icon" href="/MoundsViewXC/favicon.ico" sizes="any" />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/MoundsViewXC/favicon.svg"
-            sizes="any"
-        />
-        <link rel="apple-touch-icon" href="/MoundsViewXC/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <style>
             html,
             body {
@@ -41,11 +36,25 @@ import '../styles/tailwind.css'
     <body class="flex justify-center w-screen bg-neutral-700">
         <main class="flex flex-col justify-center grow-1">
             <Navbar />
-            <img src={Grant} alt="homepage-background" width="100%" />
+            <div class="relative">
+                <img
+                    src={Grant}
+                    object-fit="contain"
+                    alt="homepage-background"
+                    width="100%"
+                    style={{ maxHeight: '400px' }}
+                />
+                <h1
+                    class="absolute text-xs md:text-xl right-10 bottom-4 md:bottom-6 font-bold"
+                >
+                    A tradition of Excellence
+                </h1>
+            </div>
+
             <div id="background" class="flex-col text-slate-50 pb-8">
                 <section class="flex justify-center my-8">
                     <div
-                        class="flex flex-col md:w-10/12 lg:w-6/12 border-2 border-white rounded px-4 py-2 m-1"
+                        class="flex flex-col md:w-10/12 lg:w-8/12 xl:w-6/12 border-2 border-white rounded px-4 py-2 m-1"
                     >
                         <h1 class="text-xl self-center">Updates</h1>
                         <div class="grid grid-cols-4 gap-4 auto-cols-auto">
@@ -71,7 +80,7 @@ import '../styles/tailwind.css'
                 </section>
                 <div class="flex justify-center my-8">
                     <div
-                        class="flex flex-col w-10/12 lg:w-1/2 text-center text-lg md:text-xl items-center"
+                        class="flex flex-col md:w-10/12 lg:w-8/12 xl:w-6/12 text-center text-lg md:text-xl items-center"
                         style={{ fontFamily: 'Quattrocento Sans' }}
                     >
                         <p class="flex">
