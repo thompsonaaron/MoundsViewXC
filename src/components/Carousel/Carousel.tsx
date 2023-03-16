@@ -23,7 +23,7 @@ const Carousel = () => {
     const imageSrcs = imageList.map((img, index) => (
         <img
             src={img}
-            style={{ maxHeight: '600px' }}
+            // style={{ maxHeight: '600px' }}
             object-fit="contain"
             alt="team photo"
             class={clsx('transition-opacity duration-1000 ease-in-out h-fit', {
@@ -41,7 +41,7 @@ const Carousel = () => {
                 setImageNum((currNum) => {
                     return currNum === imageSrcs.length - 1 ? 0 : currNum + 1
                 }),
-            8000
+            3000
         )
         return () => clearInterval(interval)
     }, [])
