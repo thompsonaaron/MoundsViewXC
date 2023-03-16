@@ -24,12 +24,10 @@ const Carousel = () => {
         <img
             src={img}
             // style={{ maxWidth: '50%' }}
-            width="100%"
-            height="auto"
             object-fit="contain"
             alt="team photo"
             class={clsx(
-                'transition-opacity duration-1000 ease-in-out h-fit max-w-full md:max-w-3xl',
+                'transition-opacity duration-1000 ease-in-out max-w-full md:max-w-3xl',
                 {
                     'opacity-100': index === imageNum,
                     'opacity-0': index !== imageNum,
