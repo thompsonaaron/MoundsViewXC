@@ -25,7 +25,7 @@ const Carousel = () => {
             src={img}
             // style={{ maxWidth: '50%' }}
             width="100%"
-            height="intrinsic"
+            height="auto"
             object-fit="contain"
             alt="team photo"
             class={clsx(
@@ -56,7 +56,7 @@ const Carousel = () => {
             {imageSrcs.map((img, index) => (
                 <div
                     class={clsx(
-                        'flex justify-center w-full absolute top-0 left-0 items-start',
+                        'flex justify-center w-full h-fit absolute top-0 left-0 items-start',
                         {
                             relative: index === 0,
                             absolute: index !== 0,
