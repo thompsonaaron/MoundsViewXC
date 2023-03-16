@@ -24,9 +24,8 @@ const Carousel = () => {
         <img
             src={img}
             // style={{ maxWidth: '50%' }}
-            height="100%"
-            //@ts-ignore
-            objectFit="contain"
+            // height="100%"
+            object-fit="contain"
             alt="team photo"
             class={clsx(
                 'transition-opacity duration-1000 ease-in-out h-fit max-w-full md:max-w-3xl',
