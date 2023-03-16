@@ -24,6 +24,7 @@ const Carousel = () => {
         <img
             src={img}
             // style={{ maxWidth: '50%' }}
+            width="100%"
             height="intrinsic"
             object-fit="contain"
             alt="team photo"
@@ -45,7 +46,7 @@ const Carousel = () => {
                 setImageNum((currNum) => {
                     return currNum === imageSrcs.length - 1 ? 0 : currNum + 1
                 }),
-            2000
+            8000
         )
         return () => clearInterval(interval)
     }, [])
