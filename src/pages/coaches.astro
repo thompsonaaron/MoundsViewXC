@@ -28,10 +28,14 @@ import tomDavis from '../assets/tom-davis.webp'
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <style>
-            html,
+            html {
+                font-family: Montserrat;
+                margin: 0;
+            }
             body {
                 font-family: Montserrat;
                 margin: 0;
+                min-height: 100vh;
             }
 
             p {
@@ -44,8 +48,8 @@ import tomDavis from '../assets/tom-davis.webp'
         </style>
         <title>Mounds View XC</title>
     </head>
-    <body class="flex justify-center w-screen bg-neutral-700">
-        <main class="flex flex-col justify-center">
+    <body class="flex justify-center w-full bg-neutral-700">
+        <main class="flex flex-col justify-center w-full">
             <Navbar />
             <img
                 src={Grant}
@@ -59,7 +63,9 @@ import tomDavis from '../assets/tom-davis.webp'
             >
                 <div
                     class="grid grid-cols-2 gap-6 md:gap-y-6 md:gap-x-16 auto-cols-auto my-8"
-                    style={{ gridTemplateRows: 'repeat(8, minmax(0, 1fr))' }}
+                    style={{
+                        gridTemplateRows: 'repeat(8, minmax(100px, 1fr))',
+                    }}
                 >
                     <div class="col-span-1">
                         <img
@@ -67,7 +73,7 @@ import tomDavis from '../assets/tom-davis.webp'
                             alt="coach fleming"
                             object-fit="contain"
                             class="ml-auto"
-                            height="100%"
+                            width="300"
                         />
                     </div>
                     <div class="col-span-1">
@@ -86,8 +92,8 @@ import tomDavis from '../assets/tom-davis.webp'
                             src={scottKopp}
                             alt="scott kopp"
                             object-fit="contain"
-                            class="my-auto mx-auto"
-                            height="100%"
+                            class="ml-auto"
+                            width="300"
                         />
                     </div>
                     <div class="col-span-1">
@@ -105,7 +111,7 @@ import tomDavis from '../assets/tom-davis.webp'
                             alt="coach davis"
                             object-fit="contain"
                             class="ml-auto"
-                            height="100%"
+                            width="300"
                         />
                     </div>
                     <div class="col-span-1">
@@ -125,7 +131,7 @@ import tomDavis from '../assets/tom-davis.webp'
                             alt="bill pratt"
                             object-fit="contain"
                             class="ml-auto"
-                            height="100%"
+                            width="300"
                         />
                     </div>
                     <div class="col-span-1">
@@ -144,7 +150,7 @@ import tomDavis from '../assets/tom-davis.webp'
                             alt="mikeGoldman"
                             object-fit="contain"
                             class="ml-auto"
-                            height="100%"
+                            width="300"
                         />
                     </div>
                     <div class="col-span-1">
@@ -160,9 +166,9 @@ import tomDavis from '../assets/tom-davis.webp'
                         <img
                             src={aaronThompson}
                             alt="aaronThompson"
-                            object-fit="contain"
+                            object-fit="cover"
                             class="ml-auto"
-                            height="100%"
+                            width="300"
                         />
                     </div>
                     <div class="col-span-1">
@@ -180,9 +186,9 @@ import tomDavis from '../assets/tom-davis.webp'
                         <img
                             src={peteErickson}
                             alt="peteErickson"
-                            object-fit="contain"
+                            object-fit="cover"
                             class="ml-auto"
-                            height="100%"
+                            width="300"
                         />
                     </div>
                     <div class="col-span-1">
@@ -198,9 +204,9 @@ import tomDavis from '../assets/tom-davis.webp'
                         <img
                             src={coachWentworth}
                             alt="coach wentworth"
-                            object-fit="contain"
+                            object-fit="cover"
                             class="ml-auto"
-                            height="100%"
+                            width="300"
                         />
                     </div>
                     <div class="col-span-1">

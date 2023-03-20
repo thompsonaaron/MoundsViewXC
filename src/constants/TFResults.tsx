@@ -702,7 +702,10 @@ const links2022 = [
 ]
 
 const links2023 = [
-    { text: 'Bethel Time Trials', href: '' },
+    {
+        text: 'Bethel Time Trials',
+        href: 'https://drive.google.com/file/d/1SO-ofLuTmdxvy0eTZpX5u4TdEY9Wm725/view?usp=share_link',
+    },
     // { text: 'St. Thomas Indoor', href: '' },
     // { text: 'Griak Indoor', href: '' },
     // { text: 'Mankato Indoor', href: '' },

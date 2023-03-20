@@ -42,10 +42,14 @@ import {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <style>
-            html,
+            html {
+                font-family: Montserrat;
+                margin: 0;
+            }
             body {
                 font-family: Montserrat;
                 margin: 0;
+                min-height: 100vh;
             }
             a:hover {
                 color: #006633;
@@ -53,8 +57,8 @@ import {
         </style>
         <title>Mounds View XC</title>
     </head>
-    <body class="flex justify-center w-screen">
-        <main class="flex flex-col justify-center grow-1">
+    <body class="flex justify-center w-full">
+        <main class="flex flex-col justify-center grow-1 w-full">
             <Navbar />
             <img
                 src={Grant}
