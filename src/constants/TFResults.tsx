@@ -710,7 +710,10 @@ const links2023 = [
         text: 'Bethel Time Trials',
         href: 'https://drive.google.com/file/d/1SO-ofLuTmdxvy0eTZpX5u4TdEY9Wm725/view?usp=share_link',
     },
-    // { text: 'St. Thomas Indoor', href: '' },
+    {
+        text: 'St. Thomas Indoor',
+        href: 'https://drive.google.com/file/d/1FXqXi2h0dqsnBHACNyCnJbWt9BJ-BKHj/view?usp=share_link',
+    },
     // { text: 'Griak Indoor', href: '' },
     // { text: 'Mankato Indoor', href: '' },
     // { text: 'MV Quadrangular', href: '' },
