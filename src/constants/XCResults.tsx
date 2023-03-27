@@ -430,7 +430,10 @@ const links2021 = [
         text: 'MSHSL State',
         href: 'https://drive.google.com/file/d/1V9HH_V0z4j3FoH-31PIAwLjy7rI_i1By/view?usp=share_link',
     },
-    { text: 'Nike Heartland Regional (TODO)', href: '' },
+    {
+        text: 'Nike Heartland Regional (TODO)',
+        href: 'https://drive.google.com/file/d/1k7xJ8EHdauyvpwRfqoOuTdPN1cVX9W-r/view?usp=share_link',
+    },
     {
         text: 'Season Booklet (TODO)',
         href: 'https://drive.google.com/file/d/1fkDT_qg8rfk6d4mDIrNWbjTAjQR3CGCE/view?usp=share_link',
