@@ -718,6 +718,10 @@ const links2023 = [
         text: 'Griak Indoor',
         href: 'https://drive.google.com/file/d/1e4KlwwoIkrCpqNgeFcE5nbwcVhrbooPP/view?usp=share_link',
     },
+    {
+        text: 'WBL Indoor',
+        href: 'https://drive.google.com/file/d/1d6Mp9usXWKGh9lWL58WfUMZL7zXQcWIz/view?usp=share_link',
+    },
     // { text: 'Mankato Indoor', href: '' },
     // { text: 'MV Quadrangular', href: '' },
     // { text: 'Lightning 9-10', href: '' },
