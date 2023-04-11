@@ -722,7 +722,10 @@ const links2023 = [
         text: 'WBL Indoor',
         href: 'https://drive.google.com/file/d/1d6Mp9usXWKGh9lWL58WfUMZL7zXQcWIz/view?usp=share_link',
     },
-    // { text: 'Mankato Indoor', href: '' },
+    {
+        text: 'Mankato Indoor',
+        href: 'https://drive.google.com/file/d/1wPZI0_KN4V9EMtK6v66-oAv3j5wbuEez/view?usp=share_link',
+    },
     {
         text: 'MV Quadrangular',
         href: 'https://drive.google.com/file/d/1W0YA4y-HwqqWBQqr2ISSM43SPfFU_pDx/view?usp=share_link',
