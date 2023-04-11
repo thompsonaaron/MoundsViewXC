@@ -56,7 +56,7 @@ const Carousel = () => {
         <img
             srcset={`${img.small} 300w, ${img.medium} 800w, ${img.large} 1200w`}
             sizes="(max-width: 400px) 300px, (max-width: 900px) 800px, 1200px"
-            src={img.medium}
+            // src={img.medium}
             object-fit="contain"
             alt="team photo"
             class={clsx(
