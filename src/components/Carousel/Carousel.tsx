@@ -54,9 +54,10 @@ const Carousel = () => {
 
     const imageSrcs = imageList.map((img, index) => (
         <img
-            srcset={`${img.small} 300w, ${img.medium} 800w, ${img.large} 1200w`}
-            sizes="(max-width: 400px) 300px, (max-width: 900px) 800px, 1200px"
+            srcset={`${img.small} 400w, ${img.medium} 800w, ${img.large} 1200w`}
+            sizes="(max-width:400px) 400px, (max-width:800px) 800px, 1200px"
             src={img.medium}
+            width="100%"
             object-fit="contain"
             alt="team photo"
             class={clsx(
