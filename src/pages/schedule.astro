@@ -1,5 +1,8 @@
 ---
-import Grant from '../assets/banner.jpg'
+import BannerSmall from '../assets/banner-small.webp'
+import BannerMedium from '../assets/banner-medium.webp'
+import BannerLarge from '../assets/banner-large.webp'
+import BannerXLarge from '../assets/banner-xlarge.webp'
 import Navbar from '../components/Navbar/Navbar.astro'
 import Taskbar from '../components/Taskbar/Taskbar'
 import '../styles/tailwind.css'
@@ -34,7 +37,10 @@ import '../styles/tailwind.css'
         <main class="flex flex-col justify-center grow-1 w-full">
             <Navbar />
             <img
-                src={Grant}
+                srcset={`${BannerSmall} 400w, ${BannerMedium} 800w, ${BannerLarge} 1200w, ${BannerXLarge} 1600w`}
+                sizes="(max-width: 401px) 400px, (max-width: 801px) 800px, (max-width: 1201px): 1200px, 1600px"
+                src={BannerLarge}
+                object-fit="cover"
                 alt="homepage-background"
                 width="100%"
                 style={{ maxHeight: '400px' }}
