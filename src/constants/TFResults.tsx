@@ -730,7 +730,10 @@ const links2023 = [
         text: 'MV Quadrangular',
         href: 'https://drive.google.com/file/d/1W0YA4y-HwqqWBQqr2ISSM43SPfFU_pDx/view?usp=share_link',
     },
-    // { text: 'Lightning 9-10', href: '' },
+    {
+        text: 'Lightning 9-10',
+        href: 'https://drive.google.com/file/d/1UM6YTYmlLeUvQVLtYPgeD6oHwAr708dN/view?usp=share_link',
+    },
     // { text: 'WBL Relays', href: '' },
     // { text: 'Pony Relays', href: '' },
     // { text: 'Hopkins True Team', href: '' },
