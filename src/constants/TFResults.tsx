@@ -738,6 +738,10 @@ const links2023 = [
         text: 'WBL Relays',
         href: 'https://drive.google.com/file/d/1cbMQ8r9aWQ223Zcsro_vMayF_k4E1QGP/view?usp=share_link',
     },
+    {
+        text: 'MV JV Invite',
+        href: 'https://drive.google.com/file/d/1plzBF0BeApSR7RMXjsZNCktfF_DWfygF/view?usp=share_link',
+    },
     // { text: 'Pony Relays', href: '' },
     // { text: 'Hopkins True Team', href: '' },
     // { text: 'MV 9th Grade Invite', href: '' },
