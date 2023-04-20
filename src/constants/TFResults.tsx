@@ -742,7 +742,6 @@ const links2023 = [
         text: 'MV JV Invite',
         href: 'https://drive.google.com/file/d/1plzBF0BeApSR7RMXjsZNCktfF_DWfygF/view?usp=share_link',
     },
-    // { text: 'Pony Relays', href: '' },
     // { text: 'Hopkins True Team', href: '' },
     // { text: 'MV 9th Grade Invite', href: '' },
     // { text: 'Hamline Elite Meet', href: '' },
