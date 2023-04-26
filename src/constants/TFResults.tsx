@@ -742,7 +742,10 @@ const links2023 = [
         text: 'MV JV Invite',
         href: 'https://drive.google.com/file/d/1plzBF0BeApSR7RMXjsZNCktfF_DWfygF/view?usp=share_link',
     },
-    // { text: 'Hopkins True Team', href: '' },
+    {
+        text: 'Hopkins True Team',
+        href: 'https://drive.google.com/file/d/1HMvJC9AM5LmNWL3K_YOs7byP495cEBHg/view?usp=share_link',
+    },
     // { text: 'MV 9th Grade Invite', href: '' },
     // { text: 'Hamline Elite Meet', href: '' },
     // { text: 'Bob Stewart Invite', href: '' },
