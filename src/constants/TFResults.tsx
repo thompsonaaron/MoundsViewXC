@@ -746,7 +746,10 @@ const links2023 = [
         text: 'Hopkins True Team',
         href: 'https://drive.google.com/file/d/1HMvJC9AM5LmNWL3K_YOs7byP495cEBHg/view?usp=share_link',
     },
-    // { text: 'MV 9th Grade Invite', href: '' },
+    {
+        text: 'MV 9th Grade Invite',
+        href: 'https://drive.google.com/file/d/1P3FgwG5yVLIKEaRs8uWbNE-MgH3OsxZT/view?usp=share_link',
+    },
     // { text: 'Hamline Elite Meet', href: '' },
     // { text: 'Bob Stewart Invite', href: '' },
     // { text: 'Wayzata Relays', href: '' },
