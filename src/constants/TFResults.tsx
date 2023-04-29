@@ -750,7 +750,10 @@ const links2023 = [
         text: 'MV 9th Grade Invite',
         href: 'https://drive.google.com/file/d/1P3FgwG5yVLIKEaRs8uWbNE-MgH3OsxZT/view?usp=share_link',
     },
-    // { text: 'Hamline Elite Meet', href: '' },
+    {
+        text: 'Hamline Elite Meet',
+        href: 'https://drive.google.com/file/d/10Vg3ldaXjxVfMW1xTKSjTg9ovyNHJr8T/view?usp=share_link',
+    },
     // { text: 'Bob Stewart Invite', href: '' },
     // { text: 'Wayzata Relays', href: '' },
     // { text: 'True Team Section', href: '' },
