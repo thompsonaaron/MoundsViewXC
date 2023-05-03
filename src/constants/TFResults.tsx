@@ -754,7 +754,10 @@ const links2023 = [
         text: 'Hamline Elite Meet',
         href: 'https://drive.google.com/file/d/10Vg3ldaXjxVfMW1xTKSjTg9ovyNHJr8T/view?usp=share_link',
     },
-    // { text: 'Bob Stewart Invite', href: '' },
+    {
+        text: 'Bob Stewart Invite',
+        href: 'https://drive.google.com/file/d/1awKndsk-W9BFG-eHlW-Aah-1lHFpkli6/view?usp=share_link',
+    },
     // { text: 'Wayzata Relays', href: '' },
     // { text: 'True Team Section', href: '' },
     // { text: 'Conference 9-10', href: '' },
