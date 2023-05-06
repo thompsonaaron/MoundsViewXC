@@ -758,7 +758,10 @@ const links2023 = [
         text: 'Bob Stewart Invite',
         href: 'https://drive.google.com/file/d/1awKndsk-W9BFG-eHlW-Aah-1lHFpkli6/view?usp=share_link',
     },
-    // { text: 'Wayzata Relays', href: '' },
+    {
+        text: 'Wayzata Relays',
+        href: 'https://drive.google.com/file/d/1dU_wgjfR1-lL54zbbLkXeGWCfAx4dWbX/view?usp=share_link',
+    },
     // { text: 'True Team Section', href: '' },
     // { text: 'Conference 9-10', href: '' },
     // { text: 'Last Chance', href: '' },
