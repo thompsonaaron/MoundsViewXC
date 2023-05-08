@@ -1,14 +1,16 @@
 ---
 import '@fontsource/quattrocento-sans'
-import BannerSmall from '../assets/banner-small.webp'
-import BannerMedium from '../assets/banner-medium.webp'
-import BannerLarge from '../assets/banner-large.webp'
-import BannerXLarge from '../assets/banner-xlarge.webp'
+const BannerSmall = './images/banner-small.webp'
+const BannerMedium = './images/banner-medium.webp'
+const BannerLarge = './images/banner-large.webp'
+const BannerXLarge = './images/banner-xlarge.webp'
 import Logo from '../assets/favicon.svg'
 import Carousel from '../components/Carousel/Carousel'
 import Navbar from '../components/Navbar/Navbar.astro'
 import Taskbar from '../components/Taskbar/Taskbar'
 import '../styles/tailwind.css'
+import Updates from '../components/Updates/updates'
+import Banner from '../components/Banner/Banner'
 ---
 
 <html lang="en" class="flex">
@@ -23,6 +25,7 @@ import '../styles/tailwind.css'
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
+        <link rel="stylesheet" href="fonts.css" />
         <style>
             html {
                 font-family: Montserrat;
@@ -43,57 +46,9 @@ import '../styles/tailwind.css'
     <body class="flex justify-center w-screen bg-neutral-700">
         <main class="flex flex-col justify-center grow-1">
             <Navbar />
-            <div class="relative">
-                <img
-                    srcset={`${BannerSmall} 400w, ${BannerMedium} 800w, ${BannerLarge} 1200w, ${BannerXLarge} 1600w`}
-                    sizes="(max-width: 401px) 400px, (max-width: 801px) 800px, (max-width: 1201px): 1200px, 1600px"
-                    src={BannerLarge}
-                    object-fit="cover"
-                    alt="homepage-background"
-                    width="100%"
-                    style={{ maxHeight: '400px' }}
-                />
-                <h1
-                    class="absolute text-xs md:text-xl right-10 bottom-4 md:bottom-6 font-bold"
-                >
-                    A tradition of Excellence
-                </h1>
-            </div>
-
+            <Banner />
             <div id="background" class="flex-col text-slate-50 pb-8">
-                <section class="flex justify-center my-8">
-                    <div
-                        class="flex flex-col md:w-10/12 lg:w-8/12 xl:w-6/12 border-2 border-white rounded px-4 py-2 m-1"
-                    >
-                        <h1 class="text-xl self-center">Updates</h1>
-                        <div class="grid grid-cols-4 gap-4 auto-cols-auto">
-                            <!-- Update 1 -->
-                            <div class="text-sm">Sunday, May 7, 2023</div>
-                            <div class="col-span-3 text-sm">
-                                This Tuesday is the beginning of the postseason
-                                with the <a
-                                    target="_blank"
-                                    href="https://drive.google.com/file/d/1-o6cNtLoRu0DFRHsK-fCFmxi6RJFB6jN/view?usp=share_link"
-                                    >Section 6AAA True Team</a
-                                > meet at Mounds View. Then on Thursday we have the
-                                <a
-                                    target="_blank"
-                                    href="https://drive.google.com/file/d/1FO3F-rLwDZTwyf8EWSynmWfMX0SNS9Rf/view?usp=share_link"
-                                    >9-10 Conference Meet</a
-                                > at White Bear Lake (limited entry)
-                            </div>
-                            <!-- Update 2 -->
-                            <div class="text-sm">Friday, May 5, 2023</div>
-                            <div class="col-span-3 text-sm">
-                                Results from the <a
-                                    target="_blank"
-                                    href="https://drive.google.com/file/d/1dU_wgjfR1-lL54zbbLkXeGWCfAx4dWbX/view?usp=share_link"
-                                    >Wayzata Relays</a
-                                >.
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <Updates client:load />
                 <div class="flex justify-center my-8">
                     <div
                         class="flex flex-col md:w-10/12 lg:w-8/12 xl:w-6/12 text-center text-lg md:text-xl items-center"

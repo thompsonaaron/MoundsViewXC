@@ -1,28 +1,28 @@
 import { useEffect, useState } from 'preact/hooks'
 
-import AlexandriaPodiumSmall from '../../assets/alexandria-win-small.webp'
-import AlexandriaPodiumMedium from '../../assets/alexandria-win-medium.webp'
-import AlexandriaPodiumLarge from '../../assets/alexandria-win-large.webp'
+const AlexandriaPodiumSmall = './images/alexandria-win-small.webp'
+const AlexandriaPodiumMedium = './images/alexandria-win-medium.webp'
+const AlexandriaPodiumLarge = './images/alexandria-win-large.webp'
 
-import HerbertHugsSmall from '../../assets/herbert-hugs-small.webp'
-import HerbertHugsMedium from '../../assets/herbert-hugs-medium.webp'
-import HerbertHugsLarge from '../../assets/herbert-hugs-large.webp'
+const HerbertHugsSmall = './images/herbert-hugs-small.webp'
+const HerbertHugsMedium = './images/herbert-hugs-medium.webp'
+const HerbertHugsLarge = './images/herbert-hugs-large.webp'
 
-import Rosemount2015Small from '../../assets/rosemount-start-small.webp'
-import Rosemount2015Medium from '../../assets/rosemount-start-medium.webp'
-import Rosemount2015Large from '../../assets/rosemount-start-large.webp'
+const Rosemount2015Small = './images/rosemount-start-small.webp'
+const Rosemount2015Medium = './images/rosemount-start-medium.webp'
+const Rosemount2015Large = './images/rosemount-start-large.webp'
 
-import SEC2015Small from '../../assets/2015-cc-conference-walking-small.webp'
-import SEC2015Medium from '../../assets/2015-cc-conference-walking-medium.webp'
-import SEC2015Large from '../../assets/2015-cc-conference-walking-large.webp'
+const SEC2015Small = './images/2015-cc-conference-walking-small.webp'
+const SEC2015Medium = './images/2015-cc-conference-walking-medium.webp'
+const SEC2015Large = './images/2015-cc-conference-walking-large.webp'
 
-import FourPeatSmall from '../../assets/four-peat-small.webp'
-import FourPeatMedium from '../../assets/four-peat-medium.webp'
-import FourPeatLarge from '../../assets/four-peat-large.webp'
+const FourPeatSmall = './images/four-peat-small.webp'
+const FourPeatMedium = './images/four-peat-medium.webp'
+const FourPeatLarge = './images/four-peat-large.webp'
 
-import ThreePeatSmall from '../../assets/three-peat-small.webp'
-import ThreePeatMedium from '../../assets/three-peat-medium.webp'
-import ThreePeatLarge from '../../assets/three-peat-large.webp'
+const ThreePeatSmall = './images/three-peat-small.webp'
+const ThreePeatMedium = './images/three-peat-medium.webp'
+const ThreePeatLarge = './images/three-peat-large.webp'
 
 import clsx from 'clsx'
 
@@ -55,7 +55,7 @@ const Carousel = () => {
     const imageSrcs = imageList.map((img, index) => (
         <img
             srcset={`${img.small} 400w, ${img.medium} 800w, ${img.large} 1200w`}
-            sizes="(max-width:400px) 400px, (max-width:800px) 800px, 1200px"
+            sizes="(max-width:400px) 400px, (max-width:800px) 800px"
             src={img.medium}
             width="100%"
             object-fit="contain"

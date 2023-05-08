@@ -17,6 +17,7 @@ import mikeGoldman from '../assets/mike-goldman.webp'
 import peteErickson from '../assets/pete-erickson-cropped.jpg'
 import scottKopp from '../assets/scott-kopp-3.jpg'
 import tomDavis from '../assets/tom-davis.webp'
+import Banner from '../components/Banner/Banner'
 ---
 
 <html lang="en" class="flex">
@@ -55,15 +56,7 @@ import tomDavis from '../assets/tom-davis.webp'
     <body class="flex justify-center w-full bg-neutral-700">
         <main class="flex flex-col justify-center w-full">
             <Navbar />
-            <img
-                srcset={`${BannerSmall} 400w, ${BannerMedium} 800w, ${BannerLarge} 1200w, ${BannerXLarge} 1600w`}
-                sizes="(max-width: 401px) 400px, (max-width: 801px) 800px, (max-width: 1201px): 1200px, 1600px"
-                src={BannerLarge}
-                object-fit="cover"
-                alt="homepage-background"
-                width="100%"
-                style={{ maxHeight: '400px' }}
-            />
+            <Banner />
             <div
                 id="background"
                 class="flex-col text-slate-50 pb-8 w-11/12 lg:w-7/12 self-center"
