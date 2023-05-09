@@ -1,16 +1,16 @@
 ---
 import '@fontsource/quattrocento-sans'
+import Logo from '../assets/favicon.svg'
+import Banner from '../components/Banner/Banner'
+import Carousel from '../components/Carousel/Carousel'
+import Navbar from '../components/Navbar/Navbar.astro'
+import Taskbar from '../components/Taskbar/Taskbar'
+import Updates from '../components/Updates/updates'
+import '../styles/tailwind.css'
 const BannerSmall = './images/banner-small.webp'
 const BannerMedium = './images/banner-medium.webp'
 const BannerLarge = './images/banner-large.webp'
 const BannerXLarge = './images/banner-xlarge.webp'
-import Logo from '../assets/favicon.svg'
-import Carousel from '../components/Carousel/Carousel'
-import Navbar from '../components/Navbar/Navbar.astro'
-import Taskbar from '../components/Taskbar/Taskbar'
-import '../styles/tailwind.css'
-import Updates from '../components/Updates/updates'
-import Banner from '../components/Banner/Banner'
 ---
 
 <html lang="en" class="flex">
@@ -80,7 +80,7 @@ import Banner from '../components/Banner/Banner'
                 <div
                     class="flex flex-col justify-center content-center m-4 transition ease-in-out"
                 >
-                    <Carousel client:visible />
+                    <Carousel client:idle />
                 </div>
             </div>
             <div

@@ -27,6 +27,8 @@ const ThreePeatLarge = './images/three-peat-large.webp'
 import clsx from 'clsx'
 
 // note missing rosemoutn tshirts, five-peat files
+// resize images to 16:9 here: https://www.xconvert.com/crop-webp
+// compress here: https://tinypng.com/
 
 const imageList = [
     {
@@ -53,13 +55,7 @@ const Carousel = () => {
     const [imageNum, setImageNum] = useState(0)
 
     const imageSrcs = imageList.map((img, index) => (
-        <img
-            srcset={`${img.small} 400w, ${img.medium} 800w, ${img.large} 1200w`}
-            sizes="(max-width:400px) 400px, (max-width:800px) 800px"
-            src={img.medium}
-            width="100%"
-            object-fit="contain"
-            alt="team photo"
+        <picture
             class={clsx(
                 'transition-opacity duration-1000 ease-in-out max-w-full md:max-w-3xl',
                 {
@@ -69,7 +65,45 @@ const Carousel = () => {
                     visible: index === imageNum,
                 }
             )}
-        />
+        >
+            <source
+                media="(max-width: 425px)"
+                srcset={img.small}
+                width="400"
+                height="225"
+            />
+            <source
+                media="(min-width: 800px)"
+                srcset={img.medium}
+                width="800"
+                height="450"
+            />
+            <source
+                media="(min-width: 801px)"
+                srcset={img.large}
+                width="1200"
+                height="675"
+            />
+            <img src={img.medium} alt="Team photo" width="800" height="450" />
+        </picture>
+        // <img
+        //     srcset={`${img.small} 400w, ${img.medium} 800w, ${img.large} 1200w`}
+        //     sizes="(max-width:425px) 400px, (max-width:800px) 800px"
+        //     src={img.medium}
+        //     width="auto"
+        //     // width="100%"
+        //     object-fit="contain"
+        //     alt="team photo"
+        // class={clsx(
+        //     'transition-opacity duration-1000 ease-in-out max-w-full md:max-w-3xl',
+        //     {
+        //         'opacity-100': index === imageNum,
+        //         'opacity-0': index !== imageNum,
+        //         invisible: index !== imageNum,
+        //         visible: index === imageNum,
+        //     }
+        // )}
+        // />
     ))
 
     useEffect(() => {
