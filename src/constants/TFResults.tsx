@@ -762,7 +762,7 @@ const links2023 = [
         text: 'Wayzata Relays',
         href: 'https://drive.google.com/file/d/1dU_wgjfR1-lL54zbbLkXeGWCfAx4dWbX/view?usp=share_link',
     },
-    // { text: 'True Team Section', href: '' },
+    { text: 'True Team Section', href: 'https://drive.google.com/file/d/12mnFAOyxEq2IYNs_B8_P7K6vtPx9qg3Z/view?usp=share_link' },
     // { text: 'Conference 9-10', href: '' },
     // { text: 'Last Chance', href: '' },
     // { text: 'True Team AAA State', href: '' },
