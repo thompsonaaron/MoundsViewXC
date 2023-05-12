@@ -762,8 +762,14 @@ const links2023 = [
         text: 'Wayzata Relays',
         href: 'https://drive.google.com/file/d/1dU_wgjfR1-lL54zbbLkXeGWCfAx4dWbX/view?usp=share_link',
     },
-    { text: 'True Team Section', href: 'https://drive.google.com/file/d/12mnFAOyxEq2IYNs_B8_P7K6vtPx9qg3Z/view?usp=share_link' },
-    // { text: 'Conference 9-10', href: '' },
+    {
+        text: 'True Team Section',
+        href: 'https://drive.google.com/file/d/12mnFAOyxEq2IYNs_B8_P7K6vtPx9qg3Z/view?usp=share_link',
+    },
+    {
+        text: 'Conference 9-10',
+        href: 'https://drive.google.com/file/d/1bcMnOxzcN6eDrSrqayd_aJ9zDA0sV5k5/view?usp=share_link',
+    },
     // { text: 'Last Chance', href: '' },
     // { text: 'True Team AAA State', href: '' },
     // { text: 'Suburban East Conference', href: '' },
