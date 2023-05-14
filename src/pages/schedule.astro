@@ -8,7 +8,7 @@ import Taskbar from '../components/Taskbar/Taskbar'
 import '../styles/tailwind.css'
 ---
 
-<html lang="en">
+<html lang="en" class="flex">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
@@ -33,7 +33,7 @@ import '../styles/tailwind.css'
         </style>
         <title>Mounds View XC</title>
     </head>
-    <body class="flex justify-center w-full bg-neutral-700">
+    <body class="flex justify-center w-screen bg-neutral-700">
         <main class="flex flex-col justify-center grow-1 w-full">
             <Navbar />
             <img
@@ -48,7 +48,7 @@ import '../styles/tailwind.css'
             <div id="background" class="flex-col text-slate-50 pb-8">
                 <div class="flex justify-center my-8">
                     <div
-                        class="flex flex-col w-full h-screen md:h-max md:w-9/12 xl:w-7/12 relative"
+                        class="flex flex-col w-full h-screen md:w-9/12 xl:w-7/12 relative"
                         style={{ paddingTop: '56.25%' }}
                     >
                         <iframe
