@@ -15,7 +15,6 @@
     "author": "Aaron Thompson",
     "license": "ISC",
     "dependencies": {
-        "@astrojs/image": "^0.16.0",
         "@astrojs/preact": "^2.0.3",
         "@astrojs/tailwind": "^3.1.0",
         "@fontsource/montserrat": "^4.5.14",
