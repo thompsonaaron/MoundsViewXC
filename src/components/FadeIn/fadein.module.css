@@ -1,0 +1,6 @@
+.animation {
+    @media (prefers-reduced-motion: no-preference){
+        animation-fill-mode: backwards;
+        animation-name: "fade-in"
+    }
+}
