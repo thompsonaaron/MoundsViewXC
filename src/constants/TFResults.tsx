@@ -774,7 +774,10 @@ const links2023 = [
         text: 'Last Chance',
         href: 'https://drive.google.com/file/d/1DGsj9N4fCR_XfRHfZ86pcr_FfQ7K3Yva/view?usp=share_link',
     },
-    // { text: 'True Team AAA State', href: '' },
+    {
+        text: 'True Team AAA State',
+        href: 'https://drive.google.com/file/d/1E0xZcb2BwjyMqma5K6xdsZQLZMeGr2Yy/view?usp=share_link',
+    },
     // { text: 'Suburban East Conference', href: '' },
     // { text: 'Section 5AAA', href: '' },
     // { text: 'MSHSL State', href: '' },
