@@ -2,7 +2,7 @@
 import Navbar from '../components/Navbar/Navbar.astro'
 import Taskbar from '../components/Taskbar/Taskbar'
 import '../styles/tailwind.css'
-import Banner from '../components/Banner/Banner'
+import Banner from '../components/Banner/Banner.astro'
 ---
 
 <html lang="en">
@@ -31,7 +31,7 @@ import Banner from '../components/Banner/Banner'
         <title>Mounds View XC</title>
     </head>
     <body class="flex justify-center w-full bg-neutral-700">
-        <main class="flex flex-col grow-1">
+        <main class="flex flex-col grow-1 w-full">
             <Navbar />
             <Banner />
             <div id="background" class="flex-col text-slate-50 pb-8">

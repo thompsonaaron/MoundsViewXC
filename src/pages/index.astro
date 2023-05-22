@@ -1,7 +1,7 @@
 ---
 import '@fontsource/quattrocento-sans'
 import Logo from '../assets/favicon.svg'
-import Banner from '../components/Banner/Banner'
+import Banner from '../components/Banner/Banner.astro'
 import Carousel from '../components/Carousel/Carousel'
 import Navbar from '../components/Navbar/Navbar.astro'
 import Taskbar from '../components/Taskbar/Taskbar'
@@ -39,7 +39,7 @@ import '../styles/tailwind.css'
         <title>Mounds View XC</title>
     </head>
     <body class="flex justify-center w-screen bg-neutral-700">
-        <main class="flex flex-col grow-1">
+        <main class="flex flex-col grow-1 w-full">
             <Navbar />
             <Banner />
             <div id="background" class="flex-col text-slate-50 pb-8">
