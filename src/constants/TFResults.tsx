@@ -778,6 +778,10 @@ const links2023 = [
         text: 'True Team AAA State',
         href: 'https://drive.google.com/file/d/1E0xZcb2BwjyMqma5K6xdsZQLZMeGr2Yy/view?usp=share_link',
     },
+    {
+        text: 'JV Championships',
+        href: 'https://drive.google.com/file/d/1NhAh8uZGcXD9Jt9rUhHTplYa0GQALlGt/view?usp=share_link',
+    },
     // { text: 'Suburban East Conference', href: '' },
     // { text: 'Section 5AAA', href: '' },
     // { text: 'MSHSL State', href: '' },
