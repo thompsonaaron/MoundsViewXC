@@ -782,7 +782,10 @@ const links2023 = [
         text: 'JV Championships',
         href: 'https://drive.google.com/file/d/1NhAh8uZGcXD9Jt9rUhHTplYa0GQALlGt/view?usp=share_link',
     },
-    // { text: 'Suburban East Conference', href: '' },
+    {
+        text: 'Suburban East Conference',
+        href: 'https://drive.google.com/file/d/13TOcbfzTgMxDFP2iE9Uf2suD9Cupqxme/view?usp=drive_link',
+    },
     // { text: 'Section 5AAA', href: '' },
     // { text: 'MSHSL State', href: '' },
 ]
