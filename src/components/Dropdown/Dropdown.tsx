@@ -63,7 +63,7 @@ const MediaDropdown = () => {
                     </li>
                     <li class="pl-1 text-gray-500 hover:text-black">
                         <a
-                            href="http://moundsviewboyscrosscountry.shutterfly.com/"
+                            href="https://photos.app.goo.gl/EYhrVZJsadpHAJhQ8"
                             target="_blank"
                         >
                             XC Photos
@@ -71,7 +71,7 @@ const MediaDropdown = () => {
                     </li>
                     <li class="pl-1 text-gray-500 hover:text-black">
                         <a
-                            href="https://moundsviewboystrack2017.shutterfly.com/#"
+                            href="https://photos.app.goo.gl/9FSPphRLW1iL1J7a7"
                             target="_blank"
                         >
                             TF Photos

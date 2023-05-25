@@ -4,11 +4,15 @@ import Modal from './Modal'
 const AthletesModal = () => {
     const [isOpen, setIsOpen] = useState(true)
     const [userInput, setUserInput] = useState('')
+    const [errorMessage, setErrorMessage] = useState('')
 
     const handleSubmit = (e: Event) => {
         e.preventDefault()
         if (userInput === 'MVXC') {
+            setErrorMessage('')
             setIsOpen(false)
+        } else {
+            setErrorMessage('Try again 😉')
         }
     }
 
@@ -32,6 +36,7 @@ const AthletesModal = () => {
                                 setUserInput(e.currentTarget.value)
                             }
                         />
+                        <span class="pl-4 text-red-600">{errorMessage}</span>
                     </div>
                     <div class="flex py-4 justify-center">
                         <button

@@ -10,7 +10,7 @@ const Updates = () => {
     const [updateTwo, setUpdateTwo] = useState<string[]>([])
 
     const getUpdates = useCallback(async () => {
-        console.log('calling get updates')
+        // console.log('calling get updates')
         const spreadsheetId = '1n8WHWVgXppwqlQ45p7yTO1HfM0G8wLNT_pYj2OUmITg'
         const apiKey = 'AIzaSyAX_xTy8OiuIDOU8ksMjQ4mCkRzrOqhpYI'
         const range = 'Sheet1!A2:B3'
@@ -18,9 +18,15 @@ const Updates = () => {
             const { data } = await axios.get(
                 `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`
             )
-            const [one, two] = data.values
-            setUpdateOne([one[0], parse(one[1])])
-            setUpdateTwo([two[0] || '', parse(two[1]) || ''])
+
+            const [one, two] = data.values || []
+            one && one.length && setUpdateOne([one[0], parse(one[1])])
+
+            if (two && two.length) {
+                setUpdateTwo([two[0] || '', parse(two[1]) || ''])
+            } else {
+                setUpdateTwo(['', ''])
+            }
         } catch (e) {
             console.error('Error retrieving updates')
             console.error(e)
