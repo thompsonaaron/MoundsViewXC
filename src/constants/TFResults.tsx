@@ -762,11 +762,30 @@ const links2023 = [
         text: 'Wayzata Relays',
         href: 'https://drive.google.com/file/d/1dU_wgjfR1-lL54zbbLkXeGWCfAx4dWbX/view?usp=share_link',
     },
-    // { text: 'True Team Section', href: '' },
-    // { text: 'Conference 9-10', href: '' },
-    // { text: 'Last Chance', href: '' },
-    // { text: 'True Team AAA State', href: '' },
-    // { text: 'Suburban East Conference', href: '' },
+    {
+        text: 'True Team Section',
+        href: 'https://drive.google.com/file/d/12mnFAOyxEq2IYNs_B8_P7K6vtPx9qg3Z/view?usp=share_link',
+    },
+    {
+        text: 'Conference 9-10',
+        href: 'https://drive.google.com/file/d/1bcMnOxzcN6eDrSrqayd_aJ9zDA0sV5k5/view?usp=share_link',
+    },
+    {
+        text: 'Last Chance',
+        href: 'https://drive.google.com/file/d/1DGsj9N4fCR_XfRHfZ86pcr_FfQ7K3Yva/view?usp=share_link',
+    },
+    {
+        text: 'True Team AAA State',
+        href: 'https://drive.google.com/file/d/1E0xZcb2BwjyMqma5K6xdsZQLZMeGr2Yy/view?usp=share_link',
+    },
+    {
+        text: 'JV Championships',
+        href: 'https://drive.google.com/file/d/1NhAh8uZGcXD9Jt9rUhHTplYa0GQALlGt/view?usp=share_link',
+    },
+    {
+        text: 'Suburban East Conference',
+        href: 'https://drive.google.com/file/d/13TOcbfzTgMxDFP2iE9Uf2suD9Cupqxme/view?usp=drive_link',
+    },
     // { text: 'Section 5AAA', href: '' },
     // { text: 'MSHSL State', href: '' },
 ]

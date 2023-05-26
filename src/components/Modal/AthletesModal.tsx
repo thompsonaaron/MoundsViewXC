@@ -8,7 +8,7 @@ const AthletesModal = () => {
 
     const handleSubmit = (e: Event) => {
         e.preventDefault()
-        if (userInput === 'MVXC') {
+        if (userInput === 'Summer2023') {
             setErrorMessage('')
             setIsOpen(false)
         } else {
