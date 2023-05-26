@@ -41,6 +41,8 @@ import AthletesModal from '../components/Modal/AthletesModal'
         <main class="flex flex-col grow-1">
             <Navbar />
             <Banner />
+            <AthletesModal client:load />
+
             <div id="background" class="flex-col text-slate-50 pb-8">
                 <div class="flex justify-center my-8">
                     <a
@@ -49,8 +51,14 @@ import AthletesModal from '../components/Modal/AthletesModal'
                         >Shoe Guide</a
                     >
                 </div>
+                <div class="flex justify-center my-8">
+                    <a
+                        target="_blank"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSe1OrnkPod3R1cGlw_qwHnDMzj1hNtIj3zp1iKoPcKoSEn5LQ/viewform?usp=sf_link"
+                        >Athlete Intake Form</a
+                    >
+                </div>
             </div>
-            <AthletesModal client:load />
             <!-- 
                 The password is... password
                 <Modal isOpen={isOpen} onClose={() => console.log('closing')}>
