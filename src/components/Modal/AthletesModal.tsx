@@ -8,9 +8,14 @@ const AthletesModal = () => {
 
     const handleSubmit = (e: Event) => {
         e.preventDefault()
-        if (userInput === 'Summer2023') {
+        if (userInput === 'fleming') {
             setErrorMessage('')
-            setIsOpen(false)
+            window.open(
+                'https://drive.google.com/drive/folders/1Lqt_gB01CgFz0gVaOpNcn7co0Jx5ESDS?usp=drive_link',
+                '_blank'
+            )
+            window.open('https://www.moundsviewxc.com', '_self')
+            // setIsOpen(false)
         } else {
             setErrorMessage('Try again 😉')
         }
