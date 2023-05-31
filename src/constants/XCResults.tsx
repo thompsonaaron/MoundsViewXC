@@ -470,7 +470,7 @@ const links2022 = [
         href: 'https://drive.google.com/file/d/1L46IiDsdLDsD0Rj0qSVjpgXqs-HpfT7k/view?usp=share_link',
     },
     {
-        text: 'Section 5AA',
+        text: 'Section 5AAA',
         href: 'https://drive.google.com/file/d/1sEzGQ4mKZ6FQRNGI-Z03Ds6fSJ55EfB9/view?usp=share_link',
     },
     {
@@ -491,6 +491,57 @@ const links2022 = [
     },
 ]
 
+const links2023 = [
+    {
+        text: 'Alumni',
+        href: '',
+    },
+    {
+        text: 'Rosemount',
+        href: '',
+    },
+    {
+        text: 'Rum River / Steve Hoag',
+        href: '',
+    },
+    {
+        text: 'Griak',
+        href: '',
+    },
+    {
+        text: 'Mustang',
+        href: '',
+    },
+    {
+        text: 'Alexandria',
+        href: '',
+    },
+    {
+        text: 'Suburban East Conference',
+        href: '',
+    },
+    {
+        text: 'Section 5AAA',
+        href: '',
+    },
+    {
+        text: 'Mile Time Trial',
+        href: '',
+    },
+    {
+        text: 'MSHSL State',
+        href: '',
+    },
+    {
+        text: 'Nike Heartland Regional',
+        href: '',
+    },
+    {
+        text: 'Season Booklet',
+        href: '',
+    },
+]
+
 export const Results2012 = () => <Accordion title="2012" links={links2012} />
 export const Results2013 = () => <Accordion title="2013" links={links2013} />
 export const Results2014 = () => <Accordion title="2014" links={links2014} />
@@ -502,3 +553,4 @@ export const Results2019 = () => <Accordion title="2019" links={links2019} />
 export const Results2020 = () => <Accordion title="2020" links={links2020} />
 export const Results2021 = () => <Accordion title="2021" links={links2021} />
 export const Results2022 = () => <Accordion title="2022" links={links2022} />
+export const Results2023 = () => <Accordion title="2023" links={links2023} />
