@@ -12,21 +12,28 @@ const Rosemount2015Small = './images/rosemount-start-small.webp'
 const Rosemount2015Medium = './images/rosemount-start-medium.webp'
 const Rosemount2015Large = './images/rosemount-start-large.webp'
 
-const SEC2015Small = './images/2015-cc-conference-walking-small.webp'
-const SEC2015Medium = './images/2015-cc-conference-walking-medium.webp'
-const SEC2015Large = './images/2015-cc-conference-walking-large.webp'
-
-const FourPeatSmall = './images/four-peat-small.webp'
-const FourPeatMedium = './images/four-peat-medium.webp'
-const FourPeatLarge = './images/four-peat-large.webp'
+const SEC2015Small = './images/conf-walking-small.webp'
+const SEC2015Medium = './images/conf-walking-medium.webp'
+const SEC2015Large = './images/conf-walking-large.webp'
 
 const ThreePeatSmall = './images/three-peat-small.webp'
 const ThreePeatMedium = './images/three-peat-medium.webp'
 const ThreePeatLarge = './images/three-peat-large.webp'
 
+const WillSmall = './images/will-small.webp'
+const WillMedium = './images/will-medium.webp'
+const WillLarge = './images/will-large.webp'
+
+const NxrChampsSmall = './images/nxr-champions-small.webp'
+const NxrChampsMedium = './images/nxr-champions-medium.webp'
+const NxrChampsLarge = './images/nxr-champions-large.webp'
+
+const Section2022WarmupSmall = '/images/2022-section-warmup-small.webp'
+const Section2022WarmupMedium = './images/2022-section-warmup-medium.webp'
+const Section2022WarmupLarge = './images/2022-section-warmup-large.webp'
+
 import clsx from 'clsx'
 
-// note missing rosemoutn tshirts, five-peat files
 // resize images to 16:9 here: https://www.xconvert.com/crop-webp
 // compress here: https://tinypng.com/
 
@@ -36,19 +43,25 @@ const imageList = [
         medium: Rosemount2015Medium,
         large: Rosemount2015Large,
     },
-    { small: FourPeatSmall, medium: FourPeatMedium, large: FourPeatLarge },
+    {
+        small: Section2022WarmupSmall,
+        medium: Section2022WarmupMedium,
+        large: Section2022WarmupLarge,
+    },
     { small: SEC2015Small, medium: SEC2015Medium, large: SEC2015Large },
     {
         small: HerbertHugsSmall,
         medium: HerbertHugsMedium,
         large: HerbertHugsLarge,
     },
+    { small: WillSmall, medium: WillMedium, large: WillLarge },
     {
         small: AlexandriaPodiumSmall,
         medium: AlexandriaPodiumMedium,
         large: AlexandriaPodiumLarge,
     },
     { small: ThreePeatSmall, medium: ThreePeatMedium, large: ThreePeatLarge },
+    { small: NxrChampsSmall, medium: NxrChampsMedium, large: NxrChampsLarge },
 ]
 
 const Carousel = () => {
@@ -68,23 +81,26 @@ const Carousel = () => {
         >
             <source
                 media="(max-width: 425px)"
+                type="image/webp"
                 srcset={img.small}
                 width="400"
                 height="225"
             />
             <source
-                media="(min-width: 800px)"
+                media="(max-width: 800px)"
+                type="image/webp"
                 srcset={img.medium}
                 width="800"
                 height="450"
             />
             <source
                 media="(min-width: 801px)"
+                type="image/webp"
                 srcset={img.large}
                 width="1200"
                 height="675"
             />
-            <img src={img.medium} alt="Team photo" width="800" height="450" />
+            <img src={img.medium} alt="Team photo" />
         </picture>
         // <img
         //     srcset={`${img.small} 400w, ${img.medium} 800w, ${img.large} 1200w`}
@@ -112,7 +128,7 @@ const Carousel = () => {
                 setImageNum((currNum) => {
                     return currNum === imageSrcs.length - 1 ? 0 : currNum + 1
                 }),
-            8000
+            5000
         )
         return () => clearInterval(interval)
     }, [])
