@@ -85,23 +85,23 @@ const Carousel = () => {
                 type="image/webp"
                 srcset={img.medium}
                 width="400"
-                height="225"
+                height="266"
             />
             <source
                 media="(max-width: 800px)"
                 type="image/webp"
                 srcset={img.medium}
                 width="800"
-                height="450"
+                height="533"
             />
             <source
                 media="(min-width: 801px)"
                 type="image/webp"
                 srcset={img.large}
                 width="1200"
-                height="675"
+                height="800"
             />
-            <img src={img.medium} alt="Team photo" />
+            <img src={img.medium} alt="Team photo" object-fit="contain" />
         </picture>
         // <img
         //     srcset={`${img.small} 400w, ${img.medium} 800w, ${img.large} 1200w`}
