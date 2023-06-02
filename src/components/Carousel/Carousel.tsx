@@ -79,10 +79,11 @@ const Carousel = () => {
                 }
             )}
         >
+            {/* Doesn't seem to look great on an iphone */}
             <source
                 media="(max-width: 425px)"
                 type="image/webp"
-                srcset={img.small}
+                srcset={img.medium}
                 width="400"
                 height="225"
             />
