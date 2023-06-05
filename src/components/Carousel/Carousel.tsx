@@ -101,7 +101,12 @@ const Carousel = () => {
                 width="1200"
                 height="800"
             />
-            <img src={img.medium} alt="Team photo" object-fit="contain" />
+            <img
+                src={img.medium}
+                alt="Team photo"
+                object-fit="contain"
+                loading="lazy"
+            />
         </picture>
         // <img
         //     srcset={`${img.small} 400w, ${img.medium} 800w, ${img.large} 1200w`}
