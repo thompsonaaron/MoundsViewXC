@@ -1,0 +1,52 @@
+---
+import '@fontsource/quattrocento-sans'
+import Banner from '../../components/Banner/Banner.astro'
+import Navbar from '../../components/Navbar/Navbar.astro'
+import Taskbar from '../../components/Taskbar/Taskbar'
+import '../../styles/tailwind.css'
+import StravaAuth from '../../components/Strava/StravaAuth'
+---
+
+<html lang="en" class="flex">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <meta
+            name="description"
+            content="Mounds View High School's Boys Cross Country and Track & Field Website"
+        />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+        <link rel="stylesheet" href="../fonts.css" />
+        <style>
+            html {
+                font-family: Montserrat;
+                margin: 0;
+            }
+            body {
+                margin: 0;
+                min-height: 100vh;
+            }
+
+            a {
+                color: rgb(34 197 94);
+            }
+        </style>
+        <title>Mounds View XC</title>
+    </head>
+    <body class="flex justify-center w-screen bg-neutral-700">
+        <main class="flex flex-col grow-1">
+            <Navbar />
+            <Banner />
+
+            <div id="background" class="flex-col text-slate-50 pb-8">
+                <div class="flex justify-center my-8">
+                    <StravaAuth client:load />
+                </div>
+            </div>
+        </main>
+        <Taskbar client:load />
+    </body>
+</html>
