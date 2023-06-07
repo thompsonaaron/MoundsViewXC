@@ -6,7 +6,6 @@ import { API_BASE_URL } from './StravaAuth'
 const Strava = () => {
     const getAuthURL = async () => {
         const response = await axios.get(`${API_BASE_URL}/auth`)
-        // console.log(`response is ${JSON.stringify(response.data)}`)
         window.location.href = response.data
     }
 
