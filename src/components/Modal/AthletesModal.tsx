@@ -14,7 +14,7 @@ const AthletesModal = () => {
                 'https://drive.google.com/drive/folders/1Lqt_gB01CgFz0gVaOpNcn7co0Jx5ESDS?usp=drive_link',
                 '_blank'
             )
-            window.open('https://www.moundsviewxc.com', '_self')
+            window.open(window.location.origin, '_self')
             // setIsOpen(false)
         } else {
             setErrorMessage('Try again 😉')
