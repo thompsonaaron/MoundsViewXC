@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { useEffect } from 'preact/hooks'
 
-// export const API_BASE_URL = 'https://strava-app-qddph.ondigitalocean.app'
-export const API_BASE_URL = 'http://localhost:3001'
+export const API_BASE_URL = 'https://strava-app-qddph.ondigitalocean.app'
+// export const API_BASE_URL = 'http://localhost:3001'
 
 // Redirected back to here from Strava auth
 const StravaAuth = () => {
