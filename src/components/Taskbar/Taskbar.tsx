@@ -48,6 +48,7 @@ const Taskbar = () => {
                     >
                         COACHES
                     </a>
+                    {/* added */}
                     <a
                         href="/athletes"
                         class="z-10 m-4 text-gray-500 hover:text-black"
