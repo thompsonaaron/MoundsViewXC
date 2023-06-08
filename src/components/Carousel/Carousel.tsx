@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'preact/hooks'
 
+import clsx from 'clsx'
+
 const AlexandriaPodiumSmall = './images/alexandria-win-small.webp'
 const AlexandriaPodiumMedium = './images/alexandria-win-medium.webp'
 const AlexandriaPodiumLarge = './images/alexandria-win-large.webp'
@@ -32,9 +34,7 @@ const Section2022WarmupSmall = '/images/2022-section-warmup-small.webp'
 const Section2022WarmupMedium = './images/2022-section-warmup-medium.webp'
 const Section2022WarmupLarge = './images/2022-section-warmup-large.webp'
 
-import clsx from 'clsx'
-
-// resize images to 16:9 here: https://www.xconvert.com/crop-webp
+// resize images to 3:2 here: https://www.xconvert.com/crop-webp
 // compress here: https://tinypng.com/
 
 const imageList = [
@@ -79,23 +79,22 @@ const Carousel = () => {
                 }
             )}
         >
-            {/* Doesn't seem to look great on an iphone */}
             <source
-                media="(max-width: 425px)"
+                media="screen and (max-width: 425px)"
                 type="image/webp"
                 srcset={img.medium}
                 width="400"
                 height="266"
             />
             <source
-                media="(max-width: 800px)"
+                media="screen and (max-width: 800px)"
                 type="image/webp"
                 srcset={img.medium}
                 width="800"
                 height="533"
             />
             <source
-                media="(min-width: 801px)"
+                media="screen and (min-width: 801px)"
                 type="image/webp"
                 srcset={img.large}
                 width="1200"

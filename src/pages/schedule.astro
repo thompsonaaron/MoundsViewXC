@@ -1,11 +1,11 @@
 ---
-import '@fontsource/quattrocento-sans'
 import '@fontsource/montserrat'
+import '@fontsource/quattrocento-sans'
 
+import Banner from '../components/Banner/Banner.astro'
 import Navbar from '../components/Navbar/Navbar.astro'
 import Taskbar from '../components/Taskbar/Taskbar'
 import '../styles/tailwind.css'
-import Banner from '../components/Banner/Banner.astro'
 ---
 
 <html lang="en" class="flex">
@@ -40,7 +40,7 @@ import Banner from '../components/Banner/Banner.astro'
             <div id="background" class="flex-col text-slate-50 pb-8">
                 <div class="flex justify-center my-8">
                     <div
-                        class="flex flex-col w-full h-[calc(100vh-18rem)] lg:h-[calc(100vh-38rem)] md:w-9/12 xl:w-7/12 relative"
+                        class="flex flex-col w-full h-[calc(100vh-18rem)] min-h-[300px] lg:h-[calc(100vh-38rem)] md:w-9/12 xl:w-7/12 relative"
                     >
                         <iframe
                             src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23ffffff&ctz=America%2FChicago&showTitle=0&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=1&src=b2oxMmR0cmJzY2RnOGpqdW5vc21xcGJ0cmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%230B8043"
