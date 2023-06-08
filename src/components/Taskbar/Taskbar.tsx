@@ -1,5 +1,5 @@
-import MediaDropdown from '../Dropdown/Dropdown'
 import { useState } from 'preact/hooks'
+import MediaDropdown from '../Dropdown/Dropdown'
 
 const Taskbar = () => {
     const [showNav, setShowNav] = useState(false)
@@ -26,7 +26,7 @@ const Taskbar = () => {
                 </div>
             </div>
             {showNav && (
-                <div class="flex flex-col fixed bottom-0 mb-12 py-4 transition-all h-fit w-full bg-white shadow shadow-slate-400">
+                <div class="flex flex-col fixed bottom-0 mb-12 py-4 transition-all h-fit max-h-[calc(100vh-24px)] w-full bg-white shadow shadow-slate-400">
                     <a href="/" class="z-10 m-4 text-gray-500 hover:text-black">
                         HOME
                     </a>
