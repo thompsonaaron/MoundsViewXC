@@ -32,7 +32,7 @@ const StravaMileageDashboard = () => {
                 <>
                     <div class="col-span-1 text-right pr-4">{index + 1}.</div>
                     <div class="col-span-6">{runner.name}</div>
-                    <div class="col-span-2">{runner.miles}</div>
+                    <div class="col-span-2">{runner.miles.toFixed(2)}</div>
                 </>
             ))}
         </div>
