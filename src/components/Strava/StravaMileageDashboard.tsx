@@ -27,13 +27,12 @@ const StravaMileageDashboard = () => {
     }, [])
 
     return (
-        <div class="grid grid-cols-4 gap-0 md:gap-1 auto-cols-auto">
+        <div class="grid grid-cols-9 gap-0 md:gap-1 auto-cols-auto">
             {runnerMileage.map((runner, index) => (
                 <>
-                    <div class="col-span-3">
-                        {index + 1}. &nbsp; {runner.name}
-                    </div>
-                    <div>{runner.miles}</div>
+                    <div class="col-span-1 text-right pr-4">{index + 1}.</div>
+                    <div class="col-span-6">{runner.name}</div>
+                    <div class="col-span-2">{runner.miles}</div>
                 </>
             ))}
         </div>
