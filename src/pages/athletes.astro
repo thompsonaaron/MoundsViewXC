@@ -6,6 +6,8 @@ import Taskbar from '../components/Taskbar/Taskbar'
 import '../styles/tailwind.css'
 import Modal from '../components/Modal/Modal'
 import AthletesModal from '../components/Modal/AthletesModal'
+import StravaMileageDashboard from '../components/Strava/StravaMileageDashboard'
+import Icon from '../components/Icons/icon.astro'
 ---
 
 <html lang="en" class="flex">
@@ -20,7 +22,7 @@ import AthletesModal from '../components/Modal/AthletesModal'
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
-        <link rel="stylesheet" href="fonts.css" />
+        <link rel="stylesheet" href="../fonts.css" />
         <style>
             html {
                 font-family: Montserrat;
@@ -43,40 +45,42 @@ import AthletesModal from '../components/Modal/AthletesModal'
             <Banner />
             <AthletesModal client:load />
 
-            <div id="background" class="flex-col text-slate-50 pb-8">
-                <div class="flex justify-center my-8">
-                    <a
-                        target="_blank"
-                        href="https://docs.google.com/document/d/1RLImxlatxm2orNH7D5gwlmPmLyzcC6eyQY5-1jv2Qx0/edit?usp=share_link"
-                        >Shoe Guide</a
+            <div
+                id="background"
+                class="flex-col text-slate-50 pb-8 items-center w-screen"
+            >
+                <div
+                    class="flex flex-col items-center md:flex-row md:justify-center my-8"
+                >
+                    <div class="flex flex-col w-11/12 md:w-3/12">
+                        <h3 class="text-xl font-semibold pb-2">
+                            <div
+                                class="flex flex-row items-baseline"
+                                title="Based on miles run and 1/3 of all miles biked"
+                            >
+                                Summer Miles
+                                <Icon
+                                    icon="info"
+                                    height="17"
+                                    width="17"
+                                    fill="#22c55e"
+                                    title="Based on miles run and 1/3 of all miles biked"
+                                    style="display: flex; padding-left: 4px;"
+                                />
+                            </div>
+                        </h3>
+                        <StravaMileageDashboard client:idle />
+                    </div>
+                    <div
+                        class="flex flex-row justify-center w-11/12 md:w-3/12 py-4 md:py-0 md:self-start"
                     >
-                </div>
-                <div class="flex justify-center my-8">
-                    <a
-                        target="_blank"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSe1OrnkPod3R1cGlw_qwHnDMzj1hNtIj3zp1iKoPcKoSEn5LQ/viewform?usp=sf_link"
-                        >Athlete Intake Form</a
-                    >
+                        <a
+                            href="https://drive.google.com/drive/folders/1Lqt_gB01CgFz0gVaOpNcn7co0Jx5ESDS?usp=drive_link"
+                            target="_blank">Google Drive Resources</a
+                        >
+                    </div>
                 </div>
             </div>
-            <!-- 
-                The password is... password
-                <Modal isOpen={isOpen} onClose={() => console.log('closing')}>
-                <div>
-                    <h1 class="text-lg font-bold">
-                        Please enter the password to verify that you're in the
-                        super secret club
-                    </h1>
-                    <label>Password:</label>
-                    <input
-                        type="password"
-                        placeholder="password"
-                        class="border-solid"
-                        id="password-input"
-                    />
-                    <button id="submit-button">Submit</button>
-                </div>
-            </Modal> -->
         </main>
         <Taskbar client:load />
     </body>

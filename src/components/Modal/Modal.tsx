@@ -47,7 +47,7 @@ const Modal = ({ children, isOpen, onClose }: ModalProps) => {
         <FadeIn>
             <div
                 id="backdrop"
-                class="flex items-center bg-neutral-300 opacity-100 flex-1 h-full w-full justify-center fixed z-50 top-0 overflow-scroll"
+                class="flex items-center bg-neutral-300 opacity-100 flex-1 h-full w-full justify-center fixed z-50 top-0 left-0 overflow-scroll"
             >
                 {children && (
                     <>

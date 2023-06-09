@@ -11,7 +11,7 @@ const StravaAuth = () => {
         try {
             await axios.get(`${API_BASE_URL}/auth/callback${searchParams}`)
         } catch (e) {
-            console.error('Error callings Strava auth callback')
+            console.error('Error calling Strava auth callback')
             console.error(e)
         } finally {
             window.location.href = '/'

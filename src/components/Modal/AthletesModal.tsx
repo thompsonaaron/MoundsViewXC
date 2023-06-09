@@ -10,12 +10,13 @@ const AthletesModal = () => {
         e.preventDefault()
         if (userInput === 'fleming') {
             setErrorMessage('')
-            window.open(
-                'https://drive.google.com/drive/folders/1Lqt_gB01CgFz0gVaOpNcn7co0Jx5ESDS?usp=drive_link',
-                '_blank'
-            )
-            window.open(window.location.origin, '_self')
-            // setIsOpen(false)
+            // window.open(
+            //     'https://drive.google.com/drive/folders/1Lqt_gB01CgFz0gVaOpNcn7co0Jx5ESDS?usp=drive_link',
+            //     '_blank'
+            // )
+            // window.focus()
+            // window.open(window.location.origin, '_self')
+            setIsOpen(false)
         } else {
             setErrorMessage('Try again 😉')
         }
