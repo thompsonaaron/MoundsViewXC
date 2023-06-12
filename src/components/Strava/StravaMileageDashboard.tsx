@@ -41,7 +41,7 @@ const StravaMileageDashboard = () => {
     }, [])
 
     return (
-        <div class="w-screen flex flex-col md:flex-row md:w-10/12 h-[100% + 48px] pb-12 md:pb-0 items-center">
+        <div class="w-screen flex flex-col md:flex-row md:w-10/12 h-[100% + 48px] pb-12 md:pb-0 items-center md:items-start">
             <div class="flex flex-col w-full md:w-4/12 p-2 md:p-4 border-2 rounded border-gray-50 my-1 md:mx-4">
                 <h3 class="text-xl font-semibold pb-1">
                     <div
