@@ -8,17 +8,12 @@ const AthletesModal = () => {
 
     const handleSubmit = (e: Event) => {
         e.preventDefault()
-        if (userInput === 'fleming') {
+        if (userInput.toLowerCase().trim() === 'fleming') {
             setErrorMessage('')
-            // window.open(
-            //     'https://drive.google.com/drive/folders/1Lqt_gB01CgFz0gVaOpNcn7co0Jx5ESDS?usp=drive_link',
-            //     '_blank'
-            // )
-            // window.focus()
-            // window.open(window.location.origin, '_self')
             setIsOpen(false)
         } else {
-            setErrorMessage('Try again 😉')
+            setErrorMessage('Try again 🤔')
+            // setErrorMessage('Try again 😉')
         }
     }
 
@@ -30,7 +25,7 @@ const AthletesModal = () => {
                         Please enter the password to verify that you are a
                         member of Mounds View Cross Country
                     </h1>
-                    <div class="py-4">
+                    <div class="py-4 flex flex-col md:flex-row">
                         <label class="pr-4">Password:</label>
                         <input
                             autofocus={true}
@@ -42,7 +37,9 @@ const AthletesModal = () => {
                                 setUserInput(e.currentTarget.value)
                             }
                         />
-                        <span class="pl-4 text-red-600">{errorMessage}</span>
+                        <span class="pl0 md:pl-4 text-red-600">
+                            {errorMessage}
+                        </span>
                     </div>
                     <div class="flex py-4 justify-center">
                         <button
