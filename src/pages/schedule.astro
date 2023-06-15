@@ -8,7 +8,7 @@ import Taskbar from '../components/Taskbar/Taskbar'
 import '../styles/tailwind.css'
 ---
 
-<html lang="en" class="flex">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
@@ -26,17 +26,20 @@ import '../styles/tailwind.css'
                 margin: 0;
             }
             body {
-                font-family: Montserrat;
                 margin: 0;
                 min-height: 100vh;
             }
         </style>
         <title>Mounds View XC</title>
     </head>
-    <body class="flex justify-center w-full bg-neutral-700">
-        <main class="flex flex-col grow-1 w-full">
+    <body
+        class="flex flex-col items-center justify-items-start w-screen bg-neutral-700"
+    >
+        <header class="flex flex-col grow-1 w-full">
             <Navbar />
             <Banner />
+        </header>
+        <main class="flex flex-col grow-1 w-full">
             <div id="background" class="flex-col text-slate-50 pb-8">
                 <div class="flex justify-center my-8">
                     <div

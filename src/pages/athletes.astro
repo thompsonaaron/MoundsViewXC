@@ -10,7 +10,7 @@ import StravaMileageDashboard from '../components/Strava/StravaMileageDashboard'
 // import Icon from '../components/Icons/icon.astro'
 ---
 
-<html lang="en" class="flex">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
@@ -39,10 +39,14 @@ import StravaMileageDashboard from '../components/Strava/StravaMileageDashboard'
         </style>
         <title>Mounds View XC</title>
     </head>
-    <body class="flex justify-center w-screen bg-neutral-700">
-        <main class="flex flex-col grow-1">
+    <body
+        class="flex flex-col items-center justify-items-start w-screen bg-neutral-700"
+    >
+        <header class="flex flex-col grow-1 w-full">
             <Navbar />
             <Banner />
+        </header>
+        <main class="flex flex-col grow-1">
             <AthletesModal client:load />
 
             <div

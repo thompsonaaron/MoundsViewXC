@@ -16,7 +16,7 @@ import tomDavis from '../assets/tom-davis.webp'
 import Banner from '../components/Banner/Banner.astro'
 ---
 
-<html lang="en" class="flex">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
@@ -49,10 +49,14 @@ import Banner from '../components/Banner/Banner.astro'
         </style>
         <title>Mounds View XC</title>
     </head>
-    <body class="flex justify-center w-full bg-neutral-700">
-        <main class="flex flex-col justify-center w-full">
+    <body
+        class="flex flex-col items-center justify-items-start w-screen bg-neutral-700"
+    >
+        <header class="flex flex-col grow-1 w-full">
             <Navbar />
             <Banner />
+        </header>
+        <main class="flex flex-col justify-center w-full">
             <div
                 id="background"
                 class="flex-col text-slate-50 pb-8 w-11/12 lg:w-7/12 self-center"
