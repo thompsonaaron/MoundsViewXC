@@ -15,7 +15,9 @@ interface WeeklyTotal {
 interface RunnerTotal extends WeeklyTotal {
     minutes: number
     averagePace: string
-    isOnTrack: boolean
+    isOnTrack300: boolean
+    isOnTrack325: boolean
+    isOnTrack350: boolean
 }
 
 const StravaMileageDashboard = () => {
@@ -81,7 +83,14 @@ const StravaMileageDashboard = () => {
                                 {index + 1}.
                             </div>
                             <div class="col-span-6">
-                                {runner.name} {runner.isOnTrack ? '😎' : ''}
+                                {runner.name}{' '}
+                                {runner.isOnTrack350
+                                    ? '🤩'
+                                    : runner.isOnTrack325
+                                    ? '😎'
+                                    : runner.isOnTrack300
+                                    ? '😀'
+                                    : ''}
                             </div>
                             <div class="col-span-2">
                                 {runner.miles.toFixed(2)}
