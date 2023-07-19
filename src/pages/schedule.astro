@@ -29,6 +29,18 @@ import '../styles/tailwind.css'
                 margin: 0;
                 min-height: 100vh;
             }
+
+            p > a {
+                color: rgb(34 197 94);
+            }
+
+            a:hover {
+                opacity: 85%;
+            }
+
+            a:visited {
+                color: rgba(34 197 94 0.7);
+            }
         </style>
         <title>Mounds View XC</title>
     </head>
@@ -41,7 +53,7 @@ import '../styles/tailwind.css'
         </header>
         <main class="flex flex-col grow-1 w-full">
             <div id="background" class="flex-col text-slate-50 pb-8">
-                <div class="flex justify-center my-8">
+                <div class="flex justify-center my-8 mx-1">
                     <div
                         class="flex flex-col w-full h-[calc(100vh-18rem)] min-h-[300px] lg:h-[calc(100vh-38rem)] md:w-9/12 xl:w-7/12 relative"
                     >
@@ -53,7 +65,791 @@ import '../styles/tailwind.css'
                         ></iframe>
                     </div>
                 </div>
-                <div class="h-4"></div>
+                <!-- CC Meet Info -->
+                <div class="flex justify-center my-8 mx-1">
+                    <div class="flex flex-col items-center">
+                        <h1 class="text-2xl mb-2 font-bold">XC Meet Info</h1>
+                        <!-- Whitewater -->
+                        <div
+                            class="flex flex-col items-center my-2 md:w-9/12 xl:w-7/12"
+                        >
+                            <h2
+                                id="whitewater"
+                                class="text-lg font-bold underline underline-offset-4"
+                            >
+                                Whitewater
+                            </h2>
+                            <p class="flex">
+                                For athletes that have run more than 300
+                                (freshmen), 325 (sophomores) or 350
+                                (upperclassmen) miles over the summer and
+                                regularly attended captains' practices, we will
+                                embark on the annual training trip to Whitewater
+                                state park at the start of the season. This camp
+                                is by invite-only based on mileage and behavior
+                                over the summer. All other athletes will meet at
+                                Mounds View as usual for daily practice.
+                            </p>
+                        </div>
+                        <!-- Rosemount -->
+                        <div
+                            class="flex flex-col items-center my-4 md:w-9/12 xl:w-7/12"
+                        >
+                            <h2
+                                id="rosemount"
+                                class="mt-8 text-lg font-bold underline underline-offset-4"
+                            >
+                                Rosemount Irish Invite
+                            </h2>
+                            <div class="flex flex-col">
+                                <h3>Schedule</h3>
+                                <ul>
+                                    <li>8:45 am - BOYS JV</li>
+                                    <li>9:35 AM - BOYS Frosh</li>
+                                    <li>10:00 AM - GIRLS C</li>
+                                    <li>10:25 AM - BOYS C</li>
+                                    <li>
+                                        10:50 AM - GIRLS VARSITY (limit 10
+                                        entrants)
+                                    </li>
+                                    <li>
+                                        11:15 AM - BOYS VARSITY (limit 10
+                                        entrants)
+                                    </li>
+                                </ul>
+                                <h3 class="mt-6">Location</h3>
+                                <p>Rosemount High School</p>
+                                <h3 class="mt-6">Parking</h3>
+                                <p>
+                                    Parking is available in front of the high
+                                    school (bottom of the course map) but there
+                                    is additional parking next to the course at
+                                    the Rosemount Community Center (3885 S
+                                    Robert Trail, Rosemount, MN 55068) located
+                                    just right of the dome on the course map.
+                                </p>
+
+                                <h3 class="mt-6">Course Description</h3>
+                                <p>
+                                    Every race is 2 miles long and consists of
+                                    two nearly identical laps. There are
+                                    chain-link fences approximately 400 meters
+                                    into the race that create a funnel, so the
+                                    typical strategy is to go out fairly hard
+                                    for the first 400m (not sprinting, just
+                                    faster than race pace) to bypass the
+                                    slowdown at this funnel. There is some
+                                    pavement on the initial part of the pond
+                                    trail, but most of the portions with
+                                    pavement have grass along one or both sides
+                                    for runners wearing spikes. Short spikes are
+                                    encouraged.
+                                </p>
+                                <h3 class="mt-6">Results</h3>
+                                <p>
+                                    Results will be posted on <a
+                                        href="https://fastfinishresults.com/"
+                                        target="_blank"
+                                        rel="noreferrer">Fast Finish Results</a
+                                    >
+                                </p>
+
+                                <h3 class="mt-6">Awards</h3>
+                                <ul>
+                                    <li>
+                                        Top 30 varsity individual awards
+                                        (Dri-Fit)
+                                    </li><li>
+                                        Top 20 JV individual awards (Dri-Fit)
+                                    </li>
+                                    <li>
+                                        Top 10 C/Frosh boys individual awards
+                                        (Dri-Fit)
+                                    </li>
+                                    <li>
+                                        Top varsity team individual awards
+                                        (Dri-Fit)
+                                    </li>
+                                </ul>
+
+                                <h3 class="mt-6">History</h3>
+                                <p>
+                                    <a
+                                        href="https://docs.google.com/document/d/1Y2AD87szsGgSc2rihvW42zXt0TsQaSVIaVxnntJ8EUo/edit"
+                                        target="_blank"
+                                        rel="noreferrer">Top 75 individuals</a
+                                    >
+                                    in meet history (includes a few mustangs)
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Steve Hoag -->
+                        <div
+                            class="flex flex-col items-center my-4 md:w-9/12 xl:w-7/12"
+                        >
+                            <h2
+                                id="steve-hoag"
+                                class="mt-8 text-lg font-bold underline underline-offset-4"
+                            >
+                                Steve Hoag / Rum River Invite
+                            </h2>
+                            <div class="flex flex-col">
+                                <h3>Schedule</h3>
+                                <ul>
+                                    <li>3:10 PM - Coaches meeting</li>
+                                    <li>3:30 PM - Girls JV (5000m)</li>
+                                    <li>4:10 PM - Boys JV (5000m)</li>
+                                    <li>4:50 PM - Girls Varsity (5000m)</li>
+                                    <li>5:30 PM - Boys Varsity (5000m)</li>
+                                    <li>
+                                        6:00 PM - Middle school race (3000m)
+                                    </li>
+                                </ul>
+                                <h3 class="mt-6">Location</h3>
+                                <p>Anoka High School</p>
+                                <h3 class="mt-6">Parking</h3>
+                                <p>
+                                    There is typically plenty of parking in the
+                                    Anoka High School lots adjacent to the
+                                    course.
+                                </p>
+
+                                <h3 class="mt-6">Course Description</h3>
+                                <p>
+                                    The Anoka high school course is the second
+                                    fastest course of the year despite medium
+                                    length grass (not a golf course) and mild
+                                    downhill and uphill segments throughout. The
+                                    5 kilometer course is comprised of two 2.5
+                                    kilometer loops; hence, the start and finish
+                                    of the race are in nearly identical
+                                    locations. Approximately 150-200 meters
+                                    before the finish there is an S-curve that
+                                    limits view of the finish line. Racers will
+                                    only be able to see the finish line 100
+                                    meters before the finish of the race.
+                                </p>
+                                <h3 class="mt-6">Results</h3>
+                                <p>
+                                    Results will be posted on <a
+                                        href="https://gsetiming.com/"
+                                        target="_blank"
+                                        rel="noreferrer">Gopher State Events</a
+                                    >
+                                </p>
+
+                                <h3 class="mt-6">Awards</h3>
+                                <ul>
+                                    <li>Varsity - Medals to top 15</li><li>
+                                        JV - Medals to top 15
+                                    </li>
+                                    <li>Middle school - Ribbons to top 10</li>
+                                    <li>
+                                        (All awards will be handed out in the
+                                        finish chute. )
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Griak Invite -->
+                        <div
+                            class="flex flex-col items-center my-4 md:w-9/12 xl:w-7/12"
+                        >
+                            <h2
+                                id="griak"
+                                class="mt-8 text-lg font-bold underline underline-offset-4"
+                            >
+                                Griak Invite
+                            </h2>
+                            <div class="flex flex-col">
+                                <h3>Schedule</h3>
+                                <ul>
+                                    <li>
+                                        3:00 PM - Larry Zirgibel HS Boy’s Gold
+                                        Competition (MV)
+                                    </li>
+                                    <li>
+                                        3:45 PM - Gary Wilson HS Girls Gold
+                                        Competition
+                                    </li>
+                                    <li>
+                                        4:30 PM - Lefty Wright Boys HS Maroon
+                                        Competition
+                                    </li>
+                                    <li>
+                                        5:15 PM - High School Girls Maroon
+                                        Competition
+                                    </li>
+                                </ul>
+                                <h3 class="mt-6">Location</h3>
+                                <p>Les Bolstad Golf Course</p>
+                                <h3 class="mt-6">Parking</h3>
+                                <p>
+                                    S101 (on the corner of Cleveland and
+                                    Commonwealth) and the Gortner Ave. Ramp.
+                                    Shuttles will transport to the golf course.
+                                    Park at your own risk on the city streets.
+                                </p>
+
+                                <h3 class="mt-6">Course Description</h3>
+                                <p>
+                                    The Griak course is the most difficult
+                                    course of the year. The field is huge (50
+                                    teams per race, 10 athletes per team means
+                                    there are 500 athletes in the race). But
+                                    then the course is nearly constant rolling
+                                    hills.
+                                </p>
+                                <h3 class="mt-6">Results</h3>
+                                <p>
+                                    Results will be posted on <a
+                                        href="https://pttiming.com/index.php"
+                                        target="_blank"
+                                        rel="noreferrer">Prime Time Timing</a
+                                    >
+                                </p>
+
+                                <h3 class="mt-6">Awards</h3>
+                                <ul>
+                                    <li>
+                                        Top 7 of winning team in each Division
+                                    </li>
+                                    <li>Top 20 individuals in each Division</li>
+                                </ul>
+
+                                <h3 class="mt-6">Further Info</h3>
+                                <p>
+                                    <a
+                                        href="https://gophersports.com/sports/2018/5/21/sports-m-xc-spec-rel-roy-griak-invitational-hs-coaches-html?id=1483"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        >Griak Invitational Link</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Mustang Invite -->
+                        <div
+                            class="flex flex-col items-center my-4 md:w-9/12 xl:w-7/12"
+                        >
+                            <h2
+                                id="mustang"
+                                class="mt-8 text-lg font-bold underline underline-offset-4"
+                            >
+                                Mustang Invite
+                            </h2>
+                            <div class="flex flex-col">
+                                <h3>Schedule</h3>
+                                <ul>
+                                    <li>
+                                        8:45 AM - Meet Worker Meeting at Finish
+                                        Line
+                                    </li>
+                                    <li>
+                                        9:00 AM - Coaches Meeting at Starting
+                                        Line area
+                                    </li>
+                                    <li>
+                                        9:30 AM - Girls 9th and under 3200m
+                                        Race(Unlimited entries)
+                                    </li>
+                                    <li>
+                                        9:55 AM - Boys 9th and under 3200m Race
+                                        (Unlimited entries)
+                                    </li>
+                                    <li>
+                                        10:20 AM - Girls Green 5000m Race
+                                        (Unlimited entries)
+                                    </li>
+                                    <li>
+                                        11:00 AM - Boys Green 5000m Race
+                                        (Unlimited entries)
+                                    </li>
+                                    <li>
+                                        11:40 AM - Girls Gold 5000m Race (10
+                                        entries maximum)
+                                    </li>
+                                    <li>
+                                        12:10 PM - Boys Gold 5000m Race (10
+                                        entries maximum)
+                                    </li>
+                                    <li>
+                                        12:40 PM - Girls Varsity 5000m Race (top
+                                        10 entries - for teams not racing Griak)
+                                    </li>
+                                    <li>
+                                        1:10 PM - Boys Varsity 5000m Race (top
+                                        10 entries - for teams not racing Griak)
+                                    </li>
+                                    <li>1:40 PM - Awards</li>
+                                </ul>
+                                <h3 class="mt-6">Location</h3>
+                                <p>Chippewa Middle School</p>
+                                <h3 class="mt-6">Parking</h3>
+                                <p>
+                                    Buses will be able to park at Chippewa
+                                    Middle School. Spectators can park at the
+                                    nearby churches (Incarnation Lutheran, Peace
+                                    United Methodist, Hope Christian) or across
+                                    the street at Turtle Lake.
+                                </p>
+
+                                <h3 class="mt-6">
+                                    Course Description (*New in 2023*)
+                                </h3>
+                                <p>
+                                    The course has been flattened and will be
+                                    comprised of 4 laps on the nearby fields.
+                                </p>
+                                <h3 class="mt-6">Results</h3>
+                                <p>
+                                    Results will be posted on <a
+                                        href="https://fastfinishresults.com/"
+                                        target="_blank"
+                                        rel="noreferrer">Fast Finish Results</a
+                                    >
+                                </p>
+
+                                <h3 class="mt-6">Awards</h3>
+                                <ul>
+                                    <li>
+                                        Gold races - Trophies for the top
+                                        individual, traveling plaque for the top
+                                        team in each race. Medals to top 20
+                                        individuals, ribbons to 21-30.
+                                    </li>
+                                    <li>
+                                        Green races - Medals to top 5 places in
+                                        each race, ribbons to 6-20
+                                    </li>
+                                    <li>
+                                        9th and under - Traveling plaque to the
+                                        top team. Medals to top 5 places in each
+                                        race, ribbons to 6-20
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Alexandria -->
+                        <div
+                            class="flex flex-col items-center my-4 md:w-9/12 xl:w-7/12"
+                        >
+                            <h2
+                                id="alexandria"
+                                class="mt-8 text-lg font-bold underline underline-offset-4"
+                            >
+                                Alexandria Lions Invite
+                            </h2>
+                            <div class="flex flex-col">
+                                <h3>Schedule</h3>
+                                <ul>
+                                    <li>10:00 AM - coaches meeting</li>
+                                    <li>
+                                        10:10 AM - 6th grade race (boys and
+                                        girls)
+                                        <li>
+                                            10:30 AM - girls junior high (3200m)
+                                        </li>
+                                        <li>
+                                            10:50 AM - boys junior high (3200m)
+                                        </li>
+                                        <li>11:15 AM - girls JV (5000m)</li>
+                                        <li>11:55 AM - boys JV (5000m)</li>
+                                        <li>12:30 PM - girls varsity</li>
+                                        <li>1:05 PM - boys varsity</li>
+                                        <li>1:35 PM - Awards</li>
+                                    </li>
+                                    <h3 class="mt-6">Location</h3>
+                                    <p>
+                                        Arrowwood Resort and Conference Center,
+                                        Alexandria, MN.
+                                    </p>
+                                    <h3 class="mt-6">Parking</h3>
+                                    <p>
+                                        For spectators, they will have a
+                                        park-and-ride location nearby. In 2022,
+                                        it was at the Viking Speedway / Douglas
+                                        County Fairgrounds.
+                                    </p>
+
+                                    <h3 class="mt-6">Course Description</h3>
+                                    <p>
+                                        The Alexandria course is 5,000m for
+                                        varsity and JV athletes and 3,200m for
+                                        freshmen. Freshmen do a single lap on
+                                        the course whereas varsity and JV
+                                        runners do two laps. Each lap includes
+                                        gentle rolling hills before heading
+                                        towards the woods on the back of the
+                                        course. There is a steep decline (upper
+                                        right corner of course map) leading to a
+                                        long straightaway towards the finish.
+                                        The course is a net downhill because the
+                                        start location is well above the finish
+                                        location. The morning races also tend to
+                                        be pretty cool but the varsity races
+                                        tend to be quite nice.
+                                    </p>
+                                    <h3 class="mt-6">Results</h3>
+                                    <p>
+                                        Results will be posted on <a
+                                            href="https://gsetiming.com/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            >Gopher State Events</a
+                                        >
+                                    </p>
+
+                                    <h3 class="mt-6">Awards</h3>
+                                    <ul>
+                                        <li>
+                                            Varsity - 1st place team receives a
+                                            traveling plaque. Top 15 individuals
+                                            receive a trophy.
+                                        </li>
+                                        <li>
+                                            JV - Trophies to top 10 individuals
+                                        </li>
+                                        <li>
+                                            Freshmen - Trophies to top 10
+                                            individuals
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Suburban East Conference -->
+                        <div
+                            class="flex flex-col items-center my-4 md:w-9/12 xl:w-7/12"
+                        >
+                            <h2
+                                id="sec"
+                                class="mt-8 text-lg font-bold underline underline-offset-4"
+                            >
+                                Suburban East Conference (SEC)
+                            </h2>
+                            <div class="flex flex-col">
+                                <h3>Schedule</h3>
+                                <ul>
+                                    <li>2:30 PM Coaches meeting</li>
+                                    <li>3:30 PM Girls Varsity race</li>
+                                    <li>4:00 PM Boys Varsity race</li>
+                                    <li>4:30 PM Girls JV race</li>
+                                    <li>5:00 PM Boys JV race</li>
+                                    <li>5:30 PM (or so) Awards Ceremony</li>
+                                </ul>
+
+                                <h3 class="mt-6">Location</h3>
+                                <p>Tanner's Brook Golf Course</p>
+                                <h3 class="mt-6">Parking</h3>
+                                <p>
+                                    There will be limited private car parking in
+                                    the golf course parking lot, especially
+                                    until all buses are parked and unloaded. The
+                                    should be some parking attendants in the
+                                    parking lot starting at 2PM to direct
+                                    parking. Private cars will need to park
+                                    along local road 190th Street or side roads
+                                    off Hwy 61.
+                                </p>
+
+                                <h3 class="mt-6">Course Description</h3>
+                                <p>
+                                    The SEC course has historically been very
+                                    flat. For many years it was at Falcon Ridge
+                                    Golf Course in Stacy, MN, but in 2015 the
+                                    course changed to the equally flat Tanner's
+                                    Brook Golf Course in Forest Lake. However,
+                                    it tends to be soggy footing so that
+                                    mitigates the speed of an otherwise fast
+                                    course. The course has markers at each
+                                    kilometer (1-5 km), the halfway point (2.5
+                                    km) and the 1600m and 3200m marks.
+                                </p>
+                                <h3 class="mt-6">Results</h3>
+                                <p>
+                                    Results will be posted on <a
+                                        href="https://www.mtecresults.com/"
+                                        target="_blank"
+                                        rel="noreferrer">MTEC results</a
+                                    >
+                                </p>
+
+                                <h3 class="mt-6">Awards</h3>
+                                <ul>
+                                    <li>
+                                        All-Conference medals - awarded to the
+                                        top 18 finishers in each Varsity Race.
+                                    </li>
+                                    <li>
+                                        All-Conference Honorable Mention -
+                                        awarded to places 19 – 27 in each
+                                        Varsity race.
+                                    </li>
+                                    <li>
+                                        Trophy for the winning varsity team.
+                                    </li>
+                                    <li>
+                                        Junior Varsity races - ribbons will be
+                                        awarded to the top 10 places
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Section 5AAA -->
+                        <div
+                            class="flex flex-col items-center my-4 md:w-9/12 xl:w-7/12"
+                        >
+                            <h2
+                                id="section-5aaa"
+                                class="mt-8 text-lg font-bold underline underline-offset-4"
+                            >
+                                Section 5AAA
+                            </h2>
+                            <div class="flex flex-col">
+                                <h3>Schedule</h3>
+                                <ul>
+                                    <li>2:00 pm - Coaches Meeting</li>
+                                    <li>2:22 pm - National Anthem</li>
+                                    <li>2:30 pm - Varsity Boys Race</li>
+                                    <li>3:10 pm - Varsity Girls Race</li>
+                                    <li>3:50 pm - Varsity Awards</li>
+                                    <li>4:20 pm - JV Boys Race</li>
+                                    <li>4:50 pm - JV Girls Race</li>
+                                </ul>
+
+                                <h3 class="mt-6">Location</h3>
+                                <p>Anoka High School</p>
+                                <h3 class="mt-6">Parking</h3>
+                                <p>
+                                    There will be plenty of parking in the Anoka
+                                    High School lots
+                                </p>
+
+                                <h3 class="mt-6">Course Description</h3>
+                                <p>
+                                    The Anoka high school course is the fastest
+                                    course of the year despite medium length
+                                    grass (not a golf course) and mild downhill
+                                    and uphill segments throughout. The 5
+                                    kilometer course is comprised of two 2.5
+                                    kilometer loops; hence, the start and finish
+                                    of the race are in nearly identical
+                                    locations. Approximately 150 meters before
+                                    the finish there is an S-curve that limits
+                                    view of the finish line. Racers will only be
+                                    able to see the finish line 75 meters before
+                                    the finish of the race.
+                                </p>
+                                <h3 class="mt-6">Results</h3>
+                                <p>
+                                    Results will be posted on <a
+                                        href="https://www.mtecresults.com/"
+                                        target="_blank"
+                                        rel="noreferrer">MTEC results</a
+                                    >
+                                </p>
+
+                                <h3 class="mt-6">Awards</h3>
+                                <ul>
+                                    <li>
+                                        The top two teams in each varsity race
+                                        will qualify for state as a team. The
+                                        first six runners in each varsity race
+                                        that are NOT on a qualifying team will
+                                        qualify as individuals.
+                                    </li>
+                                    <li>
+                                        Medals to individuals on the first and
+                                        second place teams
+                                    </li>
+                                    <li>
+                                        Trophies to the first and second place
+                                        teams
+                                    </li>
+                                    <li>
+                                        Medals to the six individual state
+                                        qualifiers
+                                    </li>
+                                </ul>
+
+                                <h3 class="mt-6">History</h3>
+                                <p>
+                                    Mounds View has won the section meet six
+                                    years in a row (2017-2022), qualified for
+                                    state seven years in a row (2016-2022), and
+                                    has had the individual winner the last 5
+                                    years (2018-2022, Austin Streit, Finn
+                                    Sokolowski, Elliott McArthur x 3).
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- MSHSL State Meet -->
+                        <div
+                            class="flex flex-col items-center my-4 md:w-9/12 xl:w-7/12"
+                        >
+                            <h2
+                                id="state"
+                                class="mt-8 text-lg font-bold underline underline-offset-4"
+                            >
+                                MSHSL State Meet
+                            </h2>
+                            <div class="flex flex-col">
+                                <h3>Schedule</h3>
+                                <ul>
+                                    <li>TBD</li>
+                                </ul>
+
+                                <h3 class="mt-6">Location</h3>
+                                <p>Les Bolstad Golf Course</p>
+                                <h3 class="mt-6">Parking</h3>
+                                <p>TBD. See Griak?</p>
+
+                                <h3 class="mt-6">Course Description</h3>
+                                <p>
+                                    This will be the first year that the state
+                                    meet will be back at the Les Bolstad Golf
+                                    after many years being at St. Olaf. The
+                                    course will be similar to or the same as the
+                                    Section 4AAA Meet, which is designed to be
+                                    faster than the Griak course.
+                                </p>
+                                <h3 class="mt-6">Results</h3>
+                                <p>
+                                    Results will be posted on <a
+                                        href="https://wayzataresults.com/landing/index"
+                                        target="_blank"
+                                        rel="noreferrer">Wayzata Results</a
+                                    >
+                                </p>
+
+                                <h3 class="mt-6">Awards</h3>
+                                <ul>
+                                    <li>
+                                        The top 10 individuals receive medals
+                                    </li>
+                                    <li>
+                                        The top 25 individuals receive All-State
+                                        designation
+                                    </li>
+                                    <li>The top 3 teams receive trophies</li>
+                                </ul>
+
+                                <h3 class="mt-6">History</h3>
+                                <p>
+                                    Mounds View has finished in the top-5 teams
+                                    at the MSHSL State Meet for 6 consecutive
+                                    years (2016-2022).
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- NXR -->
+                        <div
+                            class="flex flex-col items-center my-4 md:w-9/12 xl:w-7/12"
+                        >
+                            <h2
+                                id="nxr"
+                                class="mt-8 text-lg font-bold underline underline-offset-4"
+                            >
+                                Nike Heartland Regional (NXR)
+                            </h2>
+                            <div class="flex flex-col">
+                                <h3 class="flex flex-row items-baseline">
+                                    Meet Info
+                                    <a
+                                        href="https://nxrhl.runnerspace.com/eprofile.php?do=title&title_id=213&event_id=300"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <svg
+                                            class="ml-2"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"
+                                            height="15"
+                                        >
+                                            <path
+                                                class="fill-white"
+                                                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </h3>
+                                <p>
+                                    This meet is completely optional. However,
+                                    the top-10 athletes from the section and
+                                    state meets are expected to attend. Other
+                                    athletes are welcome to join but it is
+                                    completely optional. We typically want to
+                                    have one JV team entered in the open race
+                                    (minimum 5 athletes required).
+                                </p>
+
+                                <h3 class="mt-6">Location</h3>
+                                <p>Yankton Trail Park, Sioux Falls, SD</p>
+                                <h3 class="mt-6">Parking</h3>
+                                <p>
+                                    There is a $10 fee for all vehicles to enter
+                                    the park for the day
+                                </p>
+
+                                <h3 class="mt-6">Course Description</h3>
+                                <p>
+                                    This is the flattest, fastest course of the
+                                    year, if the conditions are good. Most
+                                    years, the temperature is 20-30 degrees F at
+                                    race time.
+                                </p>
+                                <h3 class="mt-6">Results</h3>
+                                <p>
+                                    Results will be posted on <a
+                                        href="https://pttiming.com/index.php"
+                                        target="_blank"
+                                        rel="noreferrer">Prime Time Timing</a
+                                    >
+                                </p>
+
+                                <h3 class="mt-6 flex flex-row items-baseline">
+                                    Awards <a
+                                        href="https://nxrhl.runnerspace.com/eprofile.php?event_id=300&title_id=213&do=title&pg=1&folder_id=268&page_id=16024"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <svg
+                                            class="ml-2"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"
+                                            height="15"
+                                        >
+                                            <path
+                                                class="fill-white"
+                                                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                            ></path>
+                                        </svg></a
+                                    >
+                                </h3>
+
+                                <h3 class="mt-6">History</h3>
+                                <p>
+                                    This meet combines the best schools from a
+                                    7-state area (IA-KS-MN-NE-ND-SD-WI). Mounds
+                                    View first entered the meet in 2017 and
+                                    finished 15th. In 2018 and 2019, Mounds View
+                                    won the meet and qualified for Nike
+                                    Nationals. In total, Mounds View has never
+                                    finished worse than 15th.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <Taskbar client:load />
         </main>
