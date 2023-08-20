@@ -13,6 +13,7 @@ import {
     Results2020,
     Results2021,
     Results2022,
+    Results2023,
 } from '../constants/XCResults'
 
 import {
@@ -93,6 +94,7 @@ import Banner from '../components/Banner/Banner.astro'
                             </a>
                         </h1>
                         <div class="mx-8 my-4">
+                            <Results2023 client:idle />
                             <Results2022 client:idle />
                             <Results2021 client:idle />
                             <Results2020 client:idle />
