@@ -2,66 +2,65 @@ import { useEffect, useState } from 'preact/hooks'
 
 import clsx from 'clsx'
 
-const AlexandriaPodiumSmall = './images/alexandria-win-small.webp'
+// const AlexandriaPodiumSmall = './images/alexandria-win-small.webp'
 const AlexandriaPodiumMedium = './images/alexandria-win-medium.webp'
 const AlexandriaPodiumLarge = './images/alexandria-win-large.webp'
 
-const HerbertHugsSmall = './images/herbert-hugs-small.webp'
+// const HerbertHugsSmall = './images/herbert-hugs-small.webp'
 const HerbertHugsMedium = './images/herbert-hugs-medium.webp'
 const HerbertHugsLarge = './images/herbert-hugs-large.webp'
 
-const Rosemount2015Small = './images/rosemount-start-small.webp'
+// const Rosemount2015Small = './images/rosemount-start-small.webp'
 const Rosemount2015Medium = './images/rosemount-start-medium.webp'
 const Rosemount2015Large = './images/rosemount-start-large.webp'
 
-const SEC2015Small = './images/conf-walking-small.webp'
+// const SEC2015Small = './images/conf-walking-small.webp'
 const SEC2015Medium = './images/conf-walking-medium.webp'
 const SEC2015Large = './images/conf-walking-large.webp'
 
-const ThreePeatSmall = './images/three-peat-small.webp'
+// const ThreePeatSmall = './images/three-peat-small.webp'
 const ThreePeatMedium = './images/three-peat-medium.webp'
 const ThreePeatLarge = './images/three-peat-large.webp'
 
-const WillSmall = './images/will-small.webp'
+// const WillSmall = './images/will-small.webp'
 const WillMedium = './images/will-medium.webp'
 const WillLarge = './images/will-large.webp'
 
-const NxrChampsSmall = './images/nxr-champions-small.webp'
+// const NxrChampsSmall = './images/nxr-champions-small.webp'
 const NxrChampsMedium = './images/nxr-champions-medium.webp'
 const NxrChampsLarge = './images/nxr-champions-large.webp'
 
-const Section2022WarmupSmall = '/images/2022-section-warmup-small.webp'
+// const Section2022WarmupSmall = './images/2022-section-warmup-small.webp'
 const Section2022WarmupMedium = './images/2022-section-warmup-medium.webp'
 const Section2022WarmupLarge = './images/2022-section-warmup-large.webp'
 
+const HOFInducteesMedium = '/images/Austin-Lukas-HOF-medium.webp'
+const HOFInducteesLarge = '/images/Austin-Lukas-HOF-large.webp'
 // resize images to 3:2 here: https://www.xconvert.com/crop-webp
 // compress here: https://tinypng.com/
 
 const imageList = [
+    { medium: HOFInducteesMedium, large: HOFInducteesLarge },
     {
-        small: Rosemount2015Small,
         medium: Rosemount2015Medium,
         large: Rosemount2015Large,
     },
     {
-        small: Section2022WarmupSmall,
         medium: Section2022WarmupMedium,
         large: Section2022WarmupLarge,
     },
-    { small: SEC2015Small, medium: SEC2015Medium, large: SEC2015Large },
+    { medium: SEC2015Medium, large: SEC2015Large },
     {
-        small: HerbertHugsSmall,
         medium: HerbertHugsMedium,
         large: HerbertHugsLarge,
     },
-    { small: WillSmall, medium: WillMedium, large: WillLarge },
+    { medium: WillMedium, large: WillLarge },
     {
-        small: AlexandriaPodiumSmall,
         medium: AlexandriaPodiumMedium,
         large: AlexandriaPodiumLarge,
     },
-    { small: ThreePeatSmall, medium: ThreePeatMedium, large: ThreePeatLarge },
-    { small: NxrChampsSmall, medium: NxrChampsMedium, large: NxrChampsLarge },
+    { medium: ThreePeatMedium, large: ThreePeatLarge },
+    { medium: NxrChampsMedium, large: NxrChampsLarge },
 ]
 
 const Carousel = () => {
