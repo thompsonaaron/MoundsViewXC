@@ -62,21 +62,11 @@ const MediaDropdown = () => {
                         </a>
                     </li>
                     <li class="pl-1 text-gray-500 hover:text-black">
-                        <a
-                            href="https://photos.app.goo.gl/EYhrVZJsadpHAJhQ8"
-                            target="_blank"
-                        >
-                            XC Photos
-                        </a>
+                        <a href="/photos">Photos</a>
                     </li>
-                    <li class="pl-1 text-gray-500 hover:text-black">
-                        <a
-                            href="https://photos.app.goo.gl/9FSPphRLW1iL1J7a7"
-                            target="_blank"
-                        >
-                            TF Photos
-                        </a>
-                    </li>
+                    {/* <li class="pl-1 text-gray-500 hover:text-black">
+                        <a href="/photos">TF Photos</a>
+                    </li> */}
                     <li class="pl-1 text-gray-500 hover:text-black">
                         <a
                             href="https://www.youtube.com/channel/UCg_Z3H_nyqWZvTqml7jGIwQ?view_as=subscriber"

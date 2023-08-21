@@ -1,0 +1,108 @@
+---
+import '@fontsource/quattrocento-sans'
+import Logo from '../assets/favicon.svg'
+import Banner from '../components/Banner/Banner.astro'
+import Carousel from '../components/Carousel/Carousel'
+import Navbar from '../components/Navbar/Navbar.astro'
+import Taskbar from '../components/Taskbar/Taskbar'
+import Updates from '../components/Updates/updates'
+import '../styles/tailwind.css'
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <meta
+            name="description"
+            content="Mounds View High School's Boys Cross Country and Track & Field Website"
+        />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+        <!-- <link rel="stylesheet" href="fonts.css" /> -->
+        <style>
+            html {
+                font-family: Montserrat;
+                margin: 0;
+            }
+            body {
+                margin: 0;
+                min-height: 100vh;
+            }
+
+            a {
+                color: rgb(34 197 94);
+            }
+        </style>
+        <title>Mounds View XC</title>
+    </head>
+    <body
+        class="flex flex-col items-center justify-items-start w-screen bg-neutral-700"
+    >
+        <header class="flex flex-col grow-1 w-full">
+            <Navbar />
+            <Banner />
+        </header>
+        <main class="flex flex-col grow-1 w-full">
+            <div id="background" class="flex-col text-slate-50 pb-8">
+                <div class="flex justify-center my-8">
+                    <div
+                        class="flex flex-col md:w-10/12 lg:w-8/12 xl:w-6/12 text-center text-lg md:text-xl items-center"
+                        style={{ fontFamily: 'Quattrocento Sans' }}
+                    >
+                        <h1 class="text-xl">XC Photos</h1>
+                        <a
+                            href="https://photos.app.goo.gl/mxe4CeSqbWZMLmdBA"
+                            target="_blank">Whitewater</a
+                        >
+                    </div>
+                    <div
+                        class="flex flex-col md:w-10/12 lg:w-8/12 xl:w-6/12 text-center text-lg md:text-xl items-center"
+                        style={{ fontFamily: 'Quattrocento Sans' }}
+                    >
+                        <h1 class="text-xl">Track Photos</h1>
+                        <p>
+                            Mrs. Hutchcroft took photos throughout the 2023
+                            season and posted them in multiple albums. The
+                            password for all of them is "RunboysRun".
+                            <ul>
+                                <li>
+                                    <a
+                                        target="_blank"
+                                        href="https://albums.memento.com/MoundsViewXCTF"
+                                        style="color:rgb(34 197 94)">Album 1</a>
+                                </li>
+                                <li>
+                                    <a
+                                        target="_blank"
+                                        href="https://albums.memento.com/TrueTeam"
+                                        style="color:rgb(34 197 94)">Album 2</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        target="_blank"
+                                        href="https://albums.memento.com/Pseason"
+                                        style="color:rgb(34 197 94)">Album 3</a>
+                                </li>
+                            </ul>
+                        </p>
+
+                        <br />
+                        <p>
+                            Team photos are available to order from <a
+                                target="_blank"
+                                href="https://galleries.photoday.io/"
+                                style="color:rgb(34 197 94)"
+                                >David Bank Studios</a
+                            >. Use the code PGHC83876
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <Taskbar client:load />
+        </main>
+    </body>
+</html>
