@@ -36,6 +36,7 @@ const Section2022WarmupLarge = './images/2022-section-warmup-large.webp'
 
 const HOFInducteesMedium = '/images/Austin-Lukas-HOF-medium.webp'
 const HOFInducteesLarge = '/images/Austin-Lukas-HOF-large.webp'
+
 // resize images to 3:2 here: https://www.xconvert.com/crop-webp
 // compress here: https://tinypng.com/
 
