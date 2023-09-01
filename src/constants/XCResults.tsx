@@ -496,10 +496,10 @@ const links2023 = [
         text: 'Alumni',
         href: 'https://drive.google.com/file/d/1fvo62bsZM5NvBfZ4ehSZ8XEo0ednq3UY/view?usp=drive_link',
     },
-    // {
-    //     text: 'Rosemount',
-    //     href: '',
-    // },
+    {
+        text: 'Rosemount',
+        href: 'https://drive.google.com/file/d/1G-E28RvYsI20R0Yds8NHOfmU8XxnjZMm/view?usp=drive_link',
+    },
     // {
     //     text: 'Rum River / Steve Hoag',
     //     href: '',
