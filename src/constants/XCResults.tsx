@@ -500,10 +500,10 @@ const links2023 = [
         text: 'Rosemount',
         href: 'https://drive.google.com/file/d/1G-E28RvYsI20R0Yds8NHOfmU8XxnjZMm/view?usp=drive_link',
     },
-    // {
-    //     text: 'Rum River / Steve Hoag',
-    //     href: '',
-    // },
+    {
+        text: 'Rum River / Steve Hoag',
+        href: 'https://drive.google.com/file/d/1GVklsQmbJ3LsA1IchjOLySBSImRePv1I/view?usp=drive_link',
+    },
     // {
     //     text: 'Griak',
     //     href: '',
