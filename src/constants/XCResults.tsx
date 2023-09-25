@@ -504,14 +504,10 @@ const links2023 = [
         text: 'Rum River / Steve Hoag',
         href: 'https://drive.google.com/file/d/1GVklsQmbJ3LsA1IchjOLySBSImRePv1I/view?usp=drive_link',
     },
-    // {
-    //     text: 'Griak',
-    //     href: '',
-    // },
-    // {
-    //     text: 'Mustang',
-    //     href: '',
-    // },
+    {
+        text: 'Griak / Mustang',
+        href: 'https://drive.google.com/file/d/1z0j74zmLqsv0flXfZNLMfG9iE3EtbS6S/view?usp=drive_link',
+    },
     // {
     //     text: 'Alexandria',
     //     href: '',
