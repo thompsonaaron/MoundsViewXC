@@ -512,10 +512,10 @@ const links2023 = [
         text: 'Alexandria',
         href: 'https://drive.google.com/file/d/1S96UQOiOcShR4E_hJoTBMmL_Gg6oeEe8/view?usp=drive_link',
     },
-    // {
-    //     text: 'Suburban East Conference',
-    //     href: '',
-    // },
+    {
+        text: 'Suburban East Conference',
+        href: 'https://drive.google.com/file/d/1wftf1DVNQeuWvdGt6e7LjVYXJVVNHCK8/view?usp=share_link',
+    },
     // {
     //     text: 'Section 5AAA',
     //     href: '',
