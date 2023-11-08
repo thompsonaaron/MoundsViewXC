@@ -46,7 +46,7 @@ import '../styles/tailwind.css'
             <Banner />
         </header>
         <main class="flex flex-col grow-1 w-full">
-            <div id="background" class="flex-col text-slate-50 pb-8">
+            <div id="background" class="flex-col text-slate-50">
                 <Updates numUpdates={2} urlPath="/" client:load />
                 <div class="flex justify-center my-8">
                     <div
@@ -145,11 +145,8 @@ import '../styles/tailwind.css'
                             (10th), 2019 (1st), 2018 (1st)
                         </p><br />
                         <p class="flex">
-                            MSHSL XC: 20232022 (5th), 2021 (3rd), 2019 (1st),
-                            2018 (2nd), 2017 (5th), 2016 (4th), 2015 (9th), 2013
-                            (6th), 2012 (15th), 2011 (14th), 2007 (14th), 2006
-                            (7th), 2004 (9th), 2002 (10th), 2001 (15th), 2000
-                            (6th), 1999 (2nd)
+                            MSHSL XC: 2023 (3rd), 2022 (5th), 2021 (3rd), 2019
+                            (1st), 2018 (2nd), 2017 (5th), 2016 (4th)
                         </p><br />
                         <p class="flex flex-row">
                             True Team State Champions: 1998, 1999, 2000, 2001,
@@ -189,25 +186,32 @@ import '../styles/tailwind.css'
             </div> -->
         </main>
         <footer
-            class="w-full hidden md:flex md:bg-white md:justify-center md:items-center h-8 md:h-10 pb-12 md:pb-0"
+            class="w-full flex bg-white justify-center items-center h-8 md:h-10 mb-12 md:mb-0"
         >
-            <a
-                class="mx-8 text-white md:text-gray-500 md:hover:text-black font-semibold"
-                href="https://www.venmo.com/u/MVboys-XC"
-                target="_blank"
-                rel="noreferrer">DONATE</a
-            >
-            <div class="flex">
-                <img src={Logo} height="40" width="40" alt="MV Logo" />
+            <div class="w-4/12 md:w-2/12 flex justify-center">
+                <a
+                    class="text-xs md:text-base text-gray-500 hover:text-black font-semibold"
+                    href="https://www.venmo.com/u/MVboys-XC"
+                    target="_blank"
+                    rel="noreferrer">DONATE</a
+                >
             </div>
 
-            <a
-                class="mx-8 font-semibold text-white md:text-gray-500 md:hover:text-black"
-                href="mailto:moundsviewxc@gmail.com"
-                target="_blank"
-                rel="noreferrer">CONTACT US</a
-            >
+            <div class="w-4/12 md:w-2/12 flex justify-center">
+                <a href="/"
+                    ><img src={Logo} height="40" width="40" alt="MV Logo" /></a
+                >
+            </div>
+
+            <div class="w-4/12 md:w-2/12 flex justify-center">
+                <a
+                    class="text-xs md:text-base text-gray-500 font-semibold hover:text-black"
+                    href="mailto:moundsviewxc@gmail.com"
+                    target="_blank"
+                    rel="noreferrer">CONTACT US</a
+                >
+            </div>
         </footer>
-        <Taskbar client:load />
     </body>
 </html>
+<Taskbar client:load />
