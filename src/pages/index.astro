@@ -21,7 +21,6 @@ import '../styles/tailwind.css'
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
-        <!-- <link rel="stylesheet" href="fonts.css" /> -->
         <style>
             html {
                 font-family: Montserrat;
@@ -163,53 +162,42 @@ import '../styles/tailwind.css'
                     <Carousel client:idle />
                 </div>
             </div>
-            <!-- 
-            <div
-                class="flex static bottom-0 right-0 left-0 w-screen justify-center p-1"
-            >
-                <img
-                    src={Logo}
-                    height="100"
-                    width="100"
-                    alt="MV Logo"
-                    class="hidden lg:flex mb-8 max-h-24 self-center justify-self-center"
-                />
-            </div> -->
-
-            <!-- <div class="flex justify-center pb-8">
-                <img
-                    src="/images/venmo-QR.png"
-                    width="200"
-                    height="200"
-                    alt="MVXC charity venmo account"
-                />
-            </div> -->
         </main>
-        <footer
-            class="w-full flex bg-white justify-center items-center h-8 md:h-10 mb-12 md:mb-0"
-        >
-            <div class="w-4/12 md:w-2/12 flex justify-center">
-                <a
-                    class="text-xs md:text-base text-gray-500 hover:text-black font-semibold"
-                    href="https://www.venmo.com/u/MVboys-XC"
-                    target="_blank"
-                    rel="noreferrer">DONATE</a
-                >
-            </div>
+        <footer class="flex w-full bg-white flex-col md:h-10 mb-12 md:mb-0">
+            <div class="flex flex-row w-full justify-center items-center h-8">
+                <div class="w-4/12 md:w-2/12 flex justify-center">
+                    <a
+                        class="text-xs md:text-base text-gray-500 hover:text-black font-semibold"
+                        href="https://www.venmo.com/u/MVboys-XC"
+                        target="_blank"
+                        rel="noreferrer">DONATE</a
+                    >
+                </div>
 
-            <div class="w-4/12 md:w-2/12 flex justify-center">
-                <a href="/"
-                    ><img src={Logo} height="40" width="40" alt="MV Logo" /></a
-                >
-            </div>
+                <div class="w-4/12 md:w-2/12 flex justify-center">
+                    <a href="/"
+                        ><img
+                            src={Logo}
+                            height="40"
+                            width="40"
+                            alt="MV Logo"
+                        /></a
+                    >
+                </div>
 
-            <div class="w-4/12 md:w-2/12 flex justify-center">
-                <a
-                    class="text-xs md:text-base text-gray-500 font-semibold hover:text-black"
-                    href="mailto:moundsviewxc@gmail.com"
-                    target="_blank"
-                    rel="noreferrer">CONTACT US</a
-                >
+                <div class="w-4/12 md:w-2/12 flex justify-center">
+                    <a
+                        class="text-xs md:text-base text-gray-500 font-semibold hover:text-black"
+                        href="mailto:moundsviewxc@gmail.com"
+                        target="_blank"
+                        rel="noreferrer">CONTACT US</a
+                    >
+                </div>
+            </div>
+            <div
+                class="h-fit flex flex-row w-full justify-end text-xs md:text-sm text-gray-500 hover:text-black"
+            >
+                &#169; Aaron Thompson
             </div>
         </footer>
     </body>

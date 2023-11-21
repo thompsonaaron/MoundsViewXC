@@ -47,7 +47,7 @@ import StravaMileageDashboard from '../components/Strava/StravaMileageDashboard'
             <Banner />
         </header>
         <main class="flex flex-col grow-1">
-            <AthletesModal client:load />
+            <!-- <AthletesModal client:load /> -->
 
             <div
                 id="background"
@@ -65,7 +65,13 @@ import StravaMileageDashboard from '../components/Strava/StravaMileageDashboard'
                         </a>
                     </div>
 
-                    <StravaMileageDashboard client:idle />
+                    <div class="mx-auto text-center">
+                        The Strava mileage calculator was built and paid for by
+                        Coach Thompson. If you found it valuable, please relay
+                        that to Coach Fleming and/or Coach Wentworth.
+                    </div>
+
+                    <!-- <StravaMileageDashboard client:idle /> -->
                 </div>
             </div>
         </main>

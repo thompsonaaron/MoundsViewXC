@@ -64,49 +64,9 @@ import Banner from '../components/Banner/Banner.astro'
                 <div
                     class="grid grid-cols-2 gap-6 md:gap-y-6 md:gap-x-16 auto-cols-auto my-8"
                     style={{
-                        gridTemplateRows: 'repeat(8, minmax(100px, 1fr))',
+                        gridTemplateRows: 'repeat(7, minmax(100px, 1fr))',
                     }}
                 >
-                    <!-- <div class="col-span-1">
-                        <img
-                            src={aaronThompson}
-                            alt="aaronThompson"
-                            object-fit="cover"
-                            class="ml-auto"
-                            width="300"
-                        />
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-base md:text-xl">Aaron Thompson</p>
-                        <p class="text-xs md:text-base">
-                            Varsity cross country and JV distance track coach
-                        </p>
-                        <p class="text-xs md:text-base">
-                            <a href="mailto:moundsviewxc@gmail.com"
-                                >moundsviewxc@gmail.com</a
-                            >
-                        </p>
-                    </div> -->
-                    <div class="col-span-1">
-                        <img
-                            src={coachWentworth}
-                            alt="coach wentworth"
-                            object-fit="cover"
-                            class="ml-auto"
-                            width="300"
-                        />
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-base md:text-xl">Tom Wentworth</p>
-                        <p class="text-xs md:text-base">
-                            Varsity cross country and JV distance track coach
-                        </p>
-                        <p class="text-xs md:text-base">
-                            <a href="mailto:moundsviewxc@gmail.com"
-                                >moundsviewxc@gmail.com</a
-                            >
-                        </p>
-                    </div>
                     <div class="col-span-1">
                         <img
                             src={coachFleming}
@@ -119,7 +79,7 @@ import Banner from '../components/Banner/Banner.astro'
                     <div class="col-span-1">
                         <p class="text-base md:text-xl">Ross Fleming</p>
                         <p class="text-xs md:text-base">
-                            Head Track Coach and JV Cross Country Coach
+                            Head Track Coach and Co-Head Cross Country Coach
                         </p>
                         <p class="text-xs md:text-base">
                             <a href="mailto:ross.fleming@moundsviewschools.org"
@@ -127,24 +87,7 @@ import Banner from '../components/Banner/Banner.astro'
                             >
                         </p>
                     </div>
-                    <!-- <div class="col-span-1">
-                        <img
-                            src={scottKopp}
-                            alt="scott kopp"
-                            object-fit="contain"
-                            class="ml-auto"
-                            width="300"
-                        />
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-base md:text-xl">Scott Kopp</p>
-                        <p class="text-xs md:text-base">Jumps</p>
-                        <p class="text-xs md:text-base">
-                            <a href="mailto:skopp713@gmail.com"
-                                >skopp713@gmail.com</a
-                            >
-                        </p>
-                    </div> -->
+
                     <div class="col-span-1">
                         <img
                             src={tomDavis}
@@ -224,6 +167,27 @@ import Banner from '../components/Banner/Banner.astro'
 
                     <div class="col-span-1">
                         <img
+                            src={coachWentworth}
+                            alt="coach wentworth"
+                            object-fit="cover"
+                            class="ml-auto"
+                            width="300"
+                        />
+                    </div>
+                    <div class="col-span-1">
+                        <p class="text-base md:text-xl">Tom Wentworth</p>
+                        <p class="text-xs md:text-base">
+                            Co-Head Cross Country and JV Distance Track Coach
+                        </p>
+                        <p class="text-xs md:text-base">
+                            <a href="mailto:moundsviewxc@gmail.com"
+                                >moundsviewxc@gmail.com</a
+                            >
+                        </p>
+                    </div>
+
+                    <div class="col-span-1">
+                        <img
                             src={coachVarichak}
                             alt="nick varichak"
                             object-fit="cover"
@@ -242,17 +206,6 @@ import Banner from '../components/Banner/Banner.astro'
                     </div>
                 </div>
             </div>
-            <!-- <div
-                class="flex static bottom-0 right-0 left-0 w-screen justify-center p-1"
-            >
-                <img
-                    src={Logo}
-                    height="100"
-                    width="100"
-                    alt="MV Logo"
-                    class="hidden md:flex mb-8 max-h-24 self-center justify-self-center"
-                />
-            </div> -->
 
             <Taskbar client:load />
         </main>
