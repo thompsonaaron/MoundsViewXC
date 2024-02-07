@@ -19,7 +19,7 @@ const AthletesModal = () => {
 
     return (
         <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div class="flex flex-col justify-between">
                     <h1 class="text-lg font-bold py-4">
                         Please enter the password to verify that you are a
@@ -43,8 +43,8 @@ const AthletesModal = () => {
                     </div>
                     <div class="flex py-4 justify-center">
                         <button
+                            type="submit"
                             id="submit-button"
-                            onClick={handleSubmit}
                             class="border-2 border-solid border-slate-300 p-2"
                         >
                             Submit
