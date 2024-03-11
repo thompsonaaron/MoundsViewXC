@@ -800,6 +800,13 @@ const links2023 = [
     },
 ]
 
+const links2024 = [
+    {
+        text: 'Bethel Time Trials',
+        href: 'https://drive.google.com/file/d/18YoR6FTfV0PckZob3gQeOYZpAUDeKQa9/view?usp=drive_link',
+    },
+]
+
 export const TFResults2014 = () => <Accordion title="2014" links={links2014} />
 export const TFResults2015 = () => <Accordion title="2015" links={links2015} />
 export const TFResults2016 = () => <Accordion title="2016" links={links2016} />
