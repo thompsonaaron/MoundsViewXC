@@ -26,6 +26,7 @@ import {
     TFResults2021,
     TFResults2022,
     TFResults2023,
+    TFResults2024,
 } from '../constants/TFResults'
 import Banner from '../components/Banner/Banner.astro'
 ---
@@ -129,6 +130,7 @@ import Banner from '../components/Banner/Banner.astro'
                             </a>
                         </h1>
                         <div class="mx-8 my-4">
+                            <TFResults2024 client:visible />
                             <TFResults2023 client:visible />
                             <TFResults2022 client:visible />
                             <TFResults2021 client:visible />

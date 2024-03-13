@@ -528,14 +528,10 @@ const links2023 = [
         text: 'MSHSL State',
         href: 'https://drive.google.com/file/d/1echM4_HP20MfPJEONaYkm8R7zq4_D-fo/view?usp=drive_link',
     },
-    // {
-    //     text: 'Nike Heartland Regional',
-    //     href: '',
-    // },
-    // {
-    //     text: 'Season Booklet',
-    //     href: '',
-    // },
+    {
+        text: 'Nike Heartland Regional',
+        href: 'https://drive.google.com/file/d/1Y00bVH6NiuBZL7lSYqPyO-p6DWcgZbZU/view?usp=drive_link',
+    },
 ]
 
 export const Results2012 = () => <Accordion title="2012" links={links2012} />

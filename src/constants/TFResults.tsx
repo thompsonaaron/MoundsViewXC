@@ -805,6 +805,94 @@ const links2024 = [
         text: 'Bethel Time Trials',
         href: 'https://drive.google.com/file/d/18YoR6FTfV0PckZob3gQeOYZpAUDeKQa9/view?usp=drive_link',
     },
+    {
+        text: 'St. Thomas Indoor',
+        href: 'https://drive.google.com/file/d/1DUejxPyyWNEuV0QUc1J1r91S60a-uedk/view?usp=drive_link',
+    },
+    {
+        text: 'Griak Classic Indoor',
+        href: 'https://drive.google.com/file/d/1gadCpWR_E49Wfq7ZU8Hf8ZenVH6lnzlF/view?usp=drive_link',
+    },
+    {
+        text: 'Griak Invite Indoor',
+        href: 'https://drive.google.com/file/d/1uR6hbqAjFtUp5uX__HOIK8HmzRRnpSVV/view?usp=drive_link',
+    },
+    {
+        text: '9-10 Indoor',
+        href: 'https://drive.google.com/file/d/1unC0j6egTLiTwPl65VEgubLHg02PQAaa/view?usp=drive_link',
+    },
+    {
+        text: 'Mankata State Relays',
+        href: 'https://drive.google.com/file/d/1HaK5bHliu2ddosBPfxLAPawquFkXSxdI/view?usp=drive_link',
+    },
+    {
+        text: 'Last Man Standing',
+        href: 'https://drive.google.com/file/d/1mjt45BkabCcx5nd92K5n9K54iMJ5Id2S/view?usp=drive_link',
+    },
+    {
+        text: '9-10 Invite',
+        href: 'https://drive.google.com/file/d/1eP_tkBh3YRpZ0x4fEIkBB-lAMQ1MAkX0/view?usp=drive_link',
+    },
+    {
+        text: 'White Bear Relays',
+        href: 'https://drive.google.com/file/d/1BmrJt7Iszd9DQZVWM9TDo-ptZolY36Bg/view?usp=drive_link',
+    },
+    {
+        text: 'JV Invite',
+        href: 'https://drive.google.com/file/d/1S2-ND18YBPE_ECMLKQgnRUF6BFF-kbim/view?usp=drive_link',
+    },
+    {
+        text: 'Pony Relays',
+        href: 'https://drive.google.com/file/d/1qJDh_rUx88FYzwB-5Dpb9c9NrmskL4gH/view?usp=drive_link',
+    },
+    {
+        text: 'MV 9th Grade Invite',
+        href: 'https://drive.google.com/file/d/1fL8jVPe1RtPRDLbnuVirECzstzQMM0EM/view?usp=drive_link',
+    },
+    {
+        text: 'Bethel Invite',
+        href: 'https://drive.google.com/file/d/1HmsufC28NjsB6SUOKkzn8QP4YWtY73dc/view?usp=drive_link',
+    },
+    {
+        text: 'Bob Stewart Invite',
+        href: 'https://drive.google.com/file/d/15rkOUCgwVrsEDiuQ1hmUfOqb7ide-92H/view?usp=drive_link',
+    },
+    {
+        text: 'Wayzata Relays',
+        href: 'https://drive.google.com/file/d/1BHdjqtgE3KeyA8SthiqLqEi7EacpJ00R/view?usp=drive_link',
+    },
+    {
+        text: 'True Team Section',
+        href: 'https://drive.google.com/file/d/1VOo8-opiiMxJSIoiE5PIBN_UJbgkwpyy/view?usp=drive_link',
+    },
+    {
+        text: 'JV Conference',
+        href: 'https://drive.google.com/file/d/1kMhRfGa4cLicIETYQvUIgBvf3DZV9LK1/view?usp=drive_link',
+    },
+    {
+        text: 'Conference 9-10',
+        href: 'https://drive.google.com/file/d/1GXTJ54kGbwaGD62xasV1RudbzVJvwAIf/view?usp=drive_link',
+    },
+    {
+        text: 'Last Chance',
+        href: 'https://drive.google.com/file/d/1MRg25eEeFGgWh-XZ9Ku9Jtv40yQkPZBE/view?usp=drive_link',
+    },
+    {
+        text: 'True Team State',
+        href: 'https://drive.google.com/file/d/1HruNctVo4BuZfN1QNj26-x9aufr6q5ir/view?usp=drive_link',
+    },
+    {
+        text: 'Suburban East Conference',
+        href: 'https://drive.google.com/file/d/1Sj0hPoiZjzlh5BiBl9As1ce1FPKAWS-l/view?usp=drive_link',
+    },
+    {
+        text: 'Section 5AAA',
+        href: 'https://drive.google.com/file/d/1pPenW6DhqAzdOsvn1RFRT4JXj78tJHN0/view?usp=drive_link',
+    },
+    {
+        text: 'MSHSL State',
+        href: 'https://drive.google.com/file/d/1UHJSS3KTAI68BKzUwaDhlO8FZrTgnCWh/view?usp=drive_link',
+    },
 ]
 
 export const TFResults2014 = () => <Accordion title="2014" links={links2014} />
@@ -816,3 +904,4 @@ export const TFResults2019 = () => <Accordion title="2019" links={links2019} />
 export const TFResults2021 = () => <Accordion title="2021" links={links2021} />
 export const TFResults2022 = () => <Accordion title="2022" links={links2022} />
 export const TFResults2023 = () => <Accordion title="2023" links={links2023} />
+export const TFResults2024 = () => <Accordion title="2024" links={links2024} />
