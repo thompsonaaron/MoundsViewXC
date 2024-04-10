@@ -2,35 +2,27 @@ import { useEffect, useState } from 'preact/hooks'
 
 import clsx from 'clsx'
 
-// const AlexandriaPodiumSmall = './images/alexandria-win-small.webp'
 const AlexandriaPodiumMedium = './images/alexandria-win-medium.webp'
 const AlexandriaPodiumLarge = './images/alexandria-win-large.webp'
 
-// const HerbertHugsSmall = './images/herbert-hugs-small.webp'
 const HerbertHugsMedium = './images/herbert-hugs-medium.webp'
 const HerbertHugsLarge = './images/herbert-hugs-large.webp'
 
-// const Rosemount2015Small = './images/rosemount-start-small.webp'
 const Rosemount2015Medium = './images/rosemount-start-medium.webp'
 const Rosemount2015Large = './images/rosemount-start-large.webp'
 
-// const SEC2015Small = './images/conf-walking-small.webp'
 const SEC2015Medium = './images/conf-walking-medium.webp'
 const SEC2015Large = './images/conf-walking-large.webp'
 
-// const ThreePeatSmall = './images/three-peat-small.webp'
 const ThreePeatMedium = './images/three-peat-medium.webp'
 const ThreePeatLarge = './images/three-peat-large.webp'
 
-// const WillSmall = './images/will-small.webp'
 const WillMedium = './images/will-medium.webp'
 const WillLarge = './images/will-large.webp'
 
-// const NxrChampsSmall = './images/nxr-champions-small.webp'
 const NxrChampsMedium = './images/nxr-champions-medium.webp'
 const NxrChampsLarge = './images/nxr-champions-large.webp'
 
-// const Section2022WarmupSmall = './images/2022-section-warmup-small.webp'
 const Section2022WarmupMedium = './images/2022-section-warmup-medium.webp'
 const Section2022WarmupLarge = './images/2022-section-warmup-large.webp'
 

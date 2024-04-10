@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks'
+import { useEffect, useRef, useState } from 'preact/hooks'
 
 interface AccordionProps {
     title: string
@@ -7,6 +7,26 @@ interface AccordionProps {
 
 const Accordion = ({ title, links }: AccordionProps) => {
     const [isOpen, setIsOpen] = useState(false)
+    const ref = useRef<HTMLDivElement>()
+
+    // const resize = () => {
+    //     setIsOpen((prevState) => !prevState)
+    // }
+
+    useEffect(() => {
+        const resultsList = ref.current
+        if (resultsList) {
+            resultsList.style.maxHeight = isOpen
+                ? `${resultsList.scrollHeight}px`
+                : '0px'
+
+            resultsList.style.transitionTimingFunction = isOpen
+                ? `ease-out`
+                : 'ease-in'
+
+            resultsList.style.transitionDuration = isOpen ? `500ms` : '250ms'
+        }
+    }, [isOpen])
 
     return (
         <div>
@@ -18,9 +38,9 @@ const Accordion = ({ title, links }: AccordionProps) => {
                 <div class="text-xl">{isOpen ? '-' : '+'}</div>
             </div>
             <div
-                class={`overflow-hidden transition-all duration-1000 ${
-                    isOpen ? 'max-h-screen' : 'max-h-0'
-                } pl-4 mb-1 flex text-sm md:text-lg`}
+                aria-hidden={isOpen}
+                class={`overflow-hidden transition-all max-h-0 pl-4 mb-1 flex text-sm md:text-lg`}
+                ref={ref}
             >
                 <ul class={`mx-2`}>
                     {links.map((link) => (
