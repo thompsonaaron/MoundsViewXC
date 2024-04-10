@@ -38,7 +38,7 @@ import '@fontsource/quattrocento-sans'
         <title>Mounds View XC</title>
     </head>
     <body
-        class="flex flex-col items-center justify-items-start w-screen bg-neutral-700"
+        class="flex flex-col items-center justify-items-start min-w-screen max-w-screen overflow-x-hidden min-h-screen bg-neutral-700 box-border"
     >
         <header class="flex flex-col grow-1 w-full">
             <Navbar />
@@ -136,24 +136,21 @@ import '@fontsource/quattrocento-sans'
                         </div> -->
 
                         <br />
+                        <p class="flex">Nike Cross Nationals (NXN): 2019 (19th), 2018 (17th)</p><br
+                        />
                         <p class="flex">
-                            Nike Cross Nationals (NXN): 2019 (19th), 2018 (17th)
+                            Nike Cross Heartland Regional: 2023 (13th), 2022 (12th), 2021 (10th),
+                            2019 (1st), 2018 (1st)
                         </p><br />
                         <p class="flex">
-                            Nike Cross Heartland Regional: 2022 (12th), 2021
-                            (10th), 2019 (1st), 2018 (1st)
-                        </p><br />
-                        <p class="flex">
-                            MSHSL XC: 2023 (3rd), 2022 (5th), 2021 (3rd), 2019
-                            (1st), 2018 (2nd), 2017 (5th), 2016 (4th)
+                            MSHSL XC: 2023 (3rd), 2022 (5th), 2021 (3rd), 2019 (1st), 2018 (2nd),
+                            2017 (5th), 2016 (4th)
                         </p><br />
                         <p class="flex flex-row">
-                            True Team State Champions: 1998, 1999, 2000, 2001,
-                            2002, 2003, 2006, 2007
+                            True Team State Champions: 1998, 1999, 2000, 2001, 2002, 2003, 2006,
+                            2007
                         </p>
-                        <p class="flex flex-row">
-                            MSHSL Champions: 1999, 2000, 2001, 2006, 2007
-                        </p>
+                        <p class="flex flex-row">MSHSL Champions: 1999, 2000, 2001, 2006, 2007</p>
                     </div>
                 </div>
                 <div
@@ -163,9 +160,7 @@ import '@fontsource/quattrocento-sans'
                 </div>
             </div>
         </main>
-        <footer
-            class="flex sticky bottom-0 w-full bg-white flex-col mb-12 md:mb-0"
-        >
+        <footer class="flex mt-auto w-full bg-white flex-col mb-12 md:mb-0">
             <div class="flex flex-row w-full justify-center items-center py-1">
                 <div class="w-4/12 md:w-2/12 flex justify-center">
                     <a
@@ -177,14 +172,7 @@ import '@fontsource/quattrocento-sans'
                 </div>
 
                 <div class="w-4/12 md:w-2/12 flex justify-center">
-                    <a href="/"
-                        ><img
-                            src={Logo}
-                            height="40"
-                            width="40"
-                            alt="MV Logo"
-                        /></a
-                    >
+                    <a href="/"><img src={Logo} height="40" width="40" alt="MV Logo" /></a>
                 </div>
 
                 <div class="w-4/12 md:w-2/12 flex justify-center">
@@ -198,10 +186,10 @@ import '@fontsource/quattrocento-sans'
             </div>
         </footer>
     </body>
-    <div
+    <!-- <div
         class="h-fit flex flex-row w-full justify-center text-xs md:text-sm text-gray-500 hover:text-black"
     >
         &#169; Aaron Thompson
-    </div>
+    </div> -->
 </html>
 <Taskbar client:load />

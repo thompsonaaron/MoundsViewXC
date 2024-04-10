@@ -63,28 +63,45 @@ const Updates = ({ numUpdates = 2, urlPath }) => {
                     </span>
                 </h1>
                 <div class="grid grid-cols-4 gap-4 auto-cols-auto">
-                    {updates.map((update) => (
+                    {!updates.length && (
                         <>
                             <div
-                                class={`text-sm ${
-                                    update.length
-                                        ? ''
-                                        : styles['react-loading-skeleton']
-                                }`}
-                            >
-                                {update[0]}
-                            </div>
+                                class={`text-sm ${styles['react-loading-skeleton']} col-span-1`}
+                            ></div>
                             <div
-                                class={`col-span-3 text-sm ${
-                                    update.length
-                                        ? ''
-                                        : styles['react-loading-skeleton']
-                                }`}
-                            >
-                                {update[1]}
-                            </div>
+                                class={`text-sm ${styles['react-loading-skeleton']} col-span-3`}
+                            ></div>
+                            <div
+                                class={`text-sm ${styles['react-loading-skeleton']} col-span-1`}
+                            ></div>
+                            <div
+                                class={`text-sm ${styles['react-loading-skeleton']} col-span-3`}
+                            ></div>
                         </>
-                    ))}
+                    )}
+                    {updates.length > 0 &&
+                        updates.map((update) => (
+                            <>
+                                <div
+                                    class={`text-sm ${
+                                        update.length
+                                            ? ''
+                                            : styles['react-loading-skeleton']
+                                    }`}
+                                >
+                                    {update[0]}
+                                </div>
+                                <div
+                                    class={`col-span-3 text-sm ${
+                                        update.length
+                                            ? ''
+                                            : styles['react-loading-skeleton']
+                                    }`}
+                                >
+                                    {update[1]}
+                                </div>
+                            </>
+                        ))}
                 </div>
             </div>
         </section>
