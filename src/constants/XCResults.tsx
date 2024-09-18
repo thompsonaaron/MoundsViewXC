@@ -534,6 +534,53 @@ const links2023 = [
     },
 ]
 
+const links2024 = [
+    {
+        text: 'Alumni',
+        href: 'https://drive.google.com/file/d/1J1kvwfoWYOgrJsN_oMGeOXmeP69hvRi4/view?usp=drive_link',
+    },
+    {
+        text: 'Mile Time Trials',
+        href: 'https://drive.google.com/file/d/1q4eUZ7l39CAuHje9dOhmpdK4vyzSRMyZ/view?usp=drive_link',
+    },
+    {
+        text: 'Rosemount',
+        href: 'https://drive.google.com/file/d/1ccAC2lVuiwrYylr3azkp0yrXv-U_XU_H/view?usp=sharing',
+    },
+    {
+        text: 'Rum River / Steve Hoag',
+        href: 'https://drive.google.com/file/d/1jEPAoBT4dTDnUIsUx8CjixDH_oQovhLy/view?usp=drive_link',
+    },
+    {
+        text: 'Griak',
+        href: 'https://drive.google.com/file/d/1ncHFIX7W6SIbu2PakevFmBZkAhfwlAeX/view?usp=drive_link',
+    },
+    {
+        text: 'Mustang',
+        href: 'https://drive.google.com/file/d/1ZddA_t7meRYBhqLzDSoMX1zvEMtvOqp_/view?usp=drive_link',
+    },
+    {
+        text: 'Alexandria',
+        href: 'https://drive.google.com/file/d/1ul8z3aQ7mYS3x9YpmVaDnBk3c9nY7dj5/view?usp=drive_link',
+    },
+    {
+        text: 'Suburban East Conference',
+        href: 'https://drive.google.com/file/d/1ExRvB1nEDgqvWUUuBYmy0hY6B_HS4vLT/view?usp=drive_link',
+    },
+    {
+        text: 'Section 5AAA',
+        href: 'https://drive.google.com/file/d/1bpetqMx_oblVVeoGRZnNZcgDu1gc_xTb/view?usp=drive_link',
+    },
+    {
+        text: 'MSHSL State',
+        href: 'https://drive.google.com/file/d/1mJHmPTyZ6MFFeLs-An9aK9xwgQY9fc16/view?usp=drive_link',
+    },
+    {
+        text: 'Nike Heartland Regional',
+        href: 'https://drive.google.com/file/d/1li6MLpW8cdj149qERGkaIXP_wUNlI4_p/view?usp=drive_link',
+    },
+]
+
 export const Results2012 = () => <Accordion title="2012" links={links2012} />
 export const Results2013 = () => <Accordion title="2013" links={links2013} />
 export const Results2014 = () => <Accordion title="2014" links={links2014} />
@@ -546,3 +593,4 @@ export const Results2020 = () => <Accordion title="2020" links={links2020} />
 export const Results2021 = () => <Accordion title="2021" links={links2021} />
 export const Results2022 = () => <Accordion title="2022" links={links2022} />
 export const Results2023 = () => <Accordion title="2023" links={links2023} />
+export const Results2024 = () => <Accordion title="2024" links={links2024} />
